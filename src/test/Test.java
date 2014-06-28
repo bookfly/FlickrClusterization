@@ -10,6 +10,7 @@ import javax.xml.parsers.ParserConfigurationException;
 
 import org.xml.sax.SAXException;
 import data.PhotoJsonSerializer;
+import function.GettingClusters;
 import function.GettingLocation;
 import function.GettingPhotos;
 import java.util.ArrayList;
@@ -53,12 +54,20 @@ public class Test {
 
          writer.close();
          */
-        Photo p = new Photo("4087161911");
-        GettingLocation gl = new GettingLocation();
-        List<Photo> listaSlika = new ArrayList<>();
-        listaSlika.add(p);
-        gl.setLocations(listaSlika);
-        System.out.println("Location: " + p.getLocation() + " Lat: " + p.getLatitude() + " Lon: " + p.getLongitude());
+        /*     Photo p = new Photo("4087161911");
+         GettingLocation gl = new GettingLocation();
+         List<Photo> listaSlika = new ArrayList<>();
+         listaSlika.add(p);
+         gl.setLocations(listaSlika);
+         System.out.println("Location: " + p.getLocation() + " Lat: " + p.getLatitude() + " Lon: " + p.getLongitude());
+         */
+        GettingClusters gc = new GettingClusters();
+
+        List<String> tagovi = new ArrayList<>();
+        tagovi = gc.getClusters("shark");
+        for (String string : tagovi) {
+            System.out.println(string + " ");
+        }
 
     }
 

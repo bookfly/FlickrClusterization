@@ -80,8 +80,6 @@ public class GettingLocation extends Functions {
 
         JSONObject jobj = new JSONObject(jstr);
         JSONArray location = jobj.getJSONObject("places").getJSONArray("place");
-        //   photo.setLocation(location.getString("woe_name"));
-
         for (int i = 0; i < location.length(); i++) {
             JSONObject jLocation = location.getJSONObject(i);
             photo.setLocation(jLocation.getString("woe_name"));
