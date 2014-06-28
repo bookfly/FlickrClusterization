@@ -27,37 +27,25 @@ public class Test {
 
     public static void main(String[] args) throws IOException, ParserConfigurationException, SAXException, JSONException {
 
-        /*    Photo p = new Photo("4087161911");
-         GettingLocation gl = new GettingLocation();
-         List<Photo> listaSlika = new ArrayList<>();
-         listaSlika.add(p);
-         gl.setLocations(listaSlika);
-         System.out.println("Location: " + p.getLocation() + " Lat: " + p.getLatitude() + " Lon: " + p.getLongitude());
-         */
-        /*       GettingClusters gc = new GettingClusters();
-
-         List<String> tagovi = new ArrayList<>();
-         tagovi = gc.getClusters("shark");
-         for (String string : tagovi) {
-         System.out.println(string + " ");
-         }
-         */
         GettingClusters gc = new GettingClusters();
-        List<Photo> listOfPhotos = gc.getClusterPhotos("shark", "fish");
-
+        List<String> tagovi = new ArrayList<>();
+        tagovi = gc.getClusters("shark");
         GettingLocation gl = new GettingLocation();
-        gl.setLocations(listOfPhotos);
-
-        JsonArray jsonArray = PhotoJsonSerializer.serializePhotos(listOfPhotos);
-        FileWriter writer = new FileWriter("slicice.json");
+        JsonArray jsonArray = null;
+        FileWriter writer = new FileWriter("photos.json");
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        for (String string : tagovi) {
+            List<Photo> listOfPhotos = gc.getClusterPhotos("shark", string);
+            gl.setLocations(listOfPhotos);
+            jsonArray = PhotoJsonSerializer.serializePhotos(listOfPhotos);
 
-        for (JsonElement jsonElement : jsonArray) {
-            Photo photo = gson.fromJson(jsonElement, Photo.class);
-            writer.write(gson.toJson(photo) + "\n");
-            writer.flush();
+            for (JsonElement jsonElement : jsonArray) {
+                Photo photo = gson.fromJson(jsonElement, Photo.class);
+                writer.write(gson.toJson(photo) + "\n");
+                writer.flush();
+            }
+
         }
         writer.close();
-
     }
 }
