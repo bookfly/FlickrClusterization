@@ -57,7 +57,7 @@ public class Test {
         GettingLocation gl = new GettingLocation();
         List<Photo> listaSlika = new ArrayList<>();
         listaSlika.add(p);
-        gl.setLanLons(listaSlika);
+        gl.setLocations(listaSlika);
         System.out.println("Location: " + p.getLocation() + " Lat: " + p.getLatitude() + " Lon: " + p.getLongitude());
 
     }

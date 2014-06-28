@@ -24,11 +24,12 @@ public class GettingLocation extends Functions {
     public GettingLocation() {
     }
 
-    public void setLanLons(List<Photo> photos) throws IOException, JSONException {
+    public void setLocations(List<Photo> photos) throws IOException, JSONException {
         for (Photo photo : photos) {
             setLanLon(photo);
+            setLocation(photo);
         }
-        setLocations(photos);
+        //   setLocations(photos);
     }
 
     private void setLanLon(Photo photo) throws IOException, JSONException {
@@ -56,12 +57,6 @@ public class GettingLocation extends Functions {
         photo.setLatitude(location.getDouble("latitude"));
         photo.setLongitude(location.getDouble("longitude"));
 
-    }
-
-    private void setLocations(List<Photo> photos) throws IOException, JSONException {
-        for (Photo photo : photos) {
-            setLocation(photo);
-        }
     }
 
     private void setLocation(Photo photo) throws IOException, JSONException {
