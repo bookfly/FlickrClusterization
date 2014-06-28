@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package funkcija;
+package function;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -21,9 +21,9 @@ import org.xml.sax.SAXException;
  *
  * @author jelena
  */
-public class Autentikacija extends Funkcije {
+public class Authentication extends Functions {
 
-    public Autentikacija() {
+    public Authentication() {
     }
 
     public void dajForb() throws IOException, ParserConfigurationException, SAXException {

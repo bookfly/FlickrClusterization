@@ -3,10 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package funkcija;
+package function;
 
 import data.Data;
+import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
+import java.io.StringWriter;
+import java.io.Writer;
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.util.ArrayList;
@@ -21,7 +26,7 @@ import photo.Photo;
  *
  * @author jelena
  */
-public abstract class Funkcije {
+public abstract class Functions {
 
     private Data data;
     private String sig;
@@ -36,7 +41,7 @@ public abstract class Funkcije {
     private Photo photo;
     private List<Photo> listPhotos;
 
-    public Funkcije() {
+    public Functions() {
         data = new Data();
         rstream = null;
         client = new HttpClient();
@@ -67,6 +72,25 @@ public abstract class Funkcije {
         String code = error.item(0).getAttributes().item(0).getTextContent();
         String msg = error.item(0).getAttributes().item(1).getTextContent();
         System.out.println("Flickr request failed with error code " + code + ", " + msg);
+    }
+
+    protected static String toString(InputStream in) throws IOException {
+        StringWriter out = new StringWriter();
+        copy(new InputStreamReader(in), out);
+        out.close();
+        in.close();
+        return out.toString();
+    }
+
+    private static int copy(Reader input, Writer output) throws IOException {
+        char[] buffer = new char[1024];
+        int count = 0;
+        int n = 0;
+        while (-1 != (n = input.read(buffer))) {
+            output.write(buffer, 0, n);
+            count += n;
+        }
+        return count;
     }
 
     public Data getData() {

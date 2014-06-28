@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package funkcija;
+package function;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -28,9 +28,9 @@ import photo.Photo;
  *
  * @author jelena
  */
-public class PovlacenjeSlika extends Funkcije {
+public class GettingPhotos extends Functions {
 
-    public PovlacenjeSlika() {
+    public GettingPhotos() {
     }
 
     public List<Photo> dajSlike(String userid) throws IOException, ParserConfigurationException, SAXException, JSONException {
@@ -71,25 +71,6 @@ public class PovlacenjeSlika extends Funkcije {
             getListPhotos().add(getPhoto());
         }
         return getListPhotos();
-    }
-
-    private static String toString(InputStream in) throws IOException {
-        StringWriter out = new StringWriter();
-        copy(new InputStreamReader(in), out);
-        out.close();
-        in.close();
-        return out.toString();
-    }
-
-    private static int copy(Reader input, Writer output) throws IOException {
-        char[] buffer = new char[1024];
-        int count = 0;
-        int n = 0;
-        while (-1 != (n = input.read(buffer))) {
-            output.write(buffer, 0, n);
-            count += n;
-        }
-        return count;
     }
 
     public void napisiUDokumentSlike(List<Photo> listPhoto) {

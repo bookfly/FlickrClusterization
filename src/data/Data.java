@@ -21,6 +21,8 @@ public class Data {
     private String methodGetToken = "flickr.auth.getToken";
     private String methodGetPublicPhotos = "flickr.people.getPublicPhotos";
     private String methodFindByUsername = "flickr.people.findByUsername";
+    private String methodGeoLocation = "flickr.photos.geo.getLocation";
+    private String methodFindByLatLon = "flickr.places.findByLatLon";
 
     private String userid = "29096781@N02";
     private String photoId = "14484711641";
@@ -113,6 +115,22 @@ public class Data {
 
     public void setMethodFindByUsername(String methodFindByUsername) {
         this.methodFindByUsername = methodFindByUsername;
+    }
+
+    public String getMethodGeoLocation() {
+        return methodGeoLocation;
+    }
+
+    public void setMethodGeoLocation(String methodGeoLocation) {
+        this.methodGeoLocation = methodGeoLocation;
+    }
+
+    public String getMethodFindByLatLon() {
+        return methodFindByLatLon;
+    }
+
+    public void setMethodFindByLatLon(String methodFindByLatLon) {
+        this.methodFindByLatLon = methodFindByLatLon;
     }
 
 }

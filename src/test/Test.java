@@ -10,7 +10,10 @@ import javax.xml.parsers.ParserConfigurationException;
 
 import org.xml.sax.SAXException;
 import data.PhotoJsonSerializer;
-import funkcija.PovlacenjeSlika;
+import function.GettingLocation;
+import function.GettingPhotos;
+import java.util.ArrayList;
+import java.util.List;
 import org.json.JSONException;
 import photo.Photo;
 
@@ -25,8 +28,7 @@ public class Test {
         //    Autentikacija a = new Autentikacija();
         //    a.dajForb();
         //     a.logIn();
-        PovlacenjeSlika ps = new PovlacenjeSlika();
-
+        //  GettingPhotos ps = new GettingPhotos();
         //    ps.napisiUDokumentSlike(ps.dajSlike());
         //    ps.napisiUDokumentSlike(ps.dajSlike(ps.dajUserId("davideluciano")));
         //    ps.napisiUDokumentSlike(ps.dajSlike(ps.dajUserId("benman31")));
@@ -37,18 +39,27 @@ public class Test {
         //    ps.napisiUDokumentSlike(ps.dajSlike(ps.dajUserId("buhamdi")));
         //    ps.napisiUDokumentSlike(ps.dajSlike(ps.dajUserId("melfoody")));
         //    ps.napisiUDokumentSlike(ps.dajSlike(ps.dajUserId("alexlegaud")));
-        PhotoJsonSerializer pjs = new PhotoJsonSerializer();
+        //     PhotoJsonSerializer pjs = new PhotoJsonSerializer();
         //   System.out.println(pjs.serializePhotos(ps.dajSlike(ps.dajUserId("davideluciano"))));
-        JsonArray jsonArray = pjs.serializePhotos(ps.dajSlike(ps.dajUserId("davideluciano")));
-        FileWriter writer = new FileWriter("slike.json");
-        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+     /*   JsonArray jsonArray = pjs.serializePhotos(ps.dajSlike(ps.dajUserId("davideluciano")));
+         FileWriter writer = new FileWriter("slike.json");
+         Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
-        for (JsonElement jsonElement : jsonArray) {
+         for (JsonElement jsonElement : jsonArray) {
 
-            Photo photo = gson.fromJson(jsonElement, Photo.class);
-            writer.write(gson.toJson(photo) + "\n");
-        }
+         Photo photo = gson.fromJson(jsonElement, Photo.class);
+         writer.write(gson.toJson(photo) + "\n");
+         }
 
-        writer.close();
+         writer.close();
+         */
+        Photo p = new Photo("4087161911");
+        GettingLocation gl = new GettingLocation();
+        List<Photo> listaSlika = new ArrayList<>();
+        listaSlika.add(p);
+        gl.setLanLons(listaSlika);
+        System.out.println("Location: " + p.getLocation() + " Lat: " + p.getLatitude() + " Lon: " + p.getLongitude());
+
     }
+
 }

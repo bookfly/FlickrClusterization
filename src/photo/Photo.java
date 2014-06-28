@@ -5,7 +5,6 @@
  */
 package photo;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -20,7 +19,14 @@ public class Photo {
     private String title;
     private String secret;
     private String server;
+    private double longitude;
+    private double latitude;
+
     private List<String> listOfTags;
+
+    public Photo(String id) {
+        this.id = id;
+    }
 
     public Photo(String id, String userId, String location, String title, String secret, String server, List<String> listOfTags) {
         this.id = id;
@@ -98,6 +104,22 @@ public class Photo {
 
     public void setServer(String server) {
         this.server = server;
+    }
+
+    public double getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(double longitude) {
+        this.longitude = longitude;
+    }
+
+    public double getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(double latitude) {
+        this.latitude = latitude;
     }
 
 }
