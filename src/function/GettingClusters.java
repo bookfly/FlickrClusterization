@@ -14,6 +14,7 @@ import org.apache.commons.httpclient.methods.GetMethod;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import photo.Photo;
 
 /**
  *
@@ -30,16 +31,14 @@ public class GettingClusters extends Functions {
         System.out.println("GET clusters request: " + getRequest());
         setMethod(new GetMethod(getRequest()));
 
-        //slanje GET zahteva
         setStatusCode(getClient().executeMethod(getMethod()));
 
         if (getStatusCode() != HttpStatus.SC_OK) {
             System.err.println("Method failed: " + getMethod().getStatusLine());
         }
         setRstream(null);
-
-        //dobijanje tela odgovora
         setRstream(getMethod().getResponseBodyAsStream());
+
         String jstr = toString(getRstream());
         jstr = jstr.substring("jsonFlickrApi(".length(), jstr.length() - 1);
 
@@ -54,9 +53,41 @@ public class GettingClusters extends Functions {
                 JSONObject tag = jtag.getJSONObject(j);
                 listOfTags.add(tag.getString("_content"));
             }
-
         }
-
         return listOfTags;
+    }
+
+    public List<Photo> getClusterPhotos(String cluster, String stag) throws IOException, JSONException {
+
+        setRequest(getData().getRequestMethod() + getData().getMethodGetClusterPhotos() + "&api_key=" + getData().getKey() + "&tag=" + stag + "&cluster_id=" + cluster + "&format=json");
+        System.out.println("GET clusters request: " + getRequest());
+        setMethod(new GetMethod(getRequest()));
+
+        setStatusCode(getClient().executeMethod(getMethod()));
+
+        if (getStatusCode() != HttpStatus.SC_OK) {
+            System.err.println("Method failed: " + getMethod().getStatusLine());
+        }
+        setRstream(null);
+        setRstream(getMethod().getResponseBodyAsStream());
+
+        String jstr = toString(getRstream());
+        jstr = jstr.substring("jsonFlickrApi(".length(), jstr.length() - 1);
+
+        JSONObject jobj = new JSONObject(jstr);
+        JSONArray photos = jobj.getJSONObject("photos").getJSONArray("photo");
+
+        for (int i = 0; i < photos.length(); i++) {
+            JSONObject jphoto = photos.getJSONObject(i);
+            setPhoto(new Photo());
+            getPhoto().setId(jphoto.getString("id"));
+            getPhoto().setTitle(jphoto.getString("title"));
+            getPhoto().setUserId(jphoto.getString("owner"));
+            getPhoto().setUsername(jphoto.getString("username"));
+            getPhoto().setSecret(jphoto.getString("secret"));
+            getPhoto().setServer(jphoto.getString("server"));
+            getListPhotos().add(getPhoto());
+        }
+        return getListPhotos();
     }
 }

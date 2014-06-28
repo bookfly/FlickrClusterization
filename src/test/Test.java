@@ -16,6 +16,7 @@ import function.GettingPhotos;
 import java.util.ArrayList;
 import java.util.List;
 import org.json.JSONException;
+import org.json.JSONObject;
 import photo.Photo;
 
 public class Test {
@@ -26,49 +27,37 @@ public class Test {
 
     public static void main(String[] args) throws IOException, ParserConfigurationException, SAXException, JSONException {
 
-        //    Autentikacija a = new Autentikacija();
-        //    a.dajForb();
-        //     a.logIn();
-        //  GettingPhotos ps = new GettingPhotos();
-        //    ps.napisiUDokumentSlike(ps.dajSlike());
-        //    ps.napisiUDokumentSlike(ps.dajSlike(ps.dajUserId("davideluciano")));
-        //    ps.napisiUDokumentSlike(ps.dajSlike(ps.dajUserId("benman31")));
-        //    ps.napisiUDokumentSlike(ps.dajSlike(ps.dajUserId("Natalie+Bell")));
-        //    ps.napisiUDokumentSlike(ps.dajSlike(ps.dajUserId("R.+Francis")));
-        //    ps.napisiUDokumentSlike(ps.dajSlike(ps.dajUserId("Steffe")));
-        //    ps.napisiUDokumentSlike(ps.dajSlike(ps.dajUserId("Huntcliff")));
-        //    ps.napisiUDokumentSlike(ps.dajSlike(ps.dajUserId("buhamdi")));
-        //    ps.napisiUDokumentSlike(ps.dajSlike(ps.dajUserId("melfoody")));
-        //    ps.napisiUDokumentSlike(ps.dajSlike(ps.dajUserId("alexlegaud")));
-        //     PhotoJsonSerializer pjs = new PhotoJsonSerializer();
-        //   System.out.println(pjs.serializePhotos(ps.dajSlike(ps.dajUserId("davideluciano"))));
-     /*   JsonArray jsonArray = pjs.serializePhotos(ps.dajSlike(ps.dajUserId("davideluciano")));
-         FileWriter writer = new FileWriter("slike.json");
-         Gson gson = new GsonBuilder().setPrettyPrinting().create();
-
-         for (JsonElement jsonElement : jsonArray) {
-
-         Photo photo = gson.fromJson(jsonElement, Photo.class);
-         writer.write(gson.toJson(photo) + "\n");
-         }
-
-         writer.close();
-         */
-        /*     Photo p = new Photo("4087161911");
+        /*    Photo p = new Photo("4087161911");
          GettingLocation gl = new GettingLocation();
          List<Photo> listaSlika = new ArrayList<>();
          listaSlika.add(p);
          gl.setLocations(listaSlika);
          System.out.println("Location: " + p.getLocation() + " Lat: " + p.getLatitude() + " Lon: " + p.getLongitude());
          */
-        GettingClusters gc = new GettingClusters();
+        /*       GettingClusters gc = new GettingClusters();
 
-        List<String> tagovi = new ArrayList<>();
-        tagovi = gc.getClusters("shark");
-        for (String string : tagovi) {
-            System.out.println(string + " ");
+         List<String> tagovi = new ArrayList<>();
+         tagovi = gc.getClusters("shark");
+         for (String string : tagovi) {
+         System.out.println(string + " ");
+         }
+         */
+        GettingClusters gc = new GettingClusters();
+        List<Photo> listOfPhotos = gc.getClusterPhotos("shark", "fish");
+
+        GettingLocation gl = new GettingLocation();
+        gl.setLocations(listOfPhotos);
+
+        JsonArray jsonArray = PhotoJsonSerializer.serializePhotos(listOfPhotos);
+        FileWriter writer = new FileWriter("slicice.json");
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+
+        for (JsonElement jsonElement : jsonArray) {
+            Photo photo = gson.fromJson(jsonElement, Photo.class);
+            writer.write(gson.toJson(photo) + "\n");
+            writer.flush();
         }
+        writer.close();
 
     }
-
 }

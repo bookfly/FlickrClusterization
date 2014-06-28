@@ -51,7 +51,7 @@ public abstract class Functions {
         listPhotos = new ArrayList<>();
     }
 
-    //MD5 metoda za kodiranje
+    //MD5 method for coding text
     protected static String MD5(String text) {
         String md5Text = "";
         try {

@@ -15,6 +15,7 @@ public class Photo {
 
     private String id;
     private String userId;
+    private String username;
     private String location;
     private String title;
     private String secret;
@@ -22,20 +23,8 @@ public class Photo {
     private double longitude;
     private double latitude;
 
-    private List<String> listOfTags;
-
     public Photo(String id) {
         this.id = id;
-    }
-
-    public Photo(String id, String userId, String location, String title, String secret, String server, List<String> listOfTags) {
-        this.id = id;
-        this.userId = userId;
-        this.location = location;
-        this.title = title;
-        this.secret = secret;
-        this.server = server;
-        this.listOfTags = listOfTags;
     }
 
     public Photo(String id, String userId, String location, String title, String secret, String server) {
@@ -72,14 +61,6 @@ public class Photo {
 
     public void setLocation(String location) {
         this.location = location;
-    }
-
-    public List<String> getListOfTags() {
-        return listOfTags;
-    }
-
-    public void setListOfTags(List<String> listOfTags) {
-        this.listOfTags = listOfTags;
     }
 
     public String getTitle() {
@@ -120,6 +101,14 @@ public class Photo {
 
     public void setLatitude(double latitude) {
         this.latitude = latitude;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 
 }

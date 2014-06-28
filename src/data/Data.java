@@ -13,6 +13,7 @@ public class Data {
 
     private String key = "64a298d057676a6d7298262797a23440";
     private String secret = "2df7583cb4c1241d";
+    private String userid;
 
     private String requestMethod = "https://api.flickr.com/services/rest/?method=";
     private String requestAuth = "https://www.flickr.com/services/auth/?api_key=";
@@ -24,18 +25,14 @@ public class Data {
     private String methodGeoLocation = "flickr.photos.geo.getLocation";
     private String methodFindByLatLon = "flickr.places.findByLatLon";
     private String methodGetClusters = "flickr.tags.getClusters";
-
-    private String userid = "29096781@N02";
-    private String photoId = "14484711641";
+    private String methodGetClusterPhotos = "flickr.tags.getClusterPhotos";
 
     public Data() {
     }
 
-    public Data(String key, String secret, String userid, String photoId) {
+    public Data(String key, String secret) {
         this.key = key;
         this.secret = secret;
-        this.userid = userid;
-        this.photoId = photoId;
     }
 
     public String getKey() {
@@ -52,22 +49,6 @@ public class Data {
 
     public void setSecret(String secret) {
         this.secret = secret;
-    }
-
-    public String getUserid() {
-        return userid;
-    }
-
-    public void setUserid(String userid) {
-        this.userid = userid;
-    }
-
-    public String getPhotoId() {
-        return photoId;
-    }
-
-    public void setPhotoId(String photoId) {
-        this.photoId = photoId;
     }
 
     public String getRequestMethod() {
@@ -140,6 +121,22 @@ public class Data {
 
     public void setMethodGetClusters(String methodGetClusters) {
         this.methodGetClusters = methodGetClusters;
+    }
+
+    public String getMethodGetClusterPhotos() {
+        return methodGetClusterPhotos;
+    }
+
+    public void setMethodGetClusterPhotos(String methodGetClusterPhotos) {
+        this.methodGetClusterPhotos = methodGetClusterPhotos;
+    }
+
+    public String getUserid() {
+        return userid;
+    }
+
+    public void setUserid(String userid) {
+        this.userid = userid;
     }
 
 }

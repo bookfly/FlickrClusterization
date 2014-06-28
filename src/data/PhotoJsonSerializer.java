@@ -16,10 +16,14 @@ public class PhotoJsonSerializer {
 
             JsonObject photoJson = new JsonObject();
             photoJson.addProperty("id", p.getId());
-            photoJson.addProperty("user_id", p.getUserId());
+            photoJson.addProperty("userId", p.getUserId());
+            photoJson.addProperty("username", p.getUsername());
             photoJson.addProperty("secret", p.getSecret());
             photoJson.addProperty("server", p.getServer());
             photoJson.addProperty("title", p.getTitle());
+            photoJson.addProperty("location", p.getLocation());
+            photoJson.addProperty("latitude", p.getLatitude());
+            photoJson.addProperty("longitude", p.getLongitude());
 
             photosArray.add(photoJson);
         }

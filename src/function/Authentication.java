@@ -28,47 +28,45 @@ public class Authentication extends Functions {
 
     public void dajForb() throws IOException, ParserConfigurationException, SAXException {
 
-        //potrebna je autentikacija        
+        //Authentication       
         setSig(getData().getSecret() + "api_key" + getData().getKey() + "method" + getData().getMethodGetFrob());
-
-        //potpis mora biti MD5 enkodiran
+        //Signature must be MD5 encoded
         setSignature(MD5(getSig()));
 
-        //flickr je promenio http na https
+        //Flickr moved from http to https
         setRequest(getData().getRequestMethod() + getData().getMethodGetFrob() + "&api_key=" + getData().getKey() + "&api_sig=" + getSignature());
         System.out.println("GET frob request: " + getRequest());
 
-        zahtevOdgovorGET(getClient(), "frob");
+        sendRequest(getClient(), "frob");
     }
 
     public void logIn() throws IOException, ParserConfigurationException, SAXException {
 
-        //napravi flickr login link
+        //Make Flickr login link
         setSig(getData().getSecret() + "api_key" + getData().getKey() + "frob" + getToken() + "permswrite");
         setSignature(MD5(getSig()));
         setRequest(getData().getRequestAuth() + getData().getKey() + "&perms=write&frob=" + getToken() + "&api_sig=" + getSignature());
 
-        //potrebno je da se odobri koriscenje api-a kroz browser
+        //Certification through web browser is needed
         System.out.println("Browse to the following flickr url to authenticate yourself and then press enter.");
         System.out.println(getRequest());
         BufferedReader infile = new BufferedReader(new InputStreamReader(System.in));
         String line = infile.readLine();
 
-        //uzmi auth token iz frob-a
-        //potrebna je ponovna autentikacija
+        //Authentication is needed
         setSig(getData().getSecret() + "api_key" + getData().getKey() + "frob" + getToken() + "method" + getData().getMethodGetToken());
         setSignature(MD5(getSig()));
         setRequest(getData().getRequestMethod() + getData().getMethodGetToken() + "&api_key=" + getData().getKey() + "&frob=" + getToken() + "&api_sig=" + getSignature());
         System.out.println("Token request: " + getRequest());
 
-        zahtevOdgovorGET(getClient(), "token");
+        sendRequest(getClient(), "token");
     }
 
-    private void zahtevOdgovorGET(HttpClient client, String tagName) throws IOException, ParserConfigurationException, SAXException {
+    private void sendRequest(HttpClient client, String tagName) throws IOException, ParserConfigurationException, SAXException {
 
         setMethod(new GetMethod(getRequest()));
 
-        //slanje GET zahteva
+        //Sending GET request
         setStatusCode(client.executeMethod(getMethod()));
 
         if (getStatusCode() != HttpStatus.SC_OK) {
@@ -76,13 +74,13 @@ public class Authentication extends Functions {
         }
         setRstream(null);
 
-        //dobijanje tela odgovora
+        //Receiving body of response
         setRstream(getMethod().getResponseBodyAsStream());
 
-        //dobijanje XML odgovora i trazenje frob vrednosti
+        //Getting XML and seraching for frob value
         setResponse(DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(getRstream()));
 
-        //proveri da li je token u odgovoru
+        //Make sure token is in response
         NodeList tokenResponse = getResponse().getElementsByTagName(tagName);
         Node tokenNode = tokenResponse.item(0);
         if (tokenNode != null) {

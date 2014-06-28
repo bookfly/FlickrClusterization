@@ -9,11 +9,6 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.Reader;
-import java.io.StringWriter;
-import java.io.Writer;
 import java.util.List;
 import javax.xml.parsers.ParserConfigurationException;
 import org.apache.commons.httpclient.HttpStatus;
@@ -33,26 +28,19 @@ public class GettingPhotos extends Functions {
     public GettingPhotos() {
     }
 
-    public List<Photo> dajSlike(String userid) throws IOException, ParserConfigurationException, SAXException, JSONException {
+    public List<Photo> getPhotos(String userid) throws IOException, ParserConfigurationException, SAXException, JSONException {
 
         getData().setUserid(userid);
-
         setRequest(getData().getRequestMethod() + getData().getMethodGetPublicPhotos() + "&user_id=" + getData().getUserid() + "&api_key=" + getData().getKey() + "&format=json");
-
         System.out.println("GET photos request: " + getRequest());
 
-        //    zahtevOdgovorGET(client, "photo");
         setMethod(new GetMethod(getRequest()));
-
-        //slanje GET zahteva
         setStatusCode(getClient().executeMethod(getMethod()));
 
         if (getStatusCode() != HttpStatus.SC_OK) {
             System.err.println("Method failed: " + getMethod().getStatusLine());
         }
         setRstream(null);
-
-        //dobijanje tela odgovora
         setRstream(getMethod().getResponseBodyAsStream());
 
         String jstr = toString(getRstream());
@@ -73,19 +61,23 @@ public class GettingPhotos extends Functions {
         return getListPhotos();
     }
 
-    public void napisiUDokumentSlike(List<Photo> listPhoto) {
+    public void writeIntoDocument(List<Photo> listPhoto) {
+
         try {
             File myFile = new File("photos.txt");
-            //  File myFile = new File("photosN.txt");
             for (Photo photo : listPhoto) {
                 if (myFile.exists()) {
                     FileWriter fw = new FileWriter(myFile.getAbsoluteFile(), true);
                     BufferedWriter bw = new BufferedWriter(fw);
                     bw.write(photo.getId() + " ");
                     bw.write(photo.getUserId() + " ");
+                    bw.write(photo.getUsername() + " ");
                     bw.write(photo.getSecret() + " ");
                     bw.write(photo.getServer() + " ");
-                    bw.write(photo.getTitle());
+                    bw.write(photo.getTitle() + " ");
+                    bw.write(photo.getLocation() + " ");
+                    bw.write(photo.getLatitude() + " ");
+                    bw.write(photo.getLongitude() + "");
                     bw.write("\n");
                     bw.close();
                     System.out.println("Success!");
@@ -94,9 +86,13 @@ public class GettingPhotos extends Functions {
                     BufferedWriter bw = new BufferedWriter(fw);
                     bw.write(photo.getId() + " ");
                     bw.write(photo.getUserId() + " ");
+                    bw.write(photo.getUsername() + " ");
                     bw.write(photo.getSecret() + " ");
                     bw.write(photo.getServer() + " ");
-                    bw.write(photo.getTitle());
+                    bw.write(photo.getTitle() + " ");
+                    bw.write(photo.getLocation() + " ");
+                    bw.write(photo.getLatitude() + " ");
+                    bw.write(photo.getLongitude() + "");
                     bw.write("\n");
                     bw.close();
                     System.out.println("Written for the first time!");
@@ -109,23 +105,18 @@ public class GettingPhotos extends Functions {
 
     }
 
-    public String dajUserId(String username) throws IOException, JSONException {
+    public String getUserId(String username) throws IOException, JSONException {
+
         setRequest(getData().getRequestMethod() + getData().getMethodFindByUsername() + "&api_key=" + getData().getKey() + "&username=" + username + "&format=json");
+        System.out.println("GET userid request: " + getRequest());
 
-        System.out.println("GET user_id request: " + getRequest());
-
-        //    zahtevOdgovorGET(client, "photo");
         setMethod(new GetMethod(getRequest()));
-
-        //slanje GET zahteva
         setStatusCode(getClient().executeMethod(getMethod()));
 
         if (getStatusCode() != HttpStatus.SC_OK) {
             System.err.println("Method failed: " + getMethod().getStatusLine());
         }
         setRstream(null);
-
-        //dobijanje tela odgovora
         setRstream(getMethod().getResponseBodyAsStream());
 
         String jstr = toString(getRstream());
@@ -135,7 +126,6 @@ public class GettingPhotos extends Functions {
         JSONObject user = jobj.getJSONObject("user");
 
         return (String) user.get("id");
-
     }
 
 }
