@@ -15,13 +15,13 @@ public class Photo {
 
     private String id;
     private String userId;
-    private String username;
+ //   private String username;
     private String location;
     private String title;
     private String secret;
     private String server;
-    private double longitude;
-    private double latitude;
+//    private double longitude;
+ //   private double latitude;
 
     public Photo(String id) {
         this.id = id;
@@ -87,7 +87,7 @@ public class Photo {
         this.server = server;
     }
 
-    public double getLongitude() {
+/*    public double getLongitude() {
         return longitude;
     }
 
@@ -110,5 +110,5 @@ public class Photo {
     public void setUsername(String username) {
         this.username = username;
     }
-
+*/
 }

@@ -40,7 +40,7 @@ public class GettingLocation extends Functions {
 
         System.out.println("GET location request: " + getRequest());
         setMethod(new GetMethod(getRequest()));
-        
+
         setStatusCode(getClient().executeMethod(getMethod()));
 
         if (getStatusCode() != HttpStatus.SC_OK) {
@@ -48,15 +48,15 @@ public class GettingLocation extends Functions {
         }
         setRstream(null);
         setRstream(getMethod().getResponseBodyAsStream());
-        
+
         String jstr = toString(getRstream());
         jstr = jstr.substring("jsonFlickrApi(".length(), jstr.length() - 1);
 
         JSONObject jobj = new JSONObject(jstr);
         JSONObject location = jobj.getJSONObject("photo").getJSONObject("location");
         JSONObject loc = jobj.getJSONObject("photo").getJSONObject("location").getJSONObject("country");
-        photo.setLatitude(location.getDouble("latitude"));
-        photo.setLongitude(location.getDouble("longitude"));
+//        photo.setLatitude(location.getDouble("latitude"));
+        //     photo.setLongitude(location.getDouble("longitude"));
         photo.setLocation(loc.getString("_content"));
 
     }
@@ -64,10 +64,10 @@ public class GettingLocation extends Functions {
     //not needed
     private void setLocation(Photo photo) throws IOException, JSONException {
 
-        setRequest(getData().getRequestMethod() + getData().getMethodFindByLatLon() + "&api_key=" + getData().getKey() + "&lat=" + photo.getLatitude() + "&lon=" + photo.getLongitude() + "&format=json");
+//        setRequest(getData().getRequestMethod() + getData().getMethodFindByLatLon() + "&api_key=" + getData().getKey() + "&lat=" + photo.getLatitude() + "&lon=" + photo.getLongitude() + "&format=json");
         System.out.println("GET location request: " + getRequest());
         setMethod(new GetMethod(getRequest()));
-        
+
         setStatusCode(getClient().executeMethod(getMethod()));
 
         if (getStatusCode() != HttpStatus.SC_OK) {
@@ -75,7 +75,7 @@ public class GettingLocation extends Functions {
         }
         setRstream(null);
         setRstream(getMethod().getResponseBodyAsStream());
-        
+
         String jstr = toString(getRstream());
         jstr = jstr.substring("jsonFlickrApi(".length(), jstr.length() - 1);
 

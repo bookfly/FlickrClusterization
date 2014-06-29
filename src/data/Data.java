@@ -26,6 +26,8 @@ public class Data {
     private String methodFindByLatLon = "flickr.places.findByLatLon";
     private String methodGetClusters = "flickr.tags.getClusters";
     private String methodGetClusterPhotos = "flickr.tags.getClusterPhotos";
+    private String methodSearchPhotos = "flickr.photos.search";
+    private String methodGetInfo = "flickr.photos.getInfo";
 
     public Data() {
     }
@@ -137,6 +139,22 @@ public class Data {
 
     public void setUserid(String userid) {
         this.userid = userid;
+    }
+
+    public String getMethodSearchPhotos() {
+        return methodSearchPhotos;
+    }
+
+    public void setMethodSearchPhotos(String methodSearchPhotos) {
+        this.methodSearchPhotos = methodSearchPhotos;
+    }
+
+    public String getMethodGetInfo() {
+        return methodGetInfo;
+    }
+
+    public void setMethodGetInfo(String methodGetInfo) {
+        this.methodGetInfo = methodGetInfo;
     }
 
 }
