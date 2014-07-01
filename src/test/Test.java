@@ -13,8 +13,9 @@ import org.xml.sax.SAXException;
 import function.SearchPhotos;
 import java.util.ArrayList;
 import java.util.List;
-import org.json.JSONException;
+
 import photo.Photo;
+import weka.CreateArff;
 
 public class Test {
 
@@ -22,27 +23,25 @@ public class Test {
 
     }
 
-    public static void main(String[] args) throws IOException, ParserConfigurationException, SAXException, JSONException {
+    public static void main(String[] args) throws Exception {
 
-        SearchPhotos sp = new SearchPhotos();
+/*        List<Photo> listPhoto = new ArrayList<>();
 
-        List<Photo> listPhotos = new ArrayList<>();
-        listPhotos = sp.searchPhoto("shark", 1);
-        listPhotos = sp.searchPhoto("shark", 2);
-        listPhotos = sp.searchPhoto("shark", 3);
-        listPhotos = sp.searchPhoto("shark", 4);
-        listPhotos = sp.searchPhoto("shark", 5);
+        try {
+            
+            ChangingTitle ct = new ChangingTitle();
+            listPhoto = ct.changeTitle();
+            
+           JsonArray ja = PhotoJsonSerializer.serializePhotos(listPhoto);
+            GettingSharkJson gsj = new GettingSharkJson();
+            gsj.makeSharkJson(listPhoto);
 
-        GetPhotoInfo gpi = new GetPhotoInfo();
-        gpi.getPhotosInfo(listPhotos);
-
-        FileWriter writer = new FileWriter("sharks.json");
-        Gson gson = new GsonBuilder().setPrettyPrinting().create();
-        JsonArray jsonArray = PhotoJsonSerializer.serializePhotos(listPhotos);
-
-        writer.write(gson.toJson(jsonArray));
-        writer.flush();
-        writer.close();
-
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+*/
+        CreateArff ca = new CreateArff();
+        ca.createNominalAtt();
     }
+
 }
