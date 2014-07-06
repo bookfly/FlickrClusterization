@@ -20,7 +20,7 @@ import weka.core.Instances;
  *
  * @author jelena
  */
-public class CreateArff {
+public class CreateDataSet {
 
     private FastVector attributes;
     List<String> sharkTypes;
@@ -28,7 +28,7 @@ public class CreateArff {
     List<FastVector> fvList;
     List<Attribute> attList;
 
-    public CreateArff() {
+    public CreateDataSet() {
         sharkTypes = new ArrayList<>();
         locations = new ArrayList<>();
         fvList = new ArrayList<>();
@@ -75,14 +75,37 @@ public class CreateArff {
         }
     }
 
+    private void createInstances(List<Photo> photos) {
+
+        Instances data = new Instances("TrainingSet", attributes, photos.size());
+        Instance[] instances = new Instance[photos.size()];
+
+        for (int i = 0; i < photos.size();) {
+            for (int j = 0; j < instances.length; j++) {
+                instances[j] = createInstance(photos.get(i).getTitle(), photos.get(i).getLocation());
+                i++;
+            }
+        }
+
+        for (int i = 0; i < instances.length; i++) {
+            data.add(instances[i]);
+        }
+
+        //   System.out.println("data 0: " + data.instance(574).stringValue(0));
+        //   System.out.println("data 1: " + data.instance(574).stringValue(1));
+    }
+
     public void general(List<Photo> photos) {
         gettingSharkTypes(photos);
         gettingLocations(photos);
         getTypeValues("Type", sharkTypes);
         getTypeValues("Location", locations);
         addAttribute(attList);
-        
+
         //CREATE INSTANCES!!!
+        createInstances(photos);        
+        
+        //CREATE CLASIFIER!!!
     }
 
     public void createNominalAtt() throws Exception {

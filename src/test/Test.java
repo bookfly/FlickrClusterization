@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import photo.Photo;
-import weka.CreateArff;
+import weka.CreateDataSet;
 
 public class Test {
 
@@ -26,7 +26,7 @@ public class Test {
 
     public static void main(String[] args) throws Exception {
 
-        /*    CreateArff ca = new CreateArff();
+        /*    CreateDataSet ca = new CreateDataSet();
          ca.createNominalAtt();
          */
         /*
@@ -72,8 +72,8 @@ public class Test {
         String file = "changedLocation.json";
         listPhoto = rj.readJsonStream(new FileInputStream(file));
 
-        CreateArff ca = new CreateArff();
-        ca.general(listPhoto);
+        CreateDataSet cds = new CreateDataSet();
+        cds.general(listPhoto);
     }
 
 }
