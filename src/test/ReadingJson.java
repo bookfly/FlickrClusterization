@@ -77,11 +77,11 @@ public class ReadingJson {
     }
 
     public void setTitle(Photo photo) {
-        if (photo.getTitle().contains("Reef Shark") || photo.getTitle().contains("Reef shark") || photo.getTitle().contains("reef shark")) {
+        if (photo.getTitle().contains("Reef Shark") || photo.getTitle().contains("Reef shark") || photo.getTitle().contains("reef shark") || photo.getTitle().contains("Grey Shark")) {
             photo.setTitle("Reef");
         } else if (photo.getTitle().contains("Tiger Shark") || photo.getTitle().contains("Tiger shark") || photo.getTitle().contains("tiger shark")) {
             photo.setTitle("Tiger");
-        } else if (photo.getTitle().contains("White Shark") || photo.getTitle().contains("White shark") || photo.getTitle().contains("white shark")) {
+        } else if (photo.getTitle().contains("White Shark") || photo.getTitle().contains("White shark") || photo.getTitle().contains("white shark") || photo.getTitle().contains("White_shark") || photo.getTitle().contains("white-shark") || photo.getTitle().contains("white_shark") || photo.getTitle().contains("White_Shark") || photo.getTitle().contains("Great white")|| photo.getTitle().contains("Great White") || photo.getTitle().contains("GREAT WHITE")) {
             photo.setTitle("White");
         } else if (photo.getTitle().contains("Bull Shark") || photo.getTitle().contains("Bull shark") || photo.getTitle().contains("bull shark")) {
             photo.setTitle("Bull");
@@ -89,17 +89,44 @@ public class ReadingJson {
             photo.setTitle("Galapagos");
         } else if (photo.getTitle().contains("Lemon Shark") || photo.getTitle().contains("Lemon shark") || photo.getTitle().contains("lemon shark")) {
             photo.setTitle("Lemon");
-        } else if (photo.getTitle().contains("Hammerhead Shark") || photo.getTitle().contains("Hammerhead shark") || photo.getTitle().contains("hammerhead shark")) {
+        } else if (photo.getTitle().contains("hammerhead") || photo.getTitle().contains("Hammer head") || photo.getTitle().contains("Hammerhead")) {
             photo.setTitle("Hammerhead");
-        } else if (photo.getTitle().contains("Grey Nurse Shark") || photo.getTitle().contains("Grey nurse shark") || photo.getTitle().contains("grey nurse shark")) {
-            photo.setTitle("Nurse");
-        } else if (photo.getTitle().contains("Gray Nurse Shark") || photo.getTitle().contains("Gray nurse shark") || photo.getTitle().contains("gray nurse shark")) {
+        } else if (photo.getTitle().contains("Grey Nurse") || photo.getTitle().contains("Grey nurse") || photo.getTitle().contains("grey nurse") || photo.getTitle().contains("Sandtiger") || photo.getTitle().contains("Sand Shark")) {
             photo.setTitle("Nurse");
         } else if (photo.getTitle().contains("Blue Shark") || photo.getTitle().contains("Blue shark") || photo.getTitle().contains("blue shark")) {
             photo.setTitle("Blue");
-        } else if (photo.getTitle().contains("Whale Shark") || photo.getTitle().contains("Whale shark") || photo.getTitle().contains("whale shark")) {
+        } else if (photo.getTitle().contains("Whale Shark") || photo.getTitle().contains("Whale shark") || photo.getTitle().contains("whale shark") || photo.getTitle().contains("Wale") || photo.getTitle().contains("whale-shark")) {
             photo.setTitle("Whale");
+        } else if (photo.getTitle().contains("Porbeagle shark")) {
+            photo.setTitle("Porbeagle");
+        } else if (photo.getTitle().contains("Rainbow Shark")) {
+            photo.setTitle("Rainbow");
+        } else if (photo.getTitle().contains("black tip shark") || photo.getTitle().contains("Blacktip shark") || photo.getTitle().contains("Black Tip") || photo.getTitle().contains("Black tipped")) {
+            photo.setTitle("Blacktip");
+        } else if (photo.getTitle().contains("Silvertip Shark")) {
+            photo.setTitle("Silvertip");
+        } else if (photo.getTitle().contains("Whitetip Shark")) {
+            photo.setTitle("Whitetip");
+        } else if (photo.getTitle().contains("Silky Sharks") || photo.getTitle().contains("Silky shark")) {
+            photo.setTitle("Silky");
+        } else if (photo.getTitle().contains("MAKO SHARK") || photo.getTitle().contains("Mako_Shark") || photo.getTitle().contains("Mako Shark")) {
+            photo.setTitle("Mako");
+        } else if (photo.getTitle().contains("Sandbar Shark") || photo.getTitle().contains("Brown Shark")) {
+            photo.setTitle("Sandbar");
+        } else if (photo.getTitle().contains("Dusky Whaler Shark") || photo.getTitle().contains("greys")) {
+            photo.setTitle("Gray");
+        } else if (photo.getTitle().contains("Basking Shark")) {
+            photo.setTitle("Basking");
+        } else if (photo.getTitle().contains("Cow Shark")) {
+            photo.setTitle("Cow");
+        } else if (photo.getTitle().contains("Zebra Shark")) {
+            photo.setTitle("Zebra");
+        } else if (photo.getTitle().contains("Thresher Shark")) {
+            photo.setTitle("Thresher");
+        } else {
+            photo.setTitle("Shark");
         }
+
     }
 
 }

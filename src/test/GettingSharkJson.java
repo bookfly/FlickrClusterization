@@ -31,7 +31,7 @@ public class GettingSharkJson {
     public GettingSharkJson() {
     }
 
-    public void getSharkPhotos() throws IOException, ParserConfigurationException, SAXException, JSONException {
+    public void getSharkPhotos(String fileName) throws IOException, ParserConfigurationException, SAXException, JSONException {
 
         SearchPhotos sp = new SearchPhotos();
 
@@ -40,18 +40,21 @@ public class GettingSharkJson {
         listPhotos = sp.searchPhoto("shark", 3);
         listPhotos = sp.searchPhoto("shark", 4);
         listPhotos = sp.searchPhoto("shark", 5);
+        listPhotos = sp.searchPhoto("shark", 6);
+        listPhotos = sp.searchPhoto("shark", 7);
+        listPhotos = sp.searchPhoto("shark", 8);
 
         GetPhotoInfo gpi = new GetPhotoInfo();
         gpi.getPhotosInfo(listPhotos);
 
-        makeSharkJson(listPhotos);
+        makeSharkJson(listPhotos, fileName);
 
     }
 
-    public void makeSharkJson(List<Photo> photos) throws IOException {
+    public void makeSharkJson(List<Photo> photos, String fileName) throws IOException {
 
-        //FileWriter writer = new FileWriter("sharks.json");
-        FileWriter writer = new FileWriter("shark.json");
+        FileWriter writer = new FileWriter(fileName + ".json");
+        //    FileWriter writer = new FileWriter("shark.json");
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         JsonArray jsonArray = PhotoJsonSerializer.serializePhotos(photos);
 

@@ -22,13 +22,13 @@ public class ChangingTitle {
     public ChangingTitle() {
     }
 
-    public List<Photo> changeTitle() throws IOException {
+    public List<Photo> changeTitle(String filenName) throws IOException {
 
         System.out.println("Reading JSON from a file");
         System.out.println("----------------------------");
 
         ReadingJson rjson = new ReadingJson();
-        List<Photo> photos = rjson.readJsonStream(new FileInputStream("sharks.json"));
+        List<Photo> photos = rjson.readJsonStream(new FileInputStream(filenName + ".json"));
 
         for (Photo photo : photos) {
             String title = photo.getTitle();
