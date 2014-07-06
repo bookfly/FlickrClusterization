@@ -13,7 +13,7 @@
     "secret": "e01b5dd141",
     "server": "1012",
     "title": "Tiger",
-    "location": "Lake Worth, FL, USA"
+    "location": "United States"
   },
   {
     "id": "8950076797",
@@ -21,7 +21,7 @@
     "secret": "447fd418c0",
     "server": "3722",
     "title": "Bull",
-    "location": "Seattle, WA, USA"
+    "location": "United States"
   },
   {
     "id": "3977120858",
@@ -29,7 +29,7 @@
     "secret": "7e044a8715",
     "server": "3433",
     "title": "White",
-    "location": "Toulouse, France"
+    "location": "France"
   },
   {
     "id": "7540692492",
@@ -37,7 +37,7 @@
     "secret": "b5688ec4b1",
     "server": "8018",
     "title": "Shark",
-    "location": "Kailua-Kona, HI, USA"
+    "location": "United States"
   },
   {
     "id": "7372157372",
@@ -45,7 +45,7 @@
     "secret": "b510940c31",
     "server": "8152",
     "title": "White",
-    "location": "Seattle, WA, USA"
+    "location": "United States"
   },
   {
     "id": "1060101159",
@@ -53,7 +53,7 @@
     "secret": "048122e786",
     "server": "1276",
     "title": "Tiger",
-    "location": "Lake Worth, FL, USA"
+    "location": "United States"
   },
   {
     "id": "134610871",
@@ -61,7 +61,7 @@
     "secret": "a3ad9262b7",
     "server": "54",
     "title": "Shark",
-    "location": "Auckland, New Zealand"
+    "location": "New Zealand"
   },
   {
     "id": "11986758983",
@@ -69,7 +69,7 @@
     "secret": "7c7f1d7c0c",
     "server": "2839",
     "title": "White",
-    "location": "Blacksburg, VA, US"
+    "location": "United States"
   },
   {
     "id": "2145763683",
@@ -77,7 +77,7 @@
     "secret": "873c871ac9",
     "server": "2070",
     "title": "White",
-    "location": "Bell Canyon, CA, USA"
+    "location": "United States"
   },
   {
     "id": "7513084856",
@@ -85,7 +85,7 @@
     "secret": "9cb239e53c",
     "server": "8145",
     "title": "Shark",
-    "location": "Chicago, IL"
+    "location": "United States"
   },
   {
     "id": "99361436",
@@ -93,7 +93,7 @@
     "secret": "123abbbb0b",
     "server": "27",
     "title": "Shark",
-    "location": "Kuwait, Kuwait"
+    "location": "Kuwait"
   },
   {
     "id": "5342454182",
@@ -101,7 +101,7 @@
     "secret": "34497c53f1",
     "server": "5001",
     "title": "Shark",
-    "location": "Discovery Bay, Hong Kong"
+    "location": "Hong Kong"
   },
   {
     "id": "3336224377",
@@ -109,7 +109,7 @@
     "secret": "879a4a4685",
     "server": "3600",
     "title": "Shark",
-    "location": "Fort Worth, USA"
+    "location": "United States"
   },
   {
     "id": "8717345713",
@@ -117,7 +117,7 @@
     "secret": "6db4991d0e",
     "server": "7387",
     "title": "White",
-    "location": "Blacksburg, VA, US"
+    "location": "United States"
   },
   {
     "id": "299835621",
@@ -125,7 +125,7 @@
     "secret": "8089d0c36c",
     "server": "107",
     "title": "Tiger",
-    "location": "Santa Barbara"
+    "location": "Honduras"
   },
   {
     "id": "411968811",
@@ -133,7 +133,7 @@
     "secret": "c3a4f4f845",
     "server": "183",
     "title": "Galapagos",
-    "location": "Huntington Beach, USA"
+    "location": "United States"
   },
   {
     "id": "12459821054",
@@ -141,7 +141,7 @@
     "secret": "9be5635e81",
     "server": "7408",
     "title": "White",
-    "location": "Blacksburg, VA, US"
+    "location": "United States"
   },
   {
     "id": "6960553984",
@@ -149,7 +149,7 @@
     "secret": "5b3dcee1a0",
     "server": "7279",
     "title": "White",
-    "location": "Blacksburg, VA, US"
+    "location": "United States"
   },
   {
     "id": "392752888",
@@ -157,7 +157,7 @@
     "secret": "180306e77c",
     "server": "130",
     "title": "Shark",
-    "location": "Sialkot, Pakistan"
+    "location": "Pakistan"
   },
   {
     "id": "5457369700",
@@ -165,7 +165,7 @@
     "secret": "ed21a9417d",
     "server": "5135",
     "title": "White",
-    "location": "San Francisco, California, USA"
+    "location": "United States"
   },
   {
     "id": "199481606",
@@ -173,7 +173,7 @@
     "secret": "43ede156bd",
     "server": "59",
     "title": "Bull",
-    "location": "Newcastle, Australia"
+    "location": "Australia"
   },
   {
     "id": "14508243953",
@@ -181,7 +181,7 @@
     "secret": "9f7572b147",
     "server": "5562",
     "title": "White",
-    "location": "Blacksburg, VA, US"
+    "location": "United States"
   },
   {
     "id": "124699637",
@@ -189,7 +189,7 @@
     "secret": "0bf6db4f17",
     "server": "36",
     "title": "Whale",
-    "location": "KOBE, Japan"
+    "location": "Japan"
   },
   {
     "id": "3873710525",
@@ -205,7 +205,7 @@
     "secret": "b55718d380",
     "server": "3825",
     "title": "White",
-    "location": "Blacksburg, VA, US"
+    "location": "United States"
   },
   {
     "id": "6186980337",
@@ -213,7 +213,7 @@
     "secret": "8bef6484fc",
     "server": "6167",
     "title": "Mako",
-    "location": "Toronto, Canada"
+    "location": "Canada"
   },
   {
     "id": "4626313055",
@@ -221,7 +221,7 @@
     "secret": "bb694b9482",
     "server": "3313",
     "title": "White",
-    "location": "Toronto, Canada"
+    "location": "Canada"
   },
   {
     "id": "303369170",
@@ -229,7 +229,7 @@
     "secret": "bcc82e0c38",
     "server": "122",
     "title": "Hammerhead",
-    "location": "San Francisco, CA, USA"
+    "location": "United States"
   },
   {
     "id": "8423974768",
@@ -237,7 +237,7 @@
     "secret": "1336919cce",
     "server": "8326",
     "title": "Shark",
-    "location": "Bangkok, THAILAND"
+    "location": "Thailand"
   },
   {
     "id": "8653819782",
@@ -245,7 +245,7 @@
     "secret": "0ce7d9f68b",
     "server": "8107",
     "title": "Shark",
-    "location": "Seattle"
+    "location": "United States"
   },
   {
     "id": "3398431331",
@@ -253,7 +253,7 @@
     "secret": "196cd2dc0d",
     "server": "3578",
     "title": "White",
-    "location": "Blacksburg, VA, US"
+    "location": "United States"
   },
   {
     "id": "7854696852",
@@ -261,7 +261,7 @@
     "secret": "07df62e110",
     "server": "8291",
     "title": "White",
-    "location": "Chicago, IL"
+    "location": "United States"
   },
   {
     "id": "1027515559",
@@ -269,7 +269,7 @@
     "secret": "c6ef464570",
     "server": "1125",
     "title": "Tiger",
-    "location": "Lake Worth, FL, USA"
+    "location": "United States"
   },
   {
     "id": "2669477428",
@@ -277,7 +277,7 @@
     "secret": "2921667cdd",
     "server": "3010",
     "title": "Nurse",
-    "location": "Sydney, Australia"
+    "location": "Australia"
   },
   {
     "id": "2117112759",
@@ -293,7 +293,7 @@
     "secret": "b46ee2ae23",
     "server": "2331",
     "title": "Blue",
-    "location": "Bell Canyon, CA, USA"
+    "location": "United States"
   },
   {
     "id": "2854789461",
@@ -301,7 +301,7 @@
     "secret": "e2bd84b466",
     "server": "2352",
     "title": "White",
-    "location": "Santa Cruz, CA, USA"
+    "location": "United States"
   },
   {
     "id": "126173091",
@@ -309,7 +309,7 @@
     "secret": "81a7a24b3b",
     "server": "44",
     "title": "Shark",
-    "location": "Atlanta, United States"
+    "location": "United States"
   },
   {
     "id": "8927147162",
@@ -317,7 +317,7 @@
     "secret": "8065b90b15",
     "server": "7393",
     "title": "White",
-    "location": "Blacksburg, VA, US"
+    "location": "United States"
   },
   {
     "id": "5392874607",
@@ -325,7 +325,7 @@
     "secret": "02ffb232ec",
     "server": "5020",
     "title": "Shark",
-    "location": "Hendersonville, United States"
+    "location": "United States"
   },
   {
     "id": "14039425932",
@@ -333,7 +333,7 @@
     "secret": "740c104a67",
     "server": "5458",
     "title": "Whale",
-    "location": "Pacific Grove, CA"
+    "location": "United States"
   },
   {
     "id": "10812714703",
@@ -341,7 +341,7 @@
     "secret": "de65511361",
     "server": "2865",
     "title": "Blue",
-    "location": "Toronto, Canada"
+    "location": "Canada"
   },
   {
     "id": "8689509471",
@@ -349,7 +349,7 @@
     "secret": "f1ec1c7409",
     "server": "7051",
     "title": "White",
-    "location": "Blacksburg, VA, US"
+    "location": "United States"
   },
   {
     "id": "5643344315",
@@ -365,7 +365,7 @@
     "secret": "1eae2295c6",
     "server": "7349",
     "title": "Shark",
-    "location": "Muriwai, New Zealand"
+    "location": "New Zealand"
   },
   {
     "id": "3443459058",
@@ -373,7 +373,7 @@
     "secret": "9f1fcafea9",
     "server": "3562",
     "title": "Gray",
-    "location": "USA"
+    "location": "United States"
   },
   {
     "id": "13305017513",
@@ -381,7 +381,7 @@
     "secret": "71c74ecf09",
     "server": "3782",
     "title": "Lemon",
-    "location": "Seoul, South Korea"
+    "location": "South Korea"
   },
   {
     "id": "5522394433",
@@ -389,7 +389,7 @@
     "secret": "8e56c5940b",
     "server": "5140",
     "title": "White",
-    "location": "UK"
+    "location": "Guernsey"
   },
   {
     "id": "12687121604",
@@ -397,7 +397,7 @@
     "secret": "c1ef1132fa",
     "server": "7458",
     "title": "Tiger",
-    "location": "New York City, USA"
+    "location": "United States"
   },
   {
     "id": "6206078119",
@@ -405,7 +405,7 @@
     "secret": "5ab10bf35f",
     "server": "6155",
     "title": "White",
-    "location": "Blacksburg, VA, US"
+    "location": "United States"
   },
   {
     "id": "4848394804",
@@ -413,7 +413,7 @@
     "secret": "0e6b2d895d",
     "server": "4091",
     "title": "Whale",
-    "location": "San Francisco, CA, USA"
+    "location": "United States"
   },
   {
     "id": "5323089759",
@@ -421,7 +421,7 @@
     "secret": "55c34d05f1",
     "server": "5050",
     "title": "Whale",
-    "location": "Male\u0027, Maldives"
+    "location": "Maldives"
   },
   {
     "id": "443211030",
@@ -429,7 +429,7 @@
     "secret": "56cf607dfd",
     "server": "190",
     "title": "Galapagos",
-    "location": "Huntington Beach, USA"
+    "location": "United States"
   },
   {
     "id": "327868777",
@@ -437,7 +437,7 @@
     "secret": "8415fbbd4d",
     "server": "141",
     "title": "Shark",
-    "location": "kuwait, kuwait"
+    "location": "Kuwait"
   },
   {
     "id": "7369284082",
@@ -445,7 +445,7 @@
     "secret": "b2c08ff38b",
     "server": "7221",
     "title": "Reef",
-    "location": "Horsham, United Kingdom"
+    "location": "United Kingdom"
   },
   {
     "id": "3729634029",
@@ -453,7 +453,7 @@
     "secret": "e88e77fecf",
     "server": "3530",
     "title": "White",
-    "location": "Taipei, Taiwan"
+    "location": "Taiwan"
   },
   {
     "id": "9095574786",
@@ -461,7 +461,7 @@
     "secret": "50f6033eb0",
     "server": "5327",
     "title": "White",
-    "location": "Blacksburg, VA, US"
+    "location": "United States"
   },
   {
     "id": "10528270424",
@@ -469,7 +469,7 @@
     "secret": "13d6c2f913",
     "server": "7401",
     "title": "Shark",
-    "location": "Toronto, Canada"
+    "location": "Canada"
   },
   {
     "id": "5873397911",
@@ -477,7 +477,7 @@
     "secret": "470270f3eb",
     "server": "5032",
     "title": "White",
-    "location": "Blacksburg, VA, US"
+    "location": "United States"
   },
   {
     "id": "6231508732",
@@ -485,7 +485,7 @@
     "secret": "de00853a26",
     "server": "6220",
     "title": "White",
-    "location": "Blacksburg, VA, US"
+    "location": "United States"
   },
   {
     "id": "3398459513",
@@ -493,7 +493,7 @@
     "secret": "268c915538",
     "server": "3573",
     "title": "White",
-    "location": "Blacksburg, VA, US"
+    "location": "United States"
   },
   {
     "id": "11759831634",
@@ -501,7 +501,7 @@
     "secret": "aa6a3750f8",
     "server": "2860",
     "title": "Whale",
-    "location": "Toronto, Canada"
+    "location": "Canada"
   },
   {
     "id": "11671926924",
@@ -509,7 +509,7 @@
     "secret": "47d0539ac7",
     "server": "7394",
     "title": "White",
-    "location": "Kalispell, USA"
+    "location": "United States"
   },
   {
     "id": "6189054321",
@@ -517,7 +517,7 @@
     "secret": "496e57e545",
     "server": "6148",
     "title": "Blue",
-    "location": "Toronto, Canada"
+    "location": "Canada"
   },
   {
     "id": "247766794",
@@ -541,7 +541,7 @@
     "secret": "1b4e0906c0",
     "server": "7222",
     "title": "White",
-    "location": "Blacksburg, VA, US"
+    "location": "United States"
   },
   {
     "id": "7170811145",
@@ -549,7 +549,7 @@
     "secret": "b9ffbec0c8",
     "server": "8024",
     "title": "Nurse",
-    "location": "Canberra, Australia"
+    "location": "Australia"
   },
   {
     "id": "4625268190",
@@ -557,7 +557,7 @@
     "secret": "91b5694aac",
     "server": "3318",
     "title": "White",
-    "location": "Toronto, Canada"
+    "location": "Canada"
   },
   {
     "id": "1224110372",
@@ -565,7 +565,7 @@
     "secret": "c6cd620dd3",
     "server": "1218",
     "title": "Lemon",
-    "location": "Lake Worth, FL, USA"
+    "location": "United States"
   },
   {
     "id": "9037254158",
@@ -573,7 +573,7 @@
     "secret": "ff52a0e5bb",
     "server": "5329",
     "title": "White",
-    "location": "Blacksburg, VA, US"
+    "location": "United States"
   },
   {
     "id": "6112617824",
@@ -581,7 +581,7 @@
     "secret": "a647a0eeea",
     "server": "6080",
     "title": "Whale",
-    "location": "Aberdeen, Scotland"
+    "location": "United Kingdom"
   },
   {
     "id": "2176073833",
@@ -589,7 +589,7 @@
     "secret": "00956c8ab1",
     "server": "2152",
     "title": "White",
-    "location": "Bell Canyon, CA, USA"
+    "location": "United States"
   },
   {
     "id": "13619555034",
@@ -597,7 +597,7 @@
     "secret": "e5242fca94",
     "server": "7219",
     "title": "Shark",
-    "location": "Muriwai, New Zealand"
+    "location": "New Zealand"
   },
   {
     "id": "1106617170",
@@ -605,7 +605,7 @@
     "secret": "cbae692718",
     "server": "1373",
     "title": "Tiger",
-    "location": "Lake Worth, FL, USA"
+    "location": "United States"
   },
   {
     "id": "4398813594",
@@ -613,7 +613,7 @@
     "secret": "3f98596177",
     "server": "4024",
     "title": "Lemon",
-    "location": "amsterdam, netherlands"
+    "location": "Netherlands"
   },
   {
     "id": "6942023554",
@@ -621,7 +621,7 @@
     "secret": "9e81019c02",
     "server": "7047",
     "title": "White",
-    "location": "Blacksburg, VA, US"
+    "location": "United States"
   },
   {
     "id": "5425655228",
@@ -629,7 +629,7 @@
     "secret": "895079481e",
     "server": "5175",
     "title": "Shark",
-    "location": "Discovery Bay, Hong Kong"
+    "location": "Hong Kong"
   },
   {
     "id": "8344346348",
@@ -645,7 +645,7 @@
     "secret": "564e6b7b2f",
     "server": "8263",
     "title": "White",
-    "location": "Blacksburg, VA, US"
+    "location": "United States"
   },
   {
     "id": "8628530499",
@@ -653,7 +653,7 @@
     "secret": "43524c613f",
     "server": "8265",
     "title": "White",
-    "location": "Blacksburg, VA, US"
+    "location": "United States"
   },
   {
     "id": "6013309091",
@@ -661,7 +661,7 @@
     "secret": "8142d89f75",
     "server": "6132",
     "title": "Shark",
-    "location": "Discovery Bay, Hong Kong"
+    "location": "Hong Kong"
   },
   {
     "id": "3908123867",
@@ -669,7 +669,7 @@
     "secret": "7bdefaea98",
     "server": "2575",
     "title": "Shark",
-    "location": "Atlanta"
+    "location": "United States"
   },
   {
     "id": "3884470102",
@@ -685,7 +685,7 @@
     "secret": "a1649e143e",
     "server": "7170",
     "title": "Tiger",
-    "location": "East Grinstead, England"
+    "location": "United Kingdom"
   },
   {
     "id": "3652447972",
@@ -693,7 +693,7 @@
     "secret": "222fcc9ce1",
     "server": "3338",
     "title": "Tiger",
-    "location": "Tucson, AZ"
+    "location": "United States"
   },
   {
     "id": "2499034255",
@@ -701,7 +701,7 @@
     "secret": "5b7154cc15",
     "server": "3285",
     "title": "Tiger",
-    "location": "Toronto, Canada"
+    "location": "Canada"
   },
   {
     "id": "8325203356",
@@ -717,7 +717,7 @@
     "secret": "188314dceb",
     "server": "43",
     "title": "Shark",
-    "location": "Karachi, Pakistan"
+    "location": "Pakistan"
   },
   {
     "id": "6209530902",
@@ -725,7 +725,7 @@
     "secret": "affe380703",
     "server": "6062",
     "title": "Lemon",
-    "location": "Chicago, IL"
+    "location": "United States"
   },
   {
     "id": "5594282691",
@@ -733,7 +733,7 @@
     "secret": "407d33638b",
     "server": "5181",
     "title": "Reef",
-    "location": "Cambridge, MA, USA"
+    "location": "United States"
   },
   {
     "id": "8222050182",
@@ -741,7 +741,7 @@
     "secret": "dae62790b2",
     "server": "8201",
     "title": "Galapagos",
-    "location": "Honolulu, HI"
+    "location": "United States"
   },
   {
     "id": "6229101810",
@@ -749,7 +749,7 @@
     "secret": "ac737fe6db",
     "server": "6119",
     "title": "Lemon",
-    "location": "Chicago, IL"
+    "location": "United States"
   },
   {
     "id": "5971001542",
@@ -757,7 +757,7 @@
     "secret": "c5443b5d1a",
     "server": "6138",
     "title": "Blue",
-    "location": "Madalena do Pico, Azores"
+    "location": "Portugal"
   },
   {
     "id": "8034527159",
@@ -765,7 +765,7 @@
     "secret": "f9c7ce4079",
     "server": "8458",
     "title": "Galapagos",
-    "location": "Kailua-Kona, HI, USA"
+    "location": "United States"
   },
   {
     "id": "10935702623",
@@ -773,7 +773,7 @@
     "secret": "d778e06814",
     "server": "5489",
     "title": "Reef",
-    "location": "Toronto, Canada"
+    "location": "Canada"
   },
   {
     "id": "3351237240",
@@ -781,7 +781,7 @@
     "secret": "d470cfc099",
     "server": "3664",
     "title": "Shark",
-    "location": "Huntington Beach, USA"
+    "location": "United States"
   },
   {
     "id": "1309533946",
@@ -789,7 +789,7 @@
     "secret": "ca5694f377",
     "server": "1191",
     "title": "Shark",
-    "location": "Seattle, United States"
+    "location": "United States"
   },
   {
     "id": "10272719224",
@@ -797,7 +797,7 @@
     "secret": "5c1619373c",
     "server": "7431",
     "title": "Silky",
-    "location": "Toronto, Canada"
+    "location": "Canada"
   },
   {
     "id": "5132166644",
@@ -805,7 +805,7 @@
     "secret": "ca3ba15733",
     "server": "4026",
     "title": "Reef",
-    "location": "Toronto, Canada"
+    "location": "Canada"
   },
   {
     "id": "4588162092",
@@ -813,7 +813,7 @@
     "secret": "0a2ff0ed8f",
     "server": "4069",
     "title": "Shark",
-    "location": "Toronto, Canada"
+    "location": "Canada"
   },
   {
     "id": "6234629868",
@@ -821,7 +821,7 @@
     "secret": "ebee6bddd2",
     "server": "6233",
     "title": "White",
-    "location": "Blacksburg, VA, US"
+    "location": "United States"
   },
   {
     "id": "4625511061",
@@ -829,7 +829,7 @@
     "secret": "521e8239c1",
     "server": "4059",
     "title": "White",
-    "location": "Toronto, Canada"
+    "location": "Canada"
   },
   {
     "id": "5998000490",
@@ -837,7 +837,7 @@
     "secret": "55965458db",
     "server": "6005",
     "title": "Shark",
-    "location": "Discovery Bay, Hong Kong"
+    "location": "Hong Kong"
   },
   {
     "id": "6168760163",
@@ -845,7 +845,7 @@
     "secret": "6010776ba3",
     "server": "6172",
     "title": "Blue",
-    "location": "Toronto, Canada"
+    "location": "Canada"
   },
   {
     "id": "8595012608",
@@ -853,7 +853,7 @@
     "secret": "7bb86978c5",
     "server": "8100",
     "title": "Tiger",
-    "location": "Madrid, Spain"
+    "location": "Spain"
   },
   {
     "id": "4706569605",
@@ -861,7 +861,7 @@
     "secret": "863cfd3d58",
     "server": "4042",
     "title": "White",
-    "location": "UK"
+    "location": "Guernsey"
   },
   {
     "id": "6800743178",
@@ -869,7 +869,7 @@
     "secret": "e9a90e2426",
     "server": "7198",
     "title": "Reef",
-    "location": "amsterdam, netherlands"
+    "location": "Netherlands"
   },
   {
     "id": "11986678366",
@@ -877,7 +877,7 @@
     "secret": "9eea82aeaa",
     "server": "2837",
     "title": "Shark",
-    "location": "Missouri, USA"
+    "location": "United States"
   },
   {
     "id": "6551082241",
@@ -885,7 +885,7 @@
     "secret": "ee8d661ce3",
     "server": "7151",
     "title": "Nurse",
-    "location": "Sydney, Australia"
+    "location": "Australia"
   },
   {
     "id": "6829070383",
@@ -893,7 +893,7 @@
     "secret": "0e1da47f9d",
     "server": "7154",
     "title": "Tiger",
-    "location": "East Grinstead, England"
+    "location": "United Kingdom"
   },
   {
     "id": "2434934655",
@@ -901,7 +901,7 @@
     "secret": "497a4ed63b",
     "server": "2147",
     "title": "Shark",
-    "location": "Princeton, New Jersey, USA"
+    "location": "United States"
   },
   {
     "id": "7382603866",
@@ -909,7 +909,7 @@
     "secret": "ae99502aae",
     "server": "7244",
     "title": "Shark",
-    "location": "PIEDMONT, United States"
+    "location": "United States"
   },
   {
     "id": "4261640057",
@@ -917,7 +917,7 @@
     "secret": "25b72f0ea4",
     "server": "4072",
     "title": "Lemon",
-    "location": "Andorra, Andorra"
+    "location": "Andorra"
   },
   {
     "id": "6845765936",
@@ -925,7 +925,7 @@
     "secret": "c459ab5d46",
     "server": "7039",
     "title": "Nurse",
-    "location": "Canberra, Australia"
+    "location": "Australia"
   },
   {
     "id": "5558629121",
@@ -933,7 +933,7 @@
     "secret": "44d11b41b5",
     "server": "5021",
     "title": "White",
-    "location": "Blacksburg, VA, US"
+    "location": "United States"
   },
   {
     "id": "8259742904",
@@ -941,7 +941,7 @@
     "secret": "1962385200",
     "server": "8219",
     "title": "Tiger",
-    "location": "USA"
+    "location": "United States"
   },
   {
     "id": "4191904756",
@@ -949,7 +949,7 @@
     "secret": "e268bf8b95",
     "server": "2494",
     "title": "Nurse",
-    "location": "Sydney, Australia"
+    "location": "Australia"
   },
   {
     "id": "2181271493",
@@ -957,7 +957,7 @@
     "secret": "503011aaf6",
     "server": "2187",
     "title": "Reef",
-    "location": "Toronto, Canada"
+    "location": "Canada"
   },
   {
     "id": "4589598806",
@@ -965,7 +965,7 @@
     "secret": "2a9d615177",
     "server": "3308",
     "title": "Tiger",
-    "location": "Toronto, Canada"
+    "location": "Canada"
   },
   {
     "id": "5522394811",
@@ -973,7 +973,7 @@
     "secret": "06cdd2a280",
     "server": "5056",
     "title": "White",
-    "location": "UK"
+    "location": "Guernsey"
   },
   {
     "id": "14114393450",
@@ -981,7 +981,7 @@
     "secret": "e14264910e",
     "server": "5311",
     "title": "Shark",
-    "location": "UK"
+    "location": "Guernsey"
   },
   {
     "id": "6628654497",
@@ -989,7 +989,7 @@
     "secret": "e8d68a873a",
     "server": "7151",
     "title": "White",
-    "location": "Los Angeles, USA"
+    "location": "United States"
   },
   {
     "id": "9486462629",
@@ -997,7 +997,7 @@
     "secret": "0223d5ea46",
     "server": "5446",
     "title": "Whale",
-    "location": "Toronto, Canada"
+    "location": "Canada"
   },
   {
     "id": "6842854344",
@@ -1005,7 +1005,7 @@
     "secret": "2bc32cf400",
     "server": "7041",
     "title": "Nurse",
-    "location": "Canberra, Australia"
+    "location": "Australia"
   },
   {
     "id": "325958662",
@@ -1013,7 +1013,7 @@
     "secret": "3fb535b722",
     "server": "139",
     "title": "Reef",
-    "location": "Lake Worth, FL, USA"
+    "location": "United States"
   },
   {
     "id": "10273248735",
@@ -1021,7 +1021,7 @@
     "secret": "990287df6d",
     "server": "3702",
     "title": "Silky",
-    "location": "Toronto, Canada"
+    "location": "Canada"
   },
   {
     "id": "1181025773",
@@ -1029,7 +1029,7 @@
     "secret": "3978496781",
     "server": "1202",
     "title": "Tiger",
-    "location": "Lake Worth, FL, USA"
+    "location": "United States"
   },
   {
     "id": "6829073075",
@@ -1037,7 +1037,7 @@
     "secret": "ac379d5d14",
     "server": "7012",
     "title": "Tiger",
-    "location": "East Grinstead, England"
+    "location": "United Kingdom"
   },
   {
     "id": "7539431454",
@@ -1045,7 +1045,7 @@
     "secret": "b34a0d52af",
     "server": "7136",
     "title": "Reef",
-    "location": "Kailua-Kona, HI, USA"
+    "location": "United States"
   },
   {
     "id": "4353227499",
@@ -1053,7 +1053,7 @@
     "secret": "b4f6931112",
     "server": "4051",
     "title": "Reef",
-    "location": "Male\u0027, Maldives"
+    "location": "Maldives"
   },
   {
     "id": "6829065549",
@@ -1061,7 +1061,7 @@
     "secret": "4ddda02abc",
     "server": "7174",
     "title": "Lemon",
-    "location": "East Grinstead, England"
+    "location": "United Kingdom"
   },
   {
     "id": "4245808335",
@@ -1069,7 +1069,7 @@
     "secret": "ca005f1d8d",
     "server": "4036",
     "title": "Whale",
-    "location": "Chicago, IL"
+    "location": "United States"
   },
   {
     "id": "12195551655",
@@ -1077,7 +1077,7 @@
     "secret": "a188d72eb1",
     "server": "7298",
     "title": "Lemon",
-    "location": "Toronto, Canada"
+    "location": "Canada"
   },
   {
     "id": "7184052769",
@@ -1085,7 +1085,7 @@
     "secret": "13dc7608eb",
     "server": "8167",
     "title": "Reef",
-    "location": "Horsham, United Kingdom"
+    "location": "United Kingdom"
   },
   {
     "id": "5425932936",
@@ -1093,7 +1093,7 @@
     "secret": "ec55b7bd95",
     "server": "5136",
     "title": "Shark",
-    "location": "Discovery Bay, Hong Kong"
+    "location": "Hong Kong"
   },
   {
     "id": "2898095248",
@@ -1101,7 +1101,7 @@
     "secret": "9a2d4ffe2a",
     "server": "3259",
     "title": "White",
-    "location": "Chicago, IL, USA"
+    "location": "United States"
   },
   {
     "id": "3010084258",
@@ -1109,7 +1109,7 @@
     "secret": "664e54262f",
     "server": "3192",
     "title": "Reef",
-    "location": "Huntington Beach, USA"
+    "location": "United States"
   },
   {
     "id": "816227686",
@@ -1117,7 +1117,7 @@
     "secret": "1cb38c8c62",
     "server": "1414",
     "title": "Silvertip",
-    "location": "Santa Cruz, CA, USA"
+    "location": "United States"
   },
   {
     "id": "5446692740",
@@ -1125,7 +1125,7 @@
     "secret": "c4d23dd3e9",
     "server": "5294",
     "title": "Shark",
-    "location": "Sliema, Malta"
+    "location": "Malta"
   },
   {
     "id": "11782883793",
@@ -1133,7 +1133,7 @@
     "secret": "a7ff96b3ec",
     "server": "5548",
     "title": "Lemon",
-    "location": "Toronto, Canada"
+    "location": "Canada"
   },
   {
     "id": "2341303665",
@@ -1141,7 +1141,7 @@
     "secret": "267ec01d8a",
     "server": "3259",
     "title": "Lemon",
-    "location": "Bell Canyon, CA, USA"
+    "location": "United States"
   },
   {
     "id": "7087860543",
@@ -1149,7 +1149,7 @@
     "secret": "6664cb6ef3",
     "server": "5072",
     "title": "White",
-    "location": "Blacksburg, VA, US"
+    "location": "United States"
   },
   {
     "id": "3443459074",
@@ -1157,7 +1157,7 @@
     "secret": "74b7b038ae",
     "server": "3587",
     "title": "Gray",
-    "location": "USA"
+    "location": "United States"
   },
   {
     "id": "5633525717",
@@ -1165,7 +1165,7 @@
     "secret": "b87b9e11d2",
     "server": "5024",
     "title": "White",
-    "location": "Kota Kinabalu, Malaysia"
+    "location": "Malaysia"
   },
   {
     "id": "6674736053",
@@ -1173,7 +1173,7 @@
     "secret": "4b9e97fe7f",
     "server": "7157",
     "title": "Reef",
-    "location": "Kailua-Kona, HI, USA"
+    "location": "United States"
   },
   {
     "id": "55399115",
@@ -1181,7 +1181,7 @@
     "secret": "6f5fcacbc9",
     "server": "29",
     "title": "Tiger",
-    "location": "Huntington Beach, USA"
+    "location": "United States"
   },
   {
     "id": "2898095702",
@@ -1189,7 +1189,7 @@
     "secret": "702ab991ba",
     "server": "3289",
     "title": "White",
-    "location": "Chicago, IL, USA"
+    "location": "United States"
   },
   {
     "id": "1038942906",
@@ -1197,7 +1197,7 @@
     "secret": "852b1d8d5d",
     "server": "1041",
     "title": "Lemon",
-    "location": "Lake Worth, FL, USA"
+    "location": "United States"
   },
   {
     "id": "4485494680",
@@ -1205,7 +1205,7 @@
     "secret": "396b115b66",
     "server": "4025",
     "title": "Whale",
-    "location": "Dangriga, Belize"
+    "location": "Belize"
   },
   {
     "id": "10346101216",
@@ -1213,7 +1213,7 @@
     "secret": "f55a3fbd70",
     "server": "7326",
     "title": "Shark",
-    "location": "UK"
+    "location": "Guernsey"
   },
   {
     "id": "325958665",
@@ -1221,7 +1221,7 @@
     "secret": "a201dc9d00",
     "server": "134",
     "title": "Reef",
-    "location": "Lake Worth, FL, USA"
+    "location": "United States"
   },
   {
     "id": "2499863180",
@@ -1229,7 +1229,7 @@
     "secret": "5e396a3a9d",
     "server": "2067",
     "title": "Lemon",
-    "location": "Toronto, Canada"
+    "location": "Canada"
   },
   {
     "id": "366761350",
@@ -1237,7 +1237,7 @@
     "secret": "188d7b8ab6",
     "server": "153",
     "title": "Shark",
-    "location": "Norwich, UK"
+    "location": "United Kingdom"
   },
   {
     "id": "1401389117",
@@ -1245,7 +1245,7 @@
     "secret": "3fee95a837",
     "server": "1010",
     "title": "Tiger",
-    "location": "Lake Worth, FL, USA"
+    "location": "United States"
   },
   {
     "id": "8540915101",
@@ -1253,7 +1253,7 @@
     "secret": "4cfec8b0d4",
     "server": "8099",
     "title": "Shark",
-    "location": "Sydney, Australia"
+    "location": "Australia"
   },
   {
     "id": "17788892",
@@ -1269,7 +1269,7 @@
     "secret": "d58ea7bb7e",
     "server": "2189",
     "title": "Sandbar",
-    "location": "Huntington Beach, USA"
+    "location": "United States"
   },
   {
     "id": "6941834668",
@@ -1277,7 +1277,7 @@
     "secret": "07733afc97",
     "server": "5076",
     "title": "White",
-    "location": "Blacksburg, VA, US"
+    "location": "United States"
   },
   {
     "id": "6027142465",
@@ -1285,7 +1285,7 @@
     "secret": "be35b82ee1",
     "server": "6071",
     "title": "Shark",
-    "location": "Discovery Bay, Hong Kong"
+    "location": "Hong Kong"
   },
   {
     "id": "5065615358",
@@ -1293,7 +1293,7 @@
     "secret": "068ea1d9dc",
     "server": "4086",
     "title": "White",
-    "location": "amsterdam, netherlands"
+    "location": "Netherlands"
   },
   {
     "id": "9716885119",
@@ -1301,7 +1301,7 @@
     "secret": "a01fd18053",
     "server": "5339",
     "title": "Shark",
-    "location": "West Bend, USA"
+    "location": "United States"
   },
   {
     "id": "6286612618",
@@ -1309,7 +1309,7 @@
     "secret": "4aa53699ff",
     "server": "6218",
     "title": "White",
-    "location": "Blacksburg, VA, US"
+    "location": "United States"
   },
   {
     "id": "10032138573",
@@ -1317,7 +1317,7 @@
     "secret": "eeb44d9094",
     "server": "2867",
     "title": "Blue",
-    "location": "Toronto, Canada"
+    "location": "Canada"
   },
   {
     "id": "2366190474",
@@ -1325,7 +1325,7 @@
     "secret": "fc79f9abd0",
     "server": "2335",
     "title": "Gray",
-    "location": "Sydney, Australia"
+    "location": "Australia"
   },
   {
     "id": "6829074747",
@@ -1333,7 +1333,7 @@
     "secret": "587cce56c1",
     "server": "7024",
     "title": "Lemon",
-    "location": "East Grinstead, England"
+    "location": "United Kingdom"
   },
   {
     "id": "11302267715",
@@ -1341,7 +1341,7 @@
     "secret": "9f3431d6a8",
     "server": "3795",
     "title": "Shark",
-    "location": "Cancun , Mexico"
+    "location": "Mexico"
   },
   {
     "id": "14106997487",
@@ -1349,7 +1349,7 @@
     "secret": "8fa66aeddc",
     "server": "2929",
     "title": "Blue",
-    "location": "santa monica, ca, USA"
+    "location": "United States"
   },
   {
     "id": "4256295571",
@@ -1357,7 +1357,7 @@
     "secret": "58d0d34efe",
     "server": "4044",
     "title": "Tiger",
-    "location": "amsterdam, netherlands"
+    "location": "Netherlands"
   },
   {
     "id": "3086171790",
@@ -1381,7 +1381,7 @@
     "secret": "59d84d78a1",
     "server": "6207",
     "title": "Shark",
-    "location": "Roma, Italia"
+    "location": "Italy"
   },
   {
     "id": "3507617672",
@@ -1389,7 +1389,7 @@
     "secret": "41c134671c",
     "server": "3573",
     "title": "Lemon",
-    "location": "amsterdam, netherlands"
+    "location": "Netherlands"
   },
   {
     "id": "3924963364",
@@ -1397,7 +1397,7 @@
     "secret": "43714e33de",
     "server": "2517",
     "title": "Reef",
-    "location": "Saint Martin, USA"
+    "location": "United States"
   },
   {
     "id": "4477687647",
@@ -1405,7 +1405,7 @@
     "secret": "39dd6c0f9d",
     "server": "4008",
     "title": "Shark",
-    "location": "Brisbane, Australia"
+    "location": "Australia"
   },
   {
     "id": "3310655777",
@@ -1413,7 +1413,7 @@
     "secret": "859cfde3fd",
     "server": "3414",
     "title": "Galapagos",
-    "location": "Huntington Beach, USA"
+    "location": "United States"
   },
   {
     "id": "7184053769",
@@ -1421,7 +1421,7 @@
     "secret": "6d2a3af260",
     "server": "5231",
     "title": "Reef",
-    "location": "Horsham, United Kingdom"
+    "location": "United Kingdom"
   },
   {
     "id": "10437994225",
@@ -1437,7 +1437,7 @@
     "secret": "e6e30d32c2",
     "server": "1404",
     "title": "Shark",
-    "location": "USA"
+    "location": "United States"
   },
   {
     "id": "8104491468",
@@ -1445,7 +1445,7 @@
     "secret": "5bd41e099c",
     "server": "8183",
     "title": "White",
-    "location": "Blacksburg, VA, US"
+    "location": "United States"
   },
   {
     "id": "6234104675",
@@ -1453,7 +1453,7 @@
     "secret": "e36481c649",
     "server": "6056",
     "title": "White",
-    "location": "Blacksburg, VA, US"
+    "location": "United States"
   },
   {
     "id": "23689324",
@@ -1469,7 +1469,7 @@
     "secret": "3f98ba677c",
     "server": "3588",
     "title": "Whale",
-    "location": "Blacksburg, VA, US"
+    "location": "United States"
   },
   {
     "id": "10136713113",
@@ -1477,7 +1477,7 @@
     "secret": "c01f167bda",
     "server": "5480",
     "title": "Shark",
-    "location": "CASABLANCA, Maroc"
+    "location": "Morocco"
   },
   {
     "id": "6231206451",
@@ -1485,7 +1485,7 @@
     "secret": "440ba37ab8",
     "server": "6108",
     "title": "White",
-    "location": "Blacksburg, VA, US"
+    "location": "United States"
   },
   {
     "id": "2349853243",
@@ -1493,7 +1493,7 @@
     "secret": "6686ec10c2",
     "server": "2084",
     "title": "Shark",
-    "location": "Watchung, NJ, USA"
+    "location": "United States"
   },
   {
     "id": "8327404018",
@@ -1501,7 +1501,7 @@
     "secret": "ffff3e691d",
     "server": "8500",
     "title": "Tiger",
-    "location": "Honolulu, HI"
+    "location": "United States"
   },
   {
     "id": "6952152234",
@@ -1517,7 +1517,7 @@
     "secret": "ee8cb192c4",
     "server": "3398",
     "title": "Galapagos",
-    "location": "Huntington Beach, USA"
+    "location": "United States"
   },
   {
     "id": "8049851965",
@@ -1525,7 +1525,7 @@
     "secret": "3260e52a44",
     "server": "8176",
     "title": "White",
-    "location": "London, United Kingdom"
+    "location": "United Kingdom"
   },
   {
     "id": "1393464328",
@@ -1533,7 +1533,7 @@
     "secret": "fe791580fe",
     "server": "1170",
     "title": "Lemon",
-    "location": "Lake Worth, FL, USA"
+    "location": "United States"
   },
   {
     "id": "4451199906",
@@ -1541,7 +1541,7 @@
     "secret": "ae0e45f1c3",
     "server": "4010",
     "title": "Hammerhead",
-    "location": "Toronto, Canada"
+    "location": "Canada"
   },
   {
     "id": "6189048999",
@@ -1549,7 +1549,7 @@
     "secret": "0363bdc7cd",
     "server": "6173",
     "title": "Blue",
-    "location": "Toronto, Canada"
+    "location": "Canada"
   },
   {
     "id": "4688628888",
@@ -1557,7 +1557,7 @@
     "secret": "79cf407465",
     "server": "4048",
     "title": "Basking",
-    "location": "Cornwall, England"
+    "location": "United Kingdom"
   },
   {
     "id": "1223250367",
@@ -1565,7 +1565,7 @@
     "secret": "52f7b2d1c0",
     "server": "1316",
     "title": "Tiger",
-    "location": "Lake Worth, FL, USA"
+    "location": "United States"
   },
   {
     "id": "4012058022",
@@ -1573,7 +1573,7 @@
     "secret": "2488ea0b8b",
     "server": "2623",
     "title": "White",
-    "location": "Taipei, Taiwan"
+    "location": "Taiwan"
   },
   {
     "id": "8104437217",
@@ -1581,7 +1581,7 @@
     "secret": "152a15e94a",
     "server": "8324",
     "title": "White",
-    "location": "Blacksburg, VA, US"
+    "location": "United States"
   },
   {
     "id": "33719716",
@@ -1589,7 +1589,7 @@
     "secret": "307bb6422e",
     "server": "21",
     "title": "Lemon",
-    "location": "Huntington Beach, USA"
+    "location": "United States"
   },
   {
     "id": "7182833755",
@@ -1597,7 +1597,7 @@
     "secret": "1162f0845d",
     "server": "5349",
     "title": "Nurse",
-    "location": "Gold Coast, Australia"
+    "location": "Australia"
   },
   {
     "id": "11759268084",
@@ -1605,7 +1605,7 @@
     "secret": "ff87b91f2d",
     "server": "7433",
     "title": "Whale",
-    "location": "Toronto, Canada"
+    "location": "Canada"
   },
   {
     "id": "57106308",
@@ -1613,7 +1613,7 @@
     "secret": "86ba1af320",
     "server": "32",
     "title": "Tiger",
-    "location": "Huntington Beach, USA"
+    "location": "United States"
   },
   {
     "id": "8315080516",
@@ -1621,7 +1621,7 @@
     "secret": "1cd91893eb",
     "server": "8360",
     "title": "Reef",
-    "location": "England"
+    "location": "United Kingdom"
   },
   {
     "id": "6862269383",
@@ -1629,7 +1629,7 @@
     "secret": "b08836ceec",
     "server": "7199",
     "title": "Whale",
-    "location": "Kota Kinabalu, Malaysia"
+    "location": "Malaysia"
   },
   {
     "id": "6837984306",
@@ -1637,7 +1637,7 @@
     "secret": "b3d7019e8b",
     "server": "7177",
     "title": "Nurse",
-    "location": "Canberra, Australia"
+    "location": "Australia"
   },
   {
     "id": "3538506890",
@@ -1645,7 +1645,7 @@
     "secret": "307b63c92c",
     "server": "3327",
     "title": "Reef",
-    "location": "amsterdam, netherlands"
+    "location": "Netherlands"
   },
   {
     "id": "6175190085",
@@ -1653,7 +1653,7 @@
     "secret": "50079958e1",
     "server": "6162",
     "title": "Blue",
-    "location": "Toronto, Canada"
+    "location": "Canada"
   },
   {
     "id": "8100406576",
@@ -1661,7 +1661,7 @@
     "secret": "eac627d041",
     "server": "8196",
     "title": "Whale",
-    "location": "Madrid, Spain"
+    "location": "Spain"
   },
   {
     "id": "7184050885",
@@ -1669,7 +1669,7 @@
     "secret": "9e4f2d4952",
     "server": "7087",
     "title": "Shark",
-    "location": "Horsham, United Kingdom"
+    "location": "United Kingdom"
   },
   {
     "id": "18129808",
@@ -1685,7 +1685,7 @@
     "secret": "2244feef56",
     "server": "6053",
     "title": "White",
-    "location": "Blacksburg, VA, US"
+    "location": "United States"
   },
   {
     "id": "11783164086",
@@ -1709,7 +1709,7 @@
     "secret": "4fd1475797",
     "server": "2310",
     "title": "Tiger",
-    "location": "San Francisco, CA, USA"
+    "location": "United States"
   },
   {
     "id": "5451800863",
@@ -1717,7 +1717,7 @@
     "secret": "370121284d",
     "server": "5051",
     "title": "Shark",
-    "location": "Sanford, NC, USA"
+    "location": "United States"
   },
   {
     "id": "7002482165",
@@ -1725,7 +1725,7 @@
     "secret": "216f5768b4",
     "server": "7213",
     "title": "Nurse",
-    "location": "Canberra, Australia"
+    "location": "Australia"
   },
   {
     "id": "771988912",
@@ -1741,7 +1741,7 @@
     "secret": "5f8eae199a",
     "server": "7203",
     "title": "Whale",
-    "location": "Kota Kinabalu, Malaysia"
+    "location": "Malaysia"
   },
   {
     "id": "8563891680",
@@ -1749,7 +1749,7 @@
     "secret": "dd8ab3157a",
     "server": "8102",
     "title": "Shark",
-    "location": "sunnyvale, CA, usa"
+    "location": "United States"
   },
   {
     "id": "2181295085",
@@ -1757,7 +1757,7 @@
     "secret": "eddfc8eeac",
     "server": "2320",
     "title": "Reef",
-    "location": "Toronto, Canada"
+    "location": "Canada"
   },
   {
     "id": "8047034055",
@@ -1765,7 +1765,7 @@
     "secret": "2b17d53ed2",
     "server": "8317",
     "title": "White",
-    "location": "Madrid, Spain"
+    "location": "Spain"
   },
   {
     "id": "5386362822",
@@ -1773,7 +1773,7 @@
     "secret": "d7f7428c21",
     "server": "5211",
     "title": "Whale",
-    "location": "Metro Atlanta, USA"
+    "location": "United States"
   },
   {
     "id": "1453002312",
@@ -1781,7 +1781,7 @@
     "secret": "21d63502cc",
     "server": "1020",
     "title": "Lemon",
-    "location": "Lake Worth, FL, USA"
+    "location": "United States"
   },
   {
     "id": "5068616962",
@@ -1789,7 +1789,7 @@
     "secret": "2a7f2c5156",
     "server": "4089",
     "title": "White",
-    "location": "Blacksburg, VA, US"
+    "location": "United States"
   },
   {
     "id": "4155726293",
@@ -1797,7 +1797,7 @@
     "secret": "612683481c",
     "server": "2783",
     "title": "White",
-    "location": "Huntington Beach, USA"
+    "location": "United States"
   },
   {
     "id": "2188457487",
@@ -1805,7 +1805,7 @@
     "secret": "22befb0913",
     "server": "2144",
     "title": "Galapagos",
-    "location": "Huntington Beach, USA"
+    "location": "United States"
   },
   {
     "id": "7268009478",
@@ -1813,7 +1813,7 @@
     "secret": "c4b41b8eeb",
     "server": "8026",
     "title": "Shark",
-    "location": "Los Angeles, USA"
+    "location": "United States"
   },
   {
     "id": "6942394876",
@@ -1821,7 +1821,7 @@
     "secret": "687b9bd87d",
     "server": "7251",
     "title": "White",
-    "location": "Blacksburg, VA, US"
+    "location": "United States"
   },
   {
     "id": "4294951051",
@@ -1829,7 +1829,7 @@
     "secret": "89f172c8fc",
     "server": "4070",
     "title": "Reef",
-    "location": "amsterdam, netherlands"
+    "location": "Netherlands"
   },
   {
     "id": "6874476612",
@@ -1837,7 +1837,7 @@
     "secret": "c75aeb780c",
     "server": "7265",
     "title": "Whale",
-    "location": "Luzern, Switzerland"
+    "location": "Switzerland"
   },
   {
     "id": "4461137194",
@@ -1845,7 +1845,7 @@
     "secret": "0c6a6d7e8d",
     "server": "2700",
     "title": "Nurse",
-    "location": "Sydney, Australia"
+    "location": "Australia"
   },
   {
     "id": "2386656167",
@@ -1853,7 +1853,7 @@
     "secret": "d8596a607e",
     "server": "2357",
     "title": "Nurse",
-    "location": "Toronto, Canada"
+    "location": "Canada"
   },
   {
     "id": "12250962866",
@@ -1861,7 +1861,7 @@
     "secret": "01b0693c81",
     "server": "2882",
     "title": "Blacktip",
-    "location": "Manchester, UK"
+    "location": "United Kingdom"
   },
   {
     "id": "6793603811",
@@ -1869,7 +1869,7 @@
     "secret": "c447b9c2da",
     "server": "7168",
     "title": "Reef",
-    "location": "Kailua-Kona, HI, USA"
+    "location": "United States"
   },
   {
     "id": "24538787",
@@ -1877,7 +1877,7 @@
     "secret": "20ae19172c",
     "server": "23",
     "title": "Shark",
-    "location": "Rhoon, Netherlands"
+    "location": "Netherlands"
   },
   {
     "id": "5760550147",
@@ -1885,7 +1885,7 @@
     "secret": "0719a3efef",
     "server": "3369",
     "title": "Galapagos",
-    "location": "Goleta, CA, USA"
+    "location": "United States"
   },
   {
     "id": "5259154143",
@@ -1901,7 +1901,7 @@
     "secret": "ff0640704b",
     "server": "4104",
     "title": "White",
-    "location": "Kota Kinabalu, Malaysia"
+    "location": "Malaysia"
   },
   {
     "id": "5952611616",
@@ -1909,7 +1909,7 @@
     "secret": "895e50599c",
     "server": "6122",
     "title": "Shark",
-    "location": "Rumaithiya ,, Kuwait"
+    "location": "Kuwait"
   },
   {
     "id": "10811059714",
@@ -1917,7 +1917,7 @@
     "secret": "d69b5bfb00",
     "server": "3760",
     "title": "Cow",
-    "location": "Toronto, Canada"
+    "location": "Canada"
   },
   {
     "id": "8062000998",
@@ -1925,7 +1925,7 @@
     "secret": "9ffe080e2b",
     "server": "8309",
     "title": "Gray",
-    "location": "Sydney, Australia"
+    "location": "Australia"
   },
   {
     "id": "8590658627",
@@ -1933,7 +1933,7 @@
     "secret": "3836629640",
     "server": "8381",
     "title": "Shark",
-    "location": "Sydney, Australia"
+    "location": "Australia"
   },
   {
     "id": "5374434348",
@@ -1941,7 +1941,7 @@
     "secret": "2188f5c993",
     "server": "5124",
     "title": "Whale",
-    "location": "Metro Atlanta, USA"
+    "location": "United States"
   },
   {
     "id": "8542018182",
@@ -1949,7 +1949,7 @@
     "secret": "c8329e2e7f",
     "server": "8512",
     "title": "Shark",
-    "location": "Sydney, Australia"
+    "location": "Australia"
   },
   {
     "id": "6895537607",
@@ -1957,7 +1957,7 @@
     "secret": "efc34b031d",
     "server": "7199",
     "title": "Reef",
-    "location": "amsterdam, netherlands"
+    "location": "Netherlands"
   },
   {
     "id": "6018601740",
@@ -1965,7 +1965,7 @@
     "secret": "c44831fee0",
     "server": "6131",
     "title": "Tiger",
-    "location": "London, UK"
+    "location": "United Kingdom"
   },
   {
     "id": "5816366423",
@@ -1973,7 +1973,7 @@
     "secret": "f4e0812e82",
     "server": "5195",
     "title": "Shark",
-    "location": "Maui"
+    "location": "New Zealand"
   },
   {
     "id": "5522984384",
@@ -1981,7 +1981,7 @@
     "secret": "239e69e3a7",
     "server": "5174",
     "title": "White",
-    "location": "UK"
+    "location": "Guernsey"
   },
   {
     "id": "200243344",
@@ -1989,7 +1989,7 @@
     "secret": "7a5fc31b68",
     "server": "61",
     "title": "Bull",
-    "location": "Newcastle, Australia"
+    "location": "Australia"
   },
   {
     "id": "6836355827",
@@ -1997,7 +1997,7 @@
     "secret": "fb58a580d2",
     "server": "7009",
     "title": "Hammerhead",
-    "location": "Scituate , USA"
+    "location": "United States"
   },
   {
     "id": "5679573911",
@@ -2005,7 +2005,7 @@
     "secret": "39fa73b5f9",
     "server": "5226",
     "title": "Reef",
-    "location": "London, UK"
+    "location": "United Kingdom"
   },
   {
     "id": "2293564496",
@@ -2013,7 +2013,7 @@
     "secret": "fa17053ee3",
     "server": "2230",
     "title": "White",
-    "location": "California"
+    "location": "Mexico"
   },
   {
     "id": "3310810904",
@@ -2021,7 +2021,7 @@
     "secret": "64c8ff474d",
     "server": "3641",
     "title": "Galapagos",
-    "location": "Huntington Beach, USA"
+    "location": "United States"
   },
   {
     "id": "1258012283",
@@ -2029,7 +2029,7 @@
     "secret": "e3b6d33490",
     "server": "1227",
     "title": "Lemon",
-    "location": "Lake Worth, FL, USA"
+    "location": "United States"
   },
   {
     "id": "6862894989",
@@ -2037,7 +2037,7 @@
     "secret": "a5f0df6866",
     "server": "7204",
     "title": "Reef",
-    "location": "amsterdam, netherlands"
+    "location": "Netherlands"
   },
   {
     "id": "7371342464",
@@ -2045,7 +2045,7 @@
     "secret": "2e3ddd237b",
     "server": "7089",
     "title": "Gray",
-    "location": "Sydney, Australia"
+    "location": "Australia"
   },
   {
     "id": "8304681600",
@@ -2053,7 +2053,7 @@
     "secret": "db5efb4460",
     "server": "8071",
     "title": "Whitetip",
-    "location": "England"
+    "location": "United Kingdom"
   },
   {
     "id": "5549810969",
@@ -2061,7 +2061,7 @@
     "secret": "1857df1826",
     "server": "5187",
     "title": "Whale",
-    "location": "Singapore, Singapore"
+    "location": "Singapore"
   },
   {
     "id": "4248784595",
@@ -2069,7 +2069,7 @@
     "secret": "d265c134ea",
     "server": "4018",
     "title": "Nurse",
-    "location": "Sydney, Australia"
+    "location": "Australia"
   },
   {
     "id": "5577669372",
@@ -2077,7 +2077,7 @@
     "secret": "5d1d989f9a",
     "server": "5309",
     "title": "Shark",
-    "location": "A Coruna, Galiza"
+    "location": "Spain"
   },
   {
     "id": "5417313288",
@@ -2085,7 +2085,7 @@
     "secret": "174c417567",
     "server": "5139",
     "title": "Bull",
-    "location": "Toronto, Canada"
+    "location": "Canada"
   },
   {
     "id": "5241479044",
@@ -2093,7 +2093,7 @@
     "secret": "6ed5446687",
     "server": "5049",
     "title": "Whale",
-    "location": "Cancun, Mexico"
+    "location": "Mexico"
   },
   {
     "id": "5240883695",
@@ -2101,7 +2101,7 @@
     "secret": "785eea4578",
     "server": "5010",
     "title": "Whale",
-    "location": "Cancun, Mexico"
+    "location": "Mexico"
   },
   {
     "id": "7575690754",
@@ -2109,7 +2109,7 @@
     "secret": "1d3caf7928",
     "server": "8162",
     "title": "Shark",
-    "location": "Ventura, CA., USA"
+    "location": "United States"
   },
   {
     "id": "4156487570",
@@ -2117,7 +2117,7 @@
     "secret": "575b7a1285",
     "server": "2434",
     "title": "White",
-    "location": "Huntington Beach, USA"
+    "location": "United States"
   },
   {
     "id": "3127586470",
@@ -2125,7 +2125,7 @@
     "secret": "52e1474309",
     "server": "3084",
     "title": "Shark",
-    "location": "USA"
+    "location": "United States"
   },
   {
     "id": "8066394537",
@@ -2133,7 +2133,7 @@
     "secret": "15b4b18dc5",
     "server": "8455",
     "title": "Lemon",
-    "location": "Madrid, Spain"
+    "location": "Spain"
   },
   {
     "id": "5973314622",
@@ -2141,7 +2141,7 @@
     "secret": "dd2e6c8bb4",
     "server": "6020",
     "title": "Whale",
-    "location": "Perth, Australia"
+    "location": "Australia"
   },
   {
     "id": "6307562317",
@@ -2149,7 +2149,7 @@
     "secret": "d8ec10e5f9",
     "server": "6227",
     "title": "Shark",
-    "location": "Goleta, CA, USA"
+    "location": "United States"
   },
   {
     "id": "2499026475",
@@ -2157,7 +2157,7 @@
     "secret": "fcbff37501",
     "server": "3043",
     "title": "Bull",
-    "location": "Toronto, Canada"
+    "location": "Canada"
   },
   {
     "id": "6806538259",
@@ -2165,7 +2165,7 @@
     "secret": "e579196e7c",
     "server": "7033",
     "title": "Shark",
-    "location": "Discovery Bay, Hong Kong"
+    "location": "Hong Kong"
   },
   {
     "id": "5695261821",
@@ -2173,7 +2173,7 @@
     "secret": "b381e35276",
     "server": "3440",
     "title": "Reef",
-    "location": "London, UK"
+    "location": "United Kingdom"
   },
   {
     "id": "6231781585",
@@ -2181,7 +2181,7 @@
     "secret": "6fbc231ecb",
     "server": "6033",
     "title": "White",
-    "location": "Blacksburg, VA, US"
+    "location": "United States"
   },
   {
     "id": "4277999385",
@@ -2189,7 +2189,7 @@
     "secret": "06716d608f",
     "server": "2757",
     "title": "White",
-    "location": "Canberra, Australia"
+    "location": "Australia"
   },
   {
     "id": "2181300605",
@@ -2197,7 +2197,7 @@
     "secret": "670624e2c1",
     "server": "2142",
     "title": "Reef",
-    "location": "Toronto, Canada"
+    "location": "Canada"
   },
   {
     "id": "7583686828",
@@ -2213,7 +2213,7 @@
     "secret": "91f25df543",
     "server": "2087",
     "title": "Whale",
-    "location": "Birmingham, UK"
+    "location": "United Kingdom"
   },
   {
     "id": "6862375153",
@@ -2221,7 +2221,7 @@
     "secret": "033e48f1a3",
     "server": "7070",
     "title": "Whale",
-    "location": "Kota Kinabalu, Malaysia"
+    "location": "Malaysia"
   },
   {
     "id": "13735210573",
@@ -2229,7 +2229,7 @@
     "secret": "6b4ab9e93c",
     "server": "3781",
     "title": "Whale",
-    "location": "Ebbw Vale, Wales, UK"
+    "location": "United Kingdom"
   },
   {
     "id": "3087420393",
@@ -2245,7 +2245,7 @@
     "secret": "68759870dd",
     "server": "8019",
     "title": "Shark",
-    "location": "Discovery Bay, Hong Kong"
+    "location": "Hong Kong"
   },
   {
     "id": "6829062807",
@@ -2253,7 +2253,7 @@
     "secret": "080949138c",
     "server": "7013",
     "title": "Reef",
-    "location": "East Grinstead, England"
+    "location": "United Kingdom"
   },
   {
     "id": "4744658254",
@@ -2261,7 +2261,7 @@
     "secret": "b2fdeaa1db",
     "server": "4079",
     "title": "Reef",
-    "location": "Fort Worth, USA"
+    "location": "United States"
   },
   {
     "id": "40941823",
@@ -2269,7 +2269,7 @@
     "secret": "8cd2f1681e",
     "server": "26",
     "title": "Reef",
-    "location": "BATH, UK"
+    "location": "United Kingdom"
   },
   {
     "id": "5704356780",
@@ -2277,7 +2277,7 @@
     "secret": "c492e3b8ce",
     "server": "2654",
     "title": "White",
-    "location": "Cape Town, South Africa"
+    "location": "South Africa"
   },
   {
     "id": "6899358781",
@@ -2285,7 +2285,7 @@
     "secret": "aaf5cc724d",
     "server": "7038",
     "title": "White",
-    "location": "Charleston, SC, USA"
+    "location": "United States"
   },
   {
     "id": "14217422891",
@@ -2293,7 +2293,7 @@
     "secret": "fd69ca4d3c",
     "server": "5159",
     "title": "Shark",
-    "location": "Blacksburg, VA, US"
+    "location": "United States"
   },
   {
     "id": "6829067953",
@@ -2301,7 +2301,7 @@
     "secret": "d352a853d6",
     "server": "7033",
     "title": "Lemon",
-    "location": "East Grinstead, England"
+    "location": "United Kingdom"
   },
   {
     "id": "192597540",
@@ -2317,7 +2317,7 @@
     "secret": "1d59f1657b",
     "server": "7132",
     "title": "Shark",
-    "location": "Kailua-Kona, HI, USA"
+    "location": "United States"
   },
   {
     "id": "12581923093",
@@ -2325,7 +2325,7 @@
     "secret": "5ae06642bb",
     "server": "2873",
     "title": "Blacktip",
-    "location": "Manchester, UK"
+    "location": "United Kingdom"
   },
   {
     "id": "12250596973",
@@ -2333,7 +2333,7 @@
     "secret": "08ac7b6150",
     "server": "3706",
     "title": "Blacktip",
-    "location": "Manchester, UK"
+    "location": "United Kingdom"
   },
   {
     "id": "7182815537",
@@ -2341,7 +2341,7 @@
     "secret": "878e7e84b8",
     "server": "5450",
     "title": "Nurse",
-    "location": "Gold Coast, Australia"
+    "location": "Australia"
   },
   {
     "id": "2630743068",
@@ -2349,7 +2349,7 @@
     "secret": "d5b408f88b",
     "server": "3048",
     "title": "White",
-    "location": "Shanghai"
+    "location": "China"
   },
   {
     "id": "3914868497",
@@ -2357,7 +2357,7 @@
     "secret": "b5c14e9b30",
     "server": "2440",
     "title": "Hammerhead",
-    "location": "Pretoria, South Africa"
+    "location": "South Africa"
   },
   {
     "id": "8562785641",
@@ -2365,7 +2365,7 @@
     "secret": "931d50a51c",
     "server": "8227",
     "title": "Shark",
-    "location": "sunnyvale, CA, usa"
+    "location": "United States"
   },
   {
     "id": "2499855768",
@@ -2373,7 +2373,7 @@
     "secret": "e8deeaa7bb",
     "server": "3085",
     "title": "Silvertip",
-    "location": "Toronto, Canada"
+    "location": "Canada"
   },
   {
     "id": "7754424796",
@@ -2381,7 +2381,7 @@
     "secret": "a00690a7a1",
     "server": "8295",
     "title": "Blue",
-    "location": "USA"
+    "location": "United States"
   },
   {
     "id": "6167287742",
@@ -2389,7 +2389,7 @@
     "secret": "9aa0bbe265",
     "server": "6176",
     "title": "Blue",
-    "location": "Toronto, Canada"
+    "location": "Canada"
   },
   {
     "id": "6172567133",
@@ -2397,7 +2397,7 @@
     "secret": "284f5b0419",
     "server": "6173",
     "title": "Blue",
-    "location": "Toronto, Canada"
+    "location": "Canada"
   },
   {
     "id": "6836761364",
@@ -2405,7 +2405,7 @@
     "secret": "4f5cb4be22",
     "server": "7193",
     "title": "Nurse",
-    "location": "Canberra, Australia"
+    "location": "Australia"
   },
   {
     "id": "3357823352",
@@ -2413,7 +2413,7 @@
     "secret": "cebd22411b",
     "server": "3443",
     "title": "Reef",
-    "location": "Santa Cruz, USA"
+    "location": "United States"
   },
   {
     "id": "3244381336",
@@ -2421,7 +2421,7 @@
     "secret": "5e5fbf2eca",
     "server": "3428",
     "title": "Shark",
-    "location": "Wuppertal, Germany"
+    "location": "Germany"
   },
   {
     "id": "8920373108",
@@ -2429,7 +2429,7 @@
     "secret": "5fc5783a7b",
     "server": "5331",
     "title": "Nurse",
-    "location": "Lebanon, IL"
+    "location": "Lebanon"
   },
   {
     "id": "358268722",
@@ -2437,7 +2437,7 @@
     "secret": "cf8884e710",
     "server": "162",
     "title": "Shark",
-    "location": "Mossel Bay, South Africa"
+    "location": "South Africa"
   },
   {
     "id": "4141001292",
@@ -2445,7 +2445,7 @@
     "secret": "23fdce6fb3",
     "server": "2783",
     "title": "Shark",
-    "location": "Discovery Bay, Hong Kong"
+    "location": "Hong Kong"
   },
   {
     "id": "4569081810",
@@ -2453,7 +2453,7 @@
     "secret": "c47fa5544e",
     "server": "4046",
     "title": "Reef",
-    "location": "amsterdam, netherlands"
+    "location": "Netherlands"
   },
   {
     "id": "9269419635",
@@ -2461,7 +2461,7 @@
     "secret": "2a222bb3df",
     "server": "7392",
     "title": "Shark",
-    "location": "Hamburg, Germany"
+    "location": "Germany"
   },
   {
     "id": "2874644985",
@@ -2469,7 +2469,7 @@
     "secret": "b492bb067a",
     "server": "3181",
     "title": "Shark",
-    "location": "Jabiru, Australia"
+    "location": "Australia"
   },
   {
     "id": "2991537692",
@@ -2477,7 +2477,7 @@
     "secret": "40ac3dfa92",
     "server": "3149",
     "title": "Shark",
-    "location": "Melbourne, Australia"
+    "location": "Australia"
   },
   {
     "id": "4945656400",
@@ -2485,7 +2485,7 @@
     "secret": "94d648b66a",
     "server": "4084",
     "title": "White",
-    "location": "Kota Kinabalu, Malaysia"
+    "location": "Malaysia"
   },
   {
     "id": "3399203860",
@@ -2493,7 +2493,7 @@
     "secret": "27908266d4",
     "server": "3575",
     "title": "White",
-    "location": "Blacksburg, VA, US"
+    "location": "United States"
   },
   {
     "id": "8626157676",
@@ -2501,7 +2501,7 @@
     "secret": "faaaa84227",
     "server": "8111",
     "title": "Whale",
-    "location": "Monza, Italia"
+    "location": "Italy"
   },
   {
     "id": "4672777579",
@@ -2509,7 +2509,7 @@
     "secret": "f9840d61f5",
     "server": "1265",
     "title": "Shark",
-    "location": "Austin, USA"
+    "location": "United States"
   },
   {
     "id": "5446091009",
@@ -2517,7 +2517,7 @@
     "secret": "faa2a9ca59",
     "server": "5251",
     "title": "Shark",
-    "location": "Sliema, Malta"
+    "location": "Malta"
   },
   {
     "id": "12250942446",
@@ -2525,7 +2525,7 @@
     "secret": "2590bff76e",
     "server": "2888",
     "title": "Blacktip",
-    "location": "Manchester, UK"
+    "location": "United Kingdom"
   },
   {
     "id": "6002996070",
@@ -2533,7 +2533,7 @@
     "secret": "0c8a665051",
     "server": "6141",
     "title": "Mako",
-    "location": "Monterrey, Mexico"
+    "location": "Mexico"
   },
   {
     "id": "3870709762",
@@ -2549,7 +2549,7 @@
     "secret": "958be1b093",
     "server": "6178",
     "title": "Shark",
-    "location": "Northridge, CA, USA"
+    "location": "United States"
   },
   {
     "id": "12250554613",
@@ -2557,7 +2557,7 @@
     "secret": "21ed3ce357",
     "server": "5512",
     "title": "Blacktip",
-    "location": "Manchester, UK"
+    "location": "United Kingdom"
   },
   {
     "id": "12222100074",
@@ -2565,7 +2565,7 @@
     "secret": "671116074c",
     "server": "2813",
     "title": "Shark",
-    "location": "Blacksburg, VA, US"
+    "location": "United States"
   },
   {
     "id": "12250857344",
@@ -2573,7 +2573,7 @@
     "secret": "81f13554be",
     "server": "3704",
     "title": "Blacktip",
-    "location": "Manchester, UK"
+    "location": "United Kingdom"
   },
   {
     "id": "12667971983",
@@ -2581,7 +2581,7 @@
     "secret": "16d41f2c9c",
     "server": "3783",
     "title": "Tiger",
-    "location": "New York City, USA"
+    "location": "United States"
   },
   {
     "id": "9710575639",
@@ -2589,7 +2589,7 @@
     "secret": "08f024f34f",
     "server": "5524",
     "title": "Blue",
-    "location": "Monza, Italia"
+    "location": "Italy"
   },
   {
     "id": "10032450114",
@@ -2597,7 +2597,7 @@
     "secret": "ce47c7a0e4",
     "server": "2883",
     "title": "Reef",
-    "location": "Toronto, Canada"
+    "location": "Canada"
   },
   {
     "id": "5467262126",
@@ -2605,7 +2605,7 @@
     "secret": "0c084fea10",
     "server": "5058",
     "title": "Whale",
-    "location": "Sumter, SC, USA"
+    "location": "United States"
   },
   {
     "id": "7369285914",
@@ -2613,7 +2613,7 @@
     "secret": "f4325538dc",
     "server": "7235",
     "title": "Reef",
-    "location": "Horsham, United Kingdom"
+    "location": "United Kingdom"
   },
   {
     "id": "4779894586",
@@ -2621,7 +2621,7 @@
     "secret": "d11b91bb52",
     "server": "4079",
     "title": "Shark",
-    "location": "London, UK"
+    "location": "United Kingdom"
   },
   {
     "id": "5130696730",
@@ -2629,7 +2629,7 @@
     "secret": "7523e1a397",
     "server": "4132",
     "title": "Reef",
-    "location": "Toronto, Canada"
+    "location": "Canada"
   },
   {
     "id": "200243251",
@@ -2637,7 +2637,7 @@
     "secret": "42358062ba",
     "server": "72",
     "title": "Bull",
-    "location": "Newcastle, Australia"
+    "location": "Australia"
   },
   {
     "id": "1147983857",
@@ -2645,7 +2645,7 @@
     "secret": "436c017992",
     "server": "1340",
     "title": "Lemon",
-    "location": "Lake Worth, FL, USA"
+    "location": "United States"
   },
   {
     "id": "6275442282",
@@ -2653,7 +2653,7 @@
     "secret": "f81f513166",
     "server": "6048",
     "title": "White",
-    "location": "Bogue Chitto,MS, USA"
+    "location": "United States"
   },
   {
     "id": "13282443455",
@@ -2661,7 +2661,7 @@
     "secret": "5656feec9c",
     "server": "7150",
     "title": "Shark",
-    "location": "Sydney, Australia"
+    "location": "Australia"
   },
   {
     "id": "8585866280",
@@ -2669,7 +2669,7 @@
     "secret": "254d890732",
     "server": "8230",
     "title": "Shark",
-    "location": "Sydney, Australia"
+    "location": "Australia"
   },
   {
     "id": "3027615802",
@@ -2677,7 +2677,7 @@
     "secret": "a6c9f5c4df",
     "server": "3017",
     "title": "White",
-    "location": "Cape Town, South Africa"
+    "location": "South Africa"
   },
   {
     "id": "8390257526",
@@ -2685,7 +2685,7 @@
     "secret": "415146f32e",
     "server": "8356",
     "title": "Tiger",
-    "location": "Honolulu, HI"
+    "location": "United States"
   },
   {
     "id": "6025796633",
@@ -2693,7 +2693,7 @@
     "secret": "90781cde43",
     "server": "6069",
     "title": "Hammerhead",
-    "location": "Tucson, AZ"
+    "location": "United States"
   },
   {
     "id": "4325951778",
@@ -2701,7 +2701,7 @@
     "secret": "d8f434b644",
     "server": "4022",
     "title": "Shark",
-    "location": "Palma de Mallorca "
+    "location": "Spain"
   },
   {
     "id": "7568228702",
@@ -2709,7 +2709,7 @@
     "secret": "87f47a7cb7",
     "server": "8424",
     "title": "Reef",
-    "location": "Bluffton, SC, USA"
+    "location": "United States"
   },
   {
     "id": "5457369720",
@@ -2717,7 +2717,7 @@
     "secret": "1a5c97beb4",
     "server": "5295",
     "title": "White",
-    "location": "San Francisco, California, USA"
+    "location": "United States"
   },
   {
     "id": "13260316655",
@@ -2725,7 +2725,7 @@
     "secret": "675513ca21",
     "server": "7149",
     "title": "Shark",
-    "location": "Sydney, Australia"
+    "location": "Australia"
   },
   {
     "id": "8589093282",
@@ -2733,7 +2733,7 @@
     "secret": "75d03036b3",
     "server": "8390",
     "title": "Shark",
-    "location": "Sydney, Australia"
+    "location": "Australia"
   },
   {
     "id": "7617679802",
@@ -2741,7 +2741,7 @@
     "secret": "abcfa1ce59",
     "server": "8150",
     "title": "Shark",
-    "location": "Discovery Bay, Hong Kong"
+    "location": "Hong Kong"
   },
   {
     "id": "3313282396",
@@ -2749,7 +2749,7 @@
     "secret": "679908421e",
     "server": "3570",
     "title": "Shark",
-    "location": "Maui, Hawaii, US"
+    "location": "United States"
   },
   {
     "id": "2640469082",
@@ -2757,7 +2757,7 @@
     "secret": "f32f6950ac",
     "server": "3125",
     "title": "Shark",
-    "location": "Linkoping, Sweden"
+    "location": "Sweden"
   },
   {
     "id": "8555962793",
@@ -2765,7 +2765,7 @@
     "secret": "fb434454b7",
     "server": "8506",
     "title": "Nurse",
-    "location": "Canberra, Australia"
+    "location": "Australia"
   },
   {
     "id": "8591757932",
@@ -2773,7 +2773,7 @@
     "secret": "85a061eaef",
     "server": "8531",
     "title": "Shark",
-    "location": "Sydney, Australia"
+    "location": "Australia"
   },
   {
     "id": "12531750995",
@@ -2781,7 +2781,7 @@
     "secret": "32492668b4",
     "server": "5527",
     "title": "Gray",
-    "location": "Sydney, Australia"
+    "location": "Australia"
   },
   {
     "id": "6388250735",
@@ -2789,7 +2789,7 @@
     "secret": "697426423f",
     "server": "7152",
     "title": "Whale",
-    "location": "Manila, Philippines"
+    "location": "Philippines"
   },
   {
     "id": "5206768288",
@@ -2805,7 +2805,7 @@
     "secret": "7b4a784cc0",
     "server": "1065",
     "title": "Tiger",
-    "location": "Lake Worth, FL, USA"
+    "location": "United States"
   },
   {
     "id": "3413407576",
@@ -2813,7 +2813,7 @@
     "secret": "2c91ef5354",
     "server": "3384",
     "title": "Shark",
-    "location": "Henderson, Nevada, USA"
+    "location": "United States"
   },
   {
     "id": "8768197035",
@@ -2821,7 +2821,7 @@
     "secret": "3f585df97b",
     "server": "8560",
     "title": "Whale",
-    "location": "Schweiz"
+    "location": "Switzerland"
   },
   {
     "id": "2630871493",
@@ -2829,7 +2829,7 @@
     "secret": "c921c557e7",
     "server": "3048",
     "title": "Blacktip",
-    "location": "france"
+    "location": "France"
   },
   {
     "id": "9724187093",
@@ -2845,7 +2845,7 @@
     "secret": "2d158fc43c",
     "server": "2851",
     "title": "Shark",
-    "location": "Honolulu, Hawaii"
+    "location": "United States"
   },
   {
     "id": "10137811015",
@@ -2853,7 +2853,7 @@
     "secret": "f8a996914a",
     "server": "2881",
     "title": "Bull",
-    "location": "Koh Phangan, Thailand"
+    "location": "Thailand"
   },
   {
     "id": "3293654747",
@@ -2869,7 +2869,7 @@
     "secret": "7963feb1ff",
     "server": "7141",
     "title": "Shark",
-    "location": "Christchurch, New Zealand"
+    "location": "New Zealand"
   },
   {
     "id": "6020610043",
@@ -2877,7 +2877,7 @@
     "secret": "d2392f0088",
     "server": "6010",
     "title": "Shark",
-    "location": "Hamilton, Canada"
+    "location": "Canada"
   },
   {
     "id": "6941563223",
@@ -2885,7 +2885,7 @@
     "secret": "bc6aa88295",
     "server": "7198",
     "title": "Tiger",
-    "location": "amsterdam, netherlands"
+    "location": "Netherlands"
   },
   {
     "id": "5424911043",
@@ -2893,7 +2893,7 @@
     "secret": "aaaf17375f",
     "server": "5299",
     "title": "Shark",
-    "location": "Baleares. Spain"
+    "location": "Spain"
   },
   {
     "id": "4598797428",
@@ -2901,7 +2901,7 @@
     "secret": "8da8dd1f24",
     "server": "1341",
     "title": "Tiger",
-    "location": "amsterdam, netherlands"
+    "location": "Netherlands"
   },
   {
     "id": "6862269252",
@@ -2909,7 +2909,7 @@
     "secret": "00faf0423e",
     "server": "7065",
     "title": "Nurse",
-    "location": "Canberra, Australia"
+    "location": "Australia"
   },
   {
     "id": "8223641901",
@@ -2917,7 +2917,7 @@
     "secret": "005754e8da",
     "server": "8069",
     "title": "Galapagos",
-    "location": "Honolulu, HI"
+    "location": "United States"
   },
   {
     "id": "6829061053",
@@ -2925,7 +2925,7 @@
     "secret": "f52221ae6e",
     "server": "7162",
     "title": "Reef",
-    "location": "East Grinstead, England"
+    "location": "United Kingdom"
   },
   {
     "id": "3460967430",
@@ -2933,7 +2933,7 @@
     "secret": "b936be6bf0",
     "server": "3604",
     "title": "Shark",
-    "location": "toronto, canada"
+    "location": "Canada"
   },
   {
     "id": "2169290681",
@@ -2941,7 +2941,7 @@
     "secret": "a044db584d",
     "server": "2214",
     "title": "Shark",
-    "location": "Notodden, Norway"
+    "location": "Norway"
   },
   {
     "id": "10308349803",
@@ -2949,7 +2949,7 @@
     "secret": "a786b0fa54",
     "server": "5528",
     "title": "Shark",
-    "location": "Sydney, Australia"
+    "location": "Australia"
   },
   {
     "id": "11496955776",
@@ -2957,7 +2957,7 @@
     "secret": "24d6d8a733",
     "server": "3725",
     "title": "Silky",
-    "location": "UK"
+    "location": "Guernsey"
   },
   {
     "id": "9706155170",
@@ -2965,7 +2965,7 @@
     "secret": "fbcfdeee05",
     "server": "5457",
     "title": "Blue",
-    "location": "Monza, Italia"
+    "location": "Italy"
   },
   {
     "id": "4964559464",
@@ -2973,7 +2973,7 @@
     "secret": "03dd10e41c",
     "server": "4113",
     "title": "Tiger",
-    "location": "Bell Canyon, CA, USA"
+    "location": "United States"
   },
   {
     "id": "4831006728",
@@ -2981,7 +2981,7 @@
     "secret": "e1dec82ab8",
     "server": "4093",
     "title": "Whale",
-    "location": "Cancun, Mexico"
+    "location": "Mexico"
   },
   {
     "id": "7245119020",
@@ -2989,7 +2989,7 @@
     "secret": "d5b934fe5b",
     "server": "5348",
     "title": "Tiger",
-    "location": "Monza, Italia"
+    "location": "Italy"
   },
   {
     "id": "4947486254",
@@ -2997,7 +2997,7 @@
     "secret": "30167ebe3d",
     "server": "4112",
     "title": "White",
-    "location": "Kota Kinabalu, Malaysia"
+    "location": "Malaysia"
   },
   {
     "id": "8642187783",
@@ -3013,7 +3013,7 @@
     "secret": "776b6c5444",
     "server": "6169",
     "title": "Shark",
-    "location": "Madrid, Spain"
+    "location": "Spain"
   },
   {
     "id": "6829076485",
@@ -3021,7 +3021,7 @@
     "secret": "531cbe5b6e",
     "server": "7175",
     "title": "Reef",
-    "location": "East Grinstead, England"
+    "location": "United Kingdom"
   },
   {
     "id": "2851167909",
@@ -3029,7 +3029,7 @@
     "secret": "73f8f59365",
     "server": "3197",
     "title": "Shark",
-    "location": "usa"
+    "location": "United States"
   },
   {
     "id": "4804316933",
@@ -3037,7 +3037,7 @@
     "secret": "08c41f75ca",
     "server": "4094",
     "title": "Shark",
-    "location": "England"
+    "location": "United Kingdom"
   },
   {
     "id": "3577957360",
@@ -3045,7 +3045,7 @@
     "secret": "c621c55a58",
     "server": "3613",
     "title": "Shark",
-    "location": "Potsdam, Germany"
+    "location": "Germany"
   },
   {
     "id": "8174797170",
@@ -3061,7 +3061,7 @@
     "secret": "cff4937193",
     "server": "7176",
     "title": "Whale",
-    "location": "Kota Kinabalu, Malaysia"
+    "location": "Malaysia"
   },
   {
     "id": "1290999061",
@@ -3069,7 +3069,7 @@
     "secret": "a539e01261",
     "server": "1351",
     "title": "White",
-    "location": "Perth, Australia"
+    "location": "Australia"
   },
   {
     "id": "295401161",
@@ -3077,7 +3077,7 @@
     "secret": "194eb0de25",
     "server": "112",
     "title": "Shark",
-    "location": "Huntington Beach, USA"
+    "location": "United States"
   },
   {
     "id": "12250404955",
@@ -3085,7 +3085,7 @@
     "secret": "e990bcd9f0",
     "server": "2811",
     "title": "Blacktip",
-    "location": "Manchester, UK"
+    "location": "United Kingdom"
   },
   {
     "id": "4661570875",
@@ -3093,7 +3093,7 @@
     "secret": "91c859f3bc",
     "server": "4063",
     "title": "Shark",
-    "location": "Discovery Bay, Hong Kong"
+    "location": "Hong Kong"
   },
   {
     "id": "3800013954",
@@ -3101,7 +3101,7 @@
     "secret": "20fea3a9c9",
     "server": "2471",
     "title": "Shark",
-    "location": "Sydney, Australia"
+    "location": "Australia"
   },
   {
     "id": "390238548",
@@ -3109,7 +3109,7 @@
     "secret": "5a155d42b7",
     "server": "26",
     "title": "Shark",
-    "location": "Mossel Bay, South Africa"
+    "location": "South Africa"
   },
   {
     "id": "44901541",
@@ -3117,7 +3117,7 @@
     "secret": "671819150a",
     "server": "26",
     "title": "White",
-    "location": "Huntington Beach, USA"
+    "location": "United States"
   },
   {
     "id": "1355404460",
@@ -3125,7 +3125,7 @@
     "secret": "39ad7a8022",
     "server": "1382",
     "title": "Tiger",
-    "location": "Lake Worth, FL, USA"
+    "location": "United States"
   },
   {
     "id": "477014733",
@@ -3133,7 +3133,7 @@
     "secret": "c00accd34a",
     "server": "197",
     "title": "Zebra",
-    "location": "Lisbon, Portugal"
+    "location": "Portugal"
   },
   {
     "id": "8638495742",
@@ -3141,7 +3141,7 @@
     "secret": "0c2d0870e8",
     "server": "8124",
     "title": "White",
-    "location": "California"
+    "location": "Mexico"
   },
   {
     "id": "3739091846",
@@ -3149,7 +3149,7 @@
     "secret": "0cf1f3b9a4",
     "server": "2473",
     "title": "Tiger",
-    "location": "Bell Canyon, CA, USA"
+    "location": "United States"
   },
   {
     "id": "9724579345",
@@ -3157,7 +3157,7 @@
     "secret": "09cfe4eeed",
     "server": "7371",
     "title": "Blue",
-    "location": "Monza, Italia"
+    "location": "Italy"
   },
   {
     "id": "2094546707",
@@ -3165,7 +3165,7 @@
     "secret": "4053e53be2",
     "server": "2370",
     "title": "White",
-    "location": "Huntington Beach, USA"
+    "location": "United States"
   },
   {
     "id": "510882963",
@@ -3173,7 +3173,7 @@
     "secret": "72f81657a8",
     "server": "229",
     "title": "Shark",
-    "location": "Cape Town, South Africa"
+    "location": "South Africa"
   },
   {
     "id": "7088195007",
@@ -3181,7 +3181,7 @@
     "secret": "aaa4e17220",
     "server": "5192",
     "title": "White",
-    "location": "Blacksburg, VA, US"
+    "location": "United States"
   },
   {
     "id": "9724515999",
@@ -3189,7 +3189,7 @@
     "secret": "7a997e22b4",
     "server": "3708",
     "title": "Blue",
-    "location": "Monza, Italia"
+    "location": "Italy"
   },
   {
     "id": "12250955876",
@@ -3197,7 +3197,7 @@
     "secret": "7280e978af",
     "server": "7430",
     "title": "Blacktip",
-    "location": "Manchester, UK"
+    "location": "United Kingdom"
   },
   {
     "id": "4674209840",
@@ -3213,7 +3213,7 @@
     "secret": "cbc9f4bcf7",
     "server": "1257",
     "title": "Shark",
-    "location": "Torrington, CT, USA"
+    "location": "United States"
   },
   {
     "id": "200243298",
@@ -3221,7 +3221,7 @@
     "secret": "31911d0873",
     "server": "78",
     "title": "Bull",
-    "location": "Newcastle, Australia"
+    "location": "Australia"
   },
   {
     "id": "7248566516",
@@ -3229,7 +3229,7 @@
     "secret": "944c3e4662",
     "server": "8022",
     "title": "Nurse",
-    "location": "Sydney, Australia"
+    "location": "Australia"
   },
   {
     "id": "3917170125",
@@ -3237,7 +3237,7 @@
     "secret": "98bdce889e",
     "server": "2561",
     "title": "Shark",
-    "location": "Saint Martin, USA"
+    "location": "United States"
   },
   {
     "id": "4365423255",
@@ -3245,7 +3245,7 @@
     "secret": "b9e5429c11",
     "server": "4024",
     "title": "Reef",
-    "location": "amsterdam, netherlands"
+    "location": "Netherlands"
   },
   {
     "id": "6018599272",
@@ -3253,7 +3253,7 @@
     "secret": "d7abbec445",
     "server": "6026",
     "title": "Lemon",
-    "location": "London, UK"
+    "location": "United Kingdom"
   },
   {
     "id": "2470077070",
@@ -3261,7 +3261,7 @@
     "secret": "5affd861a1",
     "server": "3066",
     "title": "Blacktip",
-    "location": "france"
+    "location": "France"
   },
   {
     "id": "6671174275",
@@ -3269,7 +3269,7 @@
     "secret": "a28320af64",
     "server": "7002",
     "title": "Whale",
-    "location": "Honolulu, HI"
+    "location": "United States"
   },
   {
     "id": "1077443921",
@@ -3277,7 +3277,7 @@
     "secret": "7a4c898562",
     "server": "1040",
     "title": "Shark",
-    "location": "Busan, South Korea"
+    "location": "South Korea"
   },
   {
     "id": "6829064709",
@@ -3285,7 +3285,7 @@
     "secret": "eb899cbdb1",
     "server": "7148",
     "title": "Reef",
-    "location": "East Grinstead, England"
+    "location": "United Kingdom"
   },
   {
     "id": "6862256297",
@@ -3293,7 +3293,7 @@
     "secret": "0180a75b01",
     "server": "7178",
     "title": "Whale",
-    "location": "Kota Kinabalu, Malaysia"
+    "location": "Malaysia"
   },
   {
     "id": "9370913624",
@@ -3301,7 +3301,7 @@
     "secret": "5285bd4d2b",
     "server": "7358",
     "title": "Whale",
-    "location": "Tianjin, China"
+    "location": "China"
   },
   {
     "id": "6829075373",
@@ -3309,7 +3309,7 @@
     "secret": "091503c0fb",
     "server": "7027",
     "title": "Lemon",
-    "location": "East Grinstead, England"
+    "location": "United Kingdom"
   },
   {
     "id": "4190237477",
@@ -3317,7 +3317,7 @@
     "secret": "eaa173f411",
     "server": "4038",
     "title": "Reef",
-    "location": "amsterdam, netherlands"
+    "location": "Netherlands"
   },
   {
     "id": "3074797396",
@@ -3325,7 +3325,7 @@
     "secret": "4f86c6ca49",
     "server": "3193",
     "title": "Tiger",
-    "location": "Mossel Bay, South Africa"
+    "location": "South Africa"
   },
   {
     "id": "5030886053",
@@ -3333,7 +3333,7 @@
     "secret": "07748e2a61",
     "server": "4089",
     "title": "Shark",
-    "location": "Monterey, USA"
+    "location": "United States"
   },
   {
     "id": "2678806814",
@@ -3341,7 +3341,7 @@
     "secret": "253ed58545",
     "server": "3189",
     "title": "Shark",
-    "location": "Discovery Bay, Hong Kong"
+    "location": "Hong Kong"
   },
   {
     "id": "4499769927",
@@ -3349,7 +3349,7 @@
     "secret": "e2171acc1c",
     "server": "4020",
     "title": "Shark",
-    "location": "Curitiba, Brasil"
+    "location": "Brazil"
   },
   {
     "id": "2342135406",
@@ -3357,7 +3357,7 @@
     "secret": "3ce58aab3a",
     "server": "2244",
     "title": "Lemon",
-    "location": "Bell Canyon, CA, USA"
+    "location": "United States"
   },
   {
     "id": "2341303245",
@@ -3365,7 +3365,7 @@
     "secret": "7cf8f7e595",
     "server": "2269",
     "title": "Lemon",
-    "location": "Bell Canyon, CA, USA"
+    "location": "United States"
   },
   {
     "id": "8653822610",
@@ -3373,7 +3373,7 @@
     "secret": "56853bf700",
     "server": "8387",
     "title": "Shark",
-    "location": "Seattle"
+    "location": "United States"
   },
   {
     "id": "6795641829",
@@ -3381,7 +3381,7 @@
     "secret": "1a959ee842",
     "server": "7157",
     "title": "Lemon",
-    "location": "amsterdam, netherlands"
+    "location": "Netherlands"
   },
   {
     "id": "3475809146",
@@ -3389,7 +3389,7 @@
     "secret": "e5a9450d5d",
     "server": "3396",
     "title": "Shark",
-    "location": "Johannesburg, South Africa"
+    "location": "South Africa"
   },
   {
     "id": "4690592783",
@@ -3397,7 +3397,7 @@
     "secret": "b628b8fb23",
     "server": "4058",
     "title": "Whale",
-    "location": "Montgomery, Alabama, United States of America"
+    "location": "United States"
   },
   {
     "id": "4899577956",
@@ -3405,7 +3405,7 @@
     "secret": "9f7c5e1538",
     "server": "4078",
     "title": "Nurse",
-    "location": "Sydney, Australia"
+    "location": "Australia"
   },
   {
     "id": "32208976",
@@ -3413,7 +3413,7 @@
     "secret": "b6cc152f40",
     "server": "21",
     "title": "Tiger",
-    "location": "Huntington Beach, USA"
+    "location": "United States"
   },
   {
     "id": "2340353389",
@@ -3421,7 +3421,7 @@
     "secret": "a899af7d2e",
     "server": "2264",
     "title": "Tiger",
-    "location": "Bell Canyon, CA, USA"
+    "location": "United States"
   },
   {
     "id": "8047582245",
@@ -3429,7 +3429,7 @@
     "secret": "6e545f715a",
     "server": "8310",
     "title": "Tiger",
-    "location": "Madrid, Spain"
+    "location": "Spain"
   },
   {
     "id": "6102222952",
@@ -3437,7 +3437,7 @@
     "secret": "5750014464",
     "server": "6185",
     "title": "Lemon",
-    "location": "USA"
+    "location": "United States"
   },
   {
     "id": "188254705",
@@ -3445,7 +3445,7 @@
     "secret": "7394cdb955",
     "server": "46",
     "title": "Shark",
-    "location": "Roaring Spring, PA"
+    "location": "United States"
   },
   {
     "id": "6018064485",
@@ -3453,7 +3453,7 @@
     "secret": "e5f6056df9",
     "server": "6020",
     "title": "Reef",
-    "location": "London, UK"
+    "location": "United Kingdom"
   },
   {
     "id": "2342133798",
@@ -3461,7 +3461,7 @@
     "secret": "dbb6f91512",
     "server": "3104",
     "title": "Lemon",
-    "location": "Bell Canyon, CA, USA"
+    "location": "United States"
   },
   {
     "id": "2499836008",
@@ -3469,7 +3469,7 @@
     "secret": "6246101ede",
     "server": "3216",
     "title": "Tiger",
-    "location": "Toronto, Canada"
+    "location": "Canada"
   },
   {
     "id": "9500320464",
@@ -3477,7 +3477,7 @@
     "secret": "d4b321200b",
     "server": "3740",
     "title": "Reef",
-    "location": "Lakeway, Tx, USA"
+    "location": "United States"
   },
   {
     "id": "5703792699",
@@ -3485,7 +3485,7 @@
     "secret": "b54d3d96e8",
     "server": "3402",
     "title": "Shark",
-    "location": "Cape Town, South Africa"
+    "location": "South Africa"
   },
   {
     "id": "10034398755",
@@ -3493,7 +3493,7 @@
     "secret": "e6a543c98d",
     "server": "5465",
     "title": "Blue",
-    "location": "Madrid, Spain"
+    "location": "Spain"
   },
   {
     "id": "225022843",
@@ -3501,7 +3501,7 @@
     "secret": "c4bf1365b2",
     "server": "90",
     "title": "Shark",
-    "location": "San Francisco, US"
+    "location": "United States"
   },
   {
     "id": "2200525292",
@@ -3517,7 +3517,7 @@
     "secret": "cdeb93338a",
     "server": "3731",
     "title": "Reef",
-    "location": "Lakeway, Tx, USA"
+    "location": "United States"
   },
   {
     "id": "5707178479",
@@ -3525,7 +3525,7 @@
     "secret": "3ce7e81ede",
     "server": "3537",
     "title": "Reef",
-    "location": "London, UK"
+    "location": "United Kingdom"
   },
   {
     "id": "5255240114",
@@ -3533,7 +3533,7 @@
     "secret": "a4ec7bd60f",
     "server": "5203",
     "title": "Shark",
-    "location": "Moskow, Russia"
+    "location": "Russia"
   },
   {
     "id": "8572832402",
@@ -3541,7 +3541,7 @@
     "secret": "92129605bf",
     "server": "8247",
     "title": "Shark",
-    "location": "Rio de Janeiro, Brasil"
+    "location": "Brazil"
   },
   {
     "id": "6862371189",
@@ -3549,7 +3549,7 @@
     "secret": "b6bde8fd35",
     "server": "7209",
     "title": "Whale",
-    "location": "Kota Kinabalu, Malaysia"
+    "location": "Malaysia"
   },
   {
     "id": "7553215902",
@@ -3557,7 +3557,7 @@
     "secret": "483328ebfa",
     "server": "7262",
     "title": "Shark",
-    "location": "San Diego, California, USA"
+    "location": "United States"
   },
   {
     "id": "4299597101",
@@ -3565,7 +3565,7 @@
     "secret": "62d6cb832a",
     "server": "2803",
     "title": "Shark",
-    "location": "NEWQUAY,CORNWALL"
+    "location": "United Kingdom"
   },
   {
     "id": "12582166134",
@@ -3573,7 +3573,7 @@
     "secret": "1a9babf615",
     "server": "2819",
     "title": "Blacktip",
-    "location": "Manchester, UK"
+    "location": "United Kingdom"
   },
   {
     "id": "8623084073",
@@ -3581,7 +3581,7 @@
     "secret": "02be0fc4b1",
     "server": "8380",
     "title": "Hammerhead",
-    "location": "Los Angeles, USA"
+    "location": "United States"
   },
   {
     "id": "3027614922",
@@ -3589,7 +3589,7 @@
     "secret": "a1071dc5fe",
     "server": "3192",
     "title": "White",
-    "location": "Cape Town, South Africa"
+    "location": "South Africa"
   },
   {
     "id": "2731261406",
@@ -3597,7 +3597,7 @@
     "secret": "57d2b1e5f5",
     "server": "3134",
     "title": "Whale",
-    "location": "Kota Kinabalu, Malaysia"
+    "location": "Malaysia"
   },
   {
     "id": "1467147915",
@@ -3605,7 +3605,7 @@
     "secret": "efc317748a",
     "server": "1175",
     "title": "Lemon",
-    "location": "Lake Worth, FL, USA"
+    "location": "United States"
   },
   {
     "id": "3803091902",
@@ -3613,7 +3613,7 @@
     "secret": "3d9c56c403",
     "server": "3512",
     "title": "Shark",
-    "location": "New Jersey, USA"
+    "location": "United States"
   },
   {
     "id": "5031499734",
@@ -3621,7 +3621,7 @@
     "secret": "062cdc1092",
     "server": "4124",
     "title": "Shark",
-    "location": "Monterey, USA"
+    "location": "United States"
   },
   {
     "id": "3552967633",
@@ -3629,7 +3629,7 @@
     "secret": "04ea1f1a30",
     "server": "3358",
     "title": "Shark",
-    "location": "Huntington Beach, USA"
+    "location": "United States"
   },
   {
     "id": "7943674108",
@@ -3637,7 +3637,7 @@
     "secret": "5fea4ddfb8",
     "server": "8035",
     "title": "Shark",
-    "location": "Discovery Bay, Hong Kong"
+    "location": "Hong Kong"
   },
   {
     "id": "7184051793",
@@ -3645,7 +3645,7 @@
     "secret": "750730876c",
     "server": "7238",
     "title": "Reef",
-    "location": "Horsham, United Kingdom"
+    "location": "United Kingdom"
   },
   {
     "id": "3674845126",
@@ -3653,7 +3653,7 @@
     "secret": "664ba4dc49",
     "server": "3664",
     "title": "Reef",
-    "location": "Corinth, Texas, USA"
+    "location": "United States"
   },
   {
     "id": "7453962250",
@@ -3661,7 +3661,7 @@
     "secret": "eeff426f9b",
     "server": "7122",
     "title": "Shark",
-    "location": "USA"
+    "location": "United States"
   },
   {
     "id": "2319458058",
@@ -3669,7 +3669,7 @@
     "secret": "afdd0449a6",
     "server": "3252",
     "title": "Shark",
-    "location": "USA"
+    "location": "United States"
   },
   {
     "id": "6790456391",
@@ -3677,7 +3677,7 @@
     "secret": "3f642004eb",
     "server": "7033",
     "title": "Lemon",
-    "location": "amsterdam, netherlands"
+    "location": "Netherlands"
   },
   {
     "id": "5618002712",
@@ -3685,7 +3685,7 @@
     "secret": "d76aa7f122",
     "server": "5306",
     "title": "Whale",
-    "location": "The Chesapeake Bay (Maryland)"
+    "location": "United States"
   },
   {
     "id": "8553374757",
@@ -3693,7 +3693,7 @@
     "secret": "0510fe6dbc",
     "server": "8391",
     "title": "Nurse",
-    "location": "Canberra, Australia"
+    "location": "Australia"
   },
   {
     "id": "867837001",
@@ -3701,7 +3701,7 @@
     "secret": "520502c651",
     "server": "1232",
     "title": "Shark",
-    "location": "Concord, CA, USA"
+    "location": "United States"
   },
   {
     "id": "12479828764",
@@ -3709,7 +3709,7 @@
     "secret": "68ebdf286c",
     "server": "7360",
     "title": "Shark",
-    "location": "Aiken, USA"
+    "location": "United States"
   },
   {
     "id": "3420221316",
@@ -3717,7 +3717,7 @@
     "secret": "726f240453",
     "server": "3407",
     "title": "Tiger",
-    "location": "Savannah, US of A"
+    "location": "United States"
   },
   {
     "id": "4975754419",
@@ -3725,7 +3725,7 @@
     "secret": "b65bfb57a2",
     "server": "4113",
     "title": "Nurse",
-    "location": "Houston, TX, USA"
+    "location": "United States"
   },
   {
     "id": "2677758080",
@@ -3733,7 +3733,7 @@
     "secret": "d155429392",
     "server": "3281",
     "title": "Shark",
-    "location": "San Francisco"
+    "location": "Costa Rica"
   },
   {
     "id": "7245119776",
@@ -3741,7 +3741,7 @@
     "secret": "cb2c5ecb39",
     "server": "7235",
     "title": "Shark",
-    "location": "Monza, Italia"
+    "location": "Italy"
   },
   {
     "id": "5531004525",
@@ -3749,7 +3749,7 @@
     "secret": "9bb018dc36",
     "server": "5134",
     "title": "Nurse",
-    "location": "Canberra, Australia"
+    "location": "Australia"
   },
   {
     "id": "2902172582",
@@ -3757,7 +3757,7 @@
     "secret": "6485d64bfa",
     "server": "3042",
     "title": "Shark",
-    "location": "Dallas"
+    "location": "United States"
   },
   {
     "id": "4619416585",
@@ -3765,7 +3765,7 @@
     "secret": "0ba798bc63",
     "server": "4067",
     "title": "Shark",
-    "location": "CHELMSFORD, United Kingdom"
+    "location": "United Kingdom"
   },
   {
     "id": "9500323324",
@@ -3773,7 +3773,7 @@
     "secret": "17671c2068",
     "server": "3667",
     "title": "Reef",
-    "location": "Lakeway, Tx, USA"
+    "location": "United States"
   },
   {
     "id": "2360555949",
@@ -3781,7 +3781,7 @@
     "secret": "b945dd35c4",
     "server": "3128",
     "title": "Shark",
-    "location": "Perth, Australia"
+    "location": "Australia"
   },
   {
     "id": "359665546",
@@ -3789,7 +3789,7 @@
     "secret": "43e100f42a",
     "server": "138",
     "title": "Shark",
-    "location": "Granada, Spain"
+    "location": "Spain"
   },
   {
     "id": "5021924629",
@@ -3797,7 +3797,7 @@
     "secret": "f88cd3b0c3",
     "server": "4106",
     "title": "Shark",
-    "location": "Denver, USA"
+    "location": "United States"
   },
   {
     "id": "5246721989",
@@ -3805,7 +3805,7 @@
     "secret": "8aa89c63ff",
     "server": "5006",
     "title": "Shark",
-    "location": "Baldock, England"
+    "location": "United Kingdom"
   },
   {
     "id": "6101672031",
@@ -3813,7 +3813,7 @@
     "secret": "a7488f12e3",
     "server": "6210",
     "title": "Lemon",
-    "location": "USA"
+    "location": "United States"
   },
   {
     "id": "2090952578",
@@ -3821,7 +3821,7 @@
     "secret": "da1cf3287f",
     "server": "2054",
     "title": "White",
-    "location": "Huntington Beach, USA"
+    "location": "United States"
   },
   {
     "id": "4979629117",
@@ -3829,7 +3829,7 @@
     "secret": "1ef0ea7c8f",
     "server": "4125",
     "title": "Shark",
-    "location": "Worms, Deutschland"
+    "location": "Germany"
   },
   {
     "id": "4980215554",
@@ -3837,7 +3837,7 @@
     "secret": "e2feffb990",
     "server": "4144",
     "title": "Shark",
-    "location": "Worms, Deutschland"
+    "location": "Germany"
   },
   {
     "id": "4588172596",
@@ -3845,7 +3845,7 @@
     "secret": "d704893433",
     "server": "4014",
     "title": "Shark",
-    "location": "Toronto, Canada"
+    "location": "Canada"
   },
   {
     "id": "5712205930",
@@ -3853,7 +3853,7 @@
     "secret": "da0dd8f553",
     "server": "3323",
     "title": "Shark",
-    "location": "Houston, US"
+    "location": "United States"
   },
   {
     "id": "12037845756",
@@ -3861,7 +3861,7 @@
     "secret": "2d5a51da54",
     "server": "3755",
     "title": "Shark",
-    "location": "Villeneuve Loubet, France"
+    "location": "France"
   },
   {
     "id": "3172613494",
@@ -3869,7 +3869,7 @@
     "secret": "0e27531bf3",
     "server": "3133",
     "title": "Shark",
-    "location": "Vegas, United States"
+    "location": "United States"
   },
   {
     "id": "2499822608",
@@ -3877,7 +3877,7 @@
     "secret": "1dd1d778a7",
     "server": "3026",
     "title": "Tiger",
-    "location": "Toronto, Canada"
+    "location": "Canada"
   },
   {
     "id": "2280594501",
@@ -3885,7 +3885,7 @@
     "secret": "2a6626f73b",
     "server": "3062",
     "title": "Shark",
-    "location": "Aguascalientes, Mexico"
+    "location": "Mexico"
   },
   {
     "id": "2499005715",
@@ -3893,7 +3893,7 @@
     "secret": "07dc06c517",
     "server": "3058",
     "title": "Tiger",
-    "location": "Toronto, Canada"
+    "location": "Canada"
   },
   {
     "id": "8202902773",
@@ -3901,7 +3901,7 @@
     "secret": "c61c64aa23",
     "server": "8490",
     "title": "Tiger",
-    "location": "Honolulu, United States"
+    "location": "United States"
   },
   {
     "id": "6805256824",
@@ -3909,7 +3909,7 @@
     "secret": "f285a5f5fd",
     "server": "7182",
     "title": "Shark",
-    "location": "Maputo, Mozambique"
+    "location": "Mozambique"
   },
   {
     "id": "2802088095",
@@ -3917,7 +3917,7 @@
     "secret": "c9c376a191",
     "server": "3246",
     "title": "Shark",
-    "location": "Nagoya, Japan"
+    "location": "Japan"
   },
   {
     "id": "8003513891",
@@ -3925,7 +3925,7 @@
     "secret": "e3c490c734",
     "server": "8461",
     "title": "Shark",
-    "location": "Brasilito, Costa Rica"
+    "location": "Costa Rica"
   },
   {
     "id": "8768218663",
@@ -3933,7 +3933,7 @@
     "secret": "6b048635c2",
     "server": "8271",
     "title": "Whale",
-    "location": "Schweiz"
+    "location": "Switzerland"
   },
   {
     "id": "5258526229",
@@ -3949,7 +3949,7 @@
     "secret": "9b521871a3",
     "server": "1168",
     "title": "Tiger",
-    "location": "Kent, UK"
+    "location": "United Kingdom"
   },
   {
     "id": "6830373047",
@@ -3957,7 +3957,7 @@
     "secret": "b9e4964395",
     "server": "7158",
     "title": "Reef",
-    "location": "amsterdam, netherlands"
+    "location": "Netherlands"
   },
   {
     "id": "2404277987",
@@ -3965,7 +3965,7 @@
     "secret": "7f10e74654",
     "server": "3083",
     "title": "Shark",
-    "location": "North Vancouver, BC, Canada"
+    "location": "Canada"
   },
   {
     "id": "2341303189",
@@ -3973,7 +3973,7 @@
     "secret": "8edfce6979",
     "server": "2055",
     "title": "Lemon",
-    "location": "Bell Canyon, CA, USA"
+    "location": "United States"
   },
   {
     "id": "5844740837",
@@ -3981,7 +3981,7 @@
     "secret": "8947198aea",
     "server": "5107",
     "title": "Shark",
-    "location": "Manchester, United Kingdom"
+    "location": "United Kingdom"
   },
   {
     "id": "5164824936",
@@ -3989,7 +3989,7 @@
     "secret": "a3344feabe",
     "server": "1218",
     "title": "Shark",
-    "location": "Rio de Janeiro, Brasil"
+    "location": "Brazil"
   },
   {
     "id": "3117028959",
@@ -3997,7 +3997,7 @@
     "secret": "7bd73f5a66",
     "server": "3062",
     "title": "White",
-    "location": "Sydney, Australia"
+    "location": "Australia"
   },
   {
     "id": "13963883471",
@@ -4005,7 +4005,7 @@
     "secret": "a1f24d46a2",
     "server": "2938",
     "title": "Whale",
-    "location": "San Francisco, USA"
+    "location": "United States"
   },
   {
     "id": "9885316864",
@@ -4013,7 +4013,7 @@
     "secret": "ff8981052f",
     "server": "7366",
     "title": "Reef",
-    "location": "Upper Marlboro, MD, USA"
+    "location": "United States"
   },
   {
     "id": "2919980791",
@@ -4021,7 +4021,7 @@
     "secret": "b5c8a03fb7",
     "server": "3265",
     "title": "White",
-    "location": "Houston, TX, USA"
+    "location": "United States"
   },
   {
     "id": "8116428496",
@@ -4029,7 +4029,7 @@
     "secret": "ea8462f4c5",
     "server": "8336",
     "title": "Shark",
-    "location": "Massachusetts, USA"
+    "location": "United States"
   },
   {
     "id": "6375623207",
@@ -4037,7 +4037,7 @@
     "secret": "479545058d",
     "server": "6113",
     "title": "Nurse",
-    "location": "Sydney, Australia"
+    "location": "Australia"
   },
   {
     "id": "1752457248",
@@ -4045,7 +4045,7 @@
     "secret": "0d2214e401",
     "server": "2185",
     "title": "Shark",
-    "location": "Kingfisher, Oklahoma, USA"
+    "location": "United States"
   },
   {
     "id": "5353248416",
@@ -4053,7 +4053,7 @@
     "secret": "5cdf1092ab",
     "server": "5203",
     "title": "Shark",
-    "location": "Cape Town, South Africa"
+    "location": "South Africa"
   },
   {
     "id": "2940242066",
@@ -4061,7 +4061,7 @@
     "secret": "3d6affcdc3",
     "server": "3196",
     "title": "White",
-    "location": "Houston, TX, USA"
+    "location": "United States"
   },
   {
     "id": "6877130151",
@@ -4069,7 +4069,7 @@
     "secret": "e358754c5d",
     "server": "7209",
     "title": "Reef",
-    "location": "amsterdam, netherlands"
+    "location": "Netherlands"
   },
   {
     "id": "11861060186",
@@ -4077,7 +4077,7 @@
     "secret": "9ccb16e815",
     "server": "2868",
     "title": "Whale",
-    "location": "Oklahoma City, USA"
+    "location": "United States"
   },
   {
     "id": "4296933000",
@@ -4085,7 +4085,7 @@
     "secret": "0ee316f358",
     "server": "4057",
     "title": "Reef",
-    "location": "San Francisco"
+    "location": "Costa Rica"
   },
   {
     "id": "7245119290",
@@ -4093,7 +4093,7 @@
     "secret": "97a50ac488",
     "server": "7242",
     "title": "Shark",
-    "location": "Monza, Italia"
+    "location": "Italy"
   },
   {
     "id": "9987862244",
@@ -4101,7 +4101,7 @@
     "secret": "a1cdfbd059",
     "server": "7337",
     "title": "Blue",
-    "location": "Monza, Italia"
+    "location": "Italy"
   },
   {
     "id": "8557997191",
@@ -4109,7 +4109,7 @@
     "secret": "5842af555b",
     "server": "8234",
     "title": "Reef",
-    "location": "Chicago, USA"
+    "location": "United States"
   },
   {
     "id": "6768938313",
@@ -4117,7 +4117,7 @@
     "secret": "b17ae6a0bb",
     "server": "7006",
     "title": "Shark",
-    "location": "Kailua-Kona, HI, USA"
+    "location": "United States"
   },
   {
     "id": "3585202113",
@@ -4125,7 +4125,7 @@
     "secret": "795e4cf339",
     "server": "3585",
     "title": "Lemon",
-    "location": "amsterdam, netherlands"
+    "location": "Netherlands"
   },
   {
     "id": "2341301839",
@@ -4133,7 +4133,7 @@
     "secret": "56a754dd9c",
     "server": "3141",
     "title": "Lemon",
-    "location": "Bell Canyon, CA, USA"
+    "location": "United States"
   },
   {
     "id": "6865167147",
@@ -4141,7 +4141,7 @@
     "secret": "d35145533f",
     "server": "7067",
     "title": "Lemon",
-    "location": "amsterdam, netherlands"
+    "location": "Netherlands"
   },
   {
     "id": "6771094533",
@@ -4149,7 +4149,7 @@
     "secret": "a68d8beb39",
     "server": "7170",
     "title": "Tiger",
-    "location": "amsterdam, netherlands"
+    "location": "Netherlands"
   },
   {
     "id": "4710084605",
@@ -4157,7 +4157,7 @@
     "secret": "bc59f51267",
     "server": "4064",
     "title": "Whale",
-    "location": "Columbus, OH, USA"
+    "location": "United States"
   },
   {
     "id": "5212625847",
@@ -4165,7 +4165,7 @@
     "secret": "dc90523d26",
     "server": "5285",
     "title": "Shark",
-    "location": "Tinley Park, IL, United States"
+    "location": "United States"
   },
   {
     "id": "6003367360",
@@ -4173,7 +4173,7 @@
     "secret": "a14efac610",
     "server": "6144",
     "title": "Shark",
-    "location": "Boston"
+    "location": "United States"
   },
   {
     "id": "8652715905",
@@ -4181,7 +4181,7 @@
     "secret": "1f828c4dd1",
     "server": "8253",
     "title": "Shark",
-    "location": "Seattle"
+    "location": "United States"
   },
   {
     "id": "8653819642",
@@ -4189,7 +4189,7 @@
     "secret": "47edb930c8",
     "server": "8260",
     "title": "Shark",
-    "location": "Seattle"
+    "location": "United States"
   },
   {
     "id": "8652715931",
@@ -4197,7 +4197,7 @@
     "secret": "7c4df8c8c5",
     "server": "8116",
     "title": "Shark",
-    "location": "Seattle"
+    "location": "United States"
   },
   {
     "id": "8087806080",
@@ -4205,7 +4205,7 @@
     "secret": "62b3681374",
     "server": "8326",
     "title": "White",
-    "location": "Plymouth, UK"
+    "location": "United Kingdom"
   },
   {
     "id": "12667873973",
@@ -4213,7 +4213,7 @@
     "secret": "6ccca366f7",
     "server": "3776",
     "title": "Tiger",
-    "location": "New York City, USA"
+    "location": "United States"
   },
   {
     "id": "11666927636",
@@ -4221,7 +4221,7 @@
     "secret": "daf68948f8",
     "server": "7334",
     "title": "Reef",
-    "location": "Bern, Switzerland"
+    "location": "Switzerland"
   },
   {
     "id": "6210104493",
@@ -4229,7 +4229,7 @@
     "secret": "fa9c2bb242",
     "server": "6067",
     "title": "Shark",
-    "location": "Cape Town, South Africa"
+    "location": "South Africa"
   },
   {
     "id": "7802359962",
@@ -4237,7 +4237,7 @@
     "secret": "35b86c0722",
     "server": "8434",
     "title": "Bull",
-    "location": "Mexico City, Mexico"
+    "location": "Mexico"
   },
   {
     "id": "181759052",
@@ -4245,7 +4245,7 @@
     "secret": "194b9717ed",
     "server": "41",
     "title": "Shark",
-    "location": "Lincoln, UK"
+    "location": "United Kingdom"
   },
   {
     "id": "13579374543",
@@ -4253,7 +4253,7 @@
     "secret": "fafff87219",
     "server": "7091",
     "title": "Shark",
-    "location": "Perpignan, FRANCE"
+    "location": "France"
   },
   {
     "id": "4405213190",
@@ -4261,7 +4261,7 @@
     "secret": "2806d574bf",
     "server": "4003",
     "title": "Tiger",
-    "location": "Lynnwood, Washington, USA"
+    "location": "United States"
   },
   {
     "id": "7184052949",
@@ -4269,7 +4269,7 @@
     "secret": "4b2944b441",
     "server": "7231",
     "title": "Reef",
-    "location": "Horsham, United Kingdom"
+    "location": "United Kingdom"
   },
   {
     "id": "3293641407",
@@ -4285,7 +4285,7 @@
     "secret": "af0b6fdeb0",
     "server": "2822",
     "title": "Reef",
-    "location": "Bern, Switzerland"
+    "location": "Switzerland"
   },
   {
     "id": "2460393779",
@@ -4293,7 +4293,7 @@
     "secret": "e8c063471f",
     "server": "2316",
     "title": "Tiger",
-    "location": "Chicago, USA"
+    "location": "United States"
   },
   {
     "id": "4775262114",
@@ -4301,7 +4301,7 @@
     "secret": "d1f559f89b",
     "server": "4101",
     "title": "Shark",
-    "location": "New Plymouth, New Zealand"
+    "location": "New Zealand"
   },
   {
     "id": "5352645497",
@@ -4309,7 +4309,7 @@
     "secret": "e039876369",
     "server": "5003",
     "title": "Shark",
-    "location": "Cape Town, South Africa"
+    "location": "South Africa"
   },
   {
     "id": "2559928848",
@@ -4317,7 +4317,7 @@
     "secret": "aceb979f28",
     "server": "3035",
     "title": "Shark",
-    "location": "Discovery Bay, Hong Kong"
+    "location": "Hong Kong"
   },
   {
     "id": "5372215644",
@@ -4325,7 +4325,7 @@
     "secret": "d4ce7b779c",
     "server": "5041",
     "title": "Shark",
-    "location": "Lubbock, USA"
+    "location": "United States"
   },
   {
     "id": "10550136886",
@@ -4333,7 +4333,7 @@
     "secret": "ae3c212f4b",
     "server": "7379",
     "title": "Shark",
-    "location": "On the Move"
+    "location": "United States"
   },
   {
     "id": "5695263415",
@@ -4341,7 +4341,7 @@
     "secret": "81075fdb3a",
     "server": "2621",
     "title": "Reef",
-    "location": "London, UK"
+    "location": "United Kingdom"
   },
   {
     "id": "12686694143",
@@ -4349,7 +4349,7 @@
     "secret": "821810b7ba",
     "server": "7362",
     "title": "Tiger",
-    "location": "New York City, USA"
+    "location": "United States"
   },
   {
     "id": "8127711325",
@@ -4357,7 +4357,7 @@
     "secret": "13f916b18d",
     "server": "8047",
     "title": "Shark",
-    "location": "Cape Town, South Africa "
+    "location": "South Africa"
   },
   {
     "id": "8127742822",
@@ -4365,7 +4365,7 @@
     "secret": "60861b5376",
     "server": "8052",
     "title": "Shark",
-    "location": "Cape Town, South Africa "
+    "location": "South Africa"
   },
   {
     "id": "8127738664",
@@ -4373,7 +4373,7 @@
     "secret": "e2be1a0bbe",
     "server": "8466",
     "title": "Shark",
-    "location": "Cape Town, South Africa "
+    "location": "South Africa"
   },
   {
     "id": "45246213",
@@ -4381,7 +4381,7 @@
     "secret": "190a3482e9",
     "server": "33",
     "title": "Shark",
-    "location": "Huntington Beach, USA"
+    "location": "United States"
   },
   {
     "id": "11496969373",
@@ -4389,7 +4389,7 @@
     "secret": "83294559b7",
     "server": "5537",
     "title": "Silky",
-    "location": "UK"
+    "location": "Guernsey"
   },
   {
     "id": "11957958113",
@@ -4397,7 +4397,7 @@
     "secret": "fe44646c70",
     "server": "5539",
     "title": "Reef",
-    "location": "Jenison, United States"
+    "location": "United States"
   },
   {
     "id": "4347343424",
@@ -4405,7 +4405,7 @@
     "secret": "9b49b43700",
     "server": "2766",
     "title": "Shark",
-    "location": "Milano, Italy"
+    "location": "Italy"
   },
   {
     "id": "4138893476",
@@ -4413,7 +4413,7 @@
     "secret": "a2c55ab091",
     "server": "2583",
     "title": "Whale",
-    "location": "Cancun, Mexico"
+    "location": "Mexico"
   },
   {
     "id": "6892696739",
@@ -4421,7 +4421,7 @@
     "secret": "d6fdb85a0a",
     "server": "7053",
     "title": "Tiger",
-    "location": "amsterdam, netherlands"
+    "location": "Netherlands"
   },
   {
     "id": "4162766602",
@@ -4429,7 +4429,7 @@
     "secret": "75cf3de34d",
     "server": "2715",
     "title": "Shark",
-    "location": "Chester"
+    "location": "United Kingdom"
   },
   {
     "id": "9987862234",
@@ -4437,7 +4437,7 @@
     "secret": "482cd1384c",
     "server": "2813",
     "title": "Blue",
-    "location": "Monza, Italia"
+    "location": "Italy"
   },
   {
     "id": "2499815328",
@@ -4445,7 +4445,7 @@
     "secret": "f13e08b3c4",
     "server": "3146",
     "title": "Silvertip",
-    "location": "Toronto, Canada"
+    "location": "Canada"
   },
   {
     "id": "4980249190",
@@ -4453,7 +4453,7 @@
     "secret": "831502e0fd",
     "server": "4147",
     "title": "Shark",
-    "location": "Worms, Deutschland"
+    "location": "Germany"
   },
   {
     "id": "4979645165",
@@ -4461,7 +4461,7 @@
     "secret": "ba4ed30c48",
     "server": "4107",
     "title": "Shark",
-    "location": "Worms, Deutschland"
+    "location": "Germany"
   },
   {
     "id": "4979663869",
@@ -4469,7 +4469,7 @@
     "secret": "794be33321",
     "server": "4154",
     "title": "Shark",
-    "location": "Worms, Deutschland"
+    "location": "Germany"
   },
   {
     "id": "4980240992",
@@ -4477,7 +4477,7 @@
     "secret": "9f3bb77f44",
     "server": "4083",
     "title": "Shark",
-    "location": "Worms, Deutschland"
+    "location": "Germany"
   },
   {
     "id": "7431256646",
@@ -4485,7 +4485,7 @@
     "secret": "1bcdf9de96",
     "server": "7108",
     "title": "Shark",
-    "location": "Sydney, Australia"
+    "location": "Australia"
   },
   {
     "id": "23875220",
@@ -4501,7 +4501,7 @@
     "secret": "7fab033b0a",
     "server": "3287",
     "title": "Reef",
-    "location": "Huntington Beach, USA"
+    "location": "United States"
   },
   {
     "id": "3393523400",
@@ -4509,7 +4509,7 @@
     "secret": "a5e15d7f53",
     "server": "3436",
     "title": "Whale",
-    "location": "Berkeley, USA"
+    "location": "United States"
   },
   {
     "id": "6210102119",
@@ -4517,7 +4517,7 @@
     "secret": "a566018094",
     "server": "6215",
     "title": "Shark",
-    "location": "Cape Town, South Africa"
+    "location": "South Africa"
   },
   {
     "id": "4163995912",
@@ -4525,7 +4525,7 @@
     "secret": "11a6ca6e03",
     "server": "2587",
     "title": "White",
-    "location": "Chester, UK"
+    "location": "United Kingdom"
   },
   {
     "id": "5514086521",
@@ -4541,7 +4541,7 @@
     "secret": "bf2a358dff",
     "server": "6164",
     "title": "Shark",
-    "location": "Kealakekua, HI, United States"
+    "location": "United States"
   },
   {
     "id": "9497523439",
@@ -4549,7 +4549,7 @@
     "secret": "0bb298809f",
     "server": "7315",
     "title": "Reef",
-    "location": "Lakeway, Tx, USA"
+    "location": "United States"
   },
   {
     "id": "483455519",
@@ -4557,7 +4557,7 @@
     "secret": "ab8aaf8843",
     "server": "228",
     "title": "Shark",
-    "location": "Brisbane, Australia"
+    "location": "Australia"
   },
   {
     "id": "6111573889",
@@ -4565,7 +4565,7 @@
     "secret": "aa13e830d6",
     "server": "6192",
     "title": "Shark",
-    "location": "Tivoli, Italia"
+    "location": "Italy"
   },
   {
     "id": "6562928847",
@@ -4573,7 +4573,7 @@
     "secret": "cc9ce61ec1",
     "server": "7159",
     "title": "Reef",
-    "location": "Halifax, Canada"
+    "location": "Canada"
   },
   {
     "id": "10730090275",
@@ -4581,7 +4581,7 @@
     "secret": "41059d9382",
     "server": "7376",
     "title": "Blue",
-    "location": "Horta, Portugal"
+    "location": "Portugal"
   },
   {
     "id": "9795109313",
@@ -4589,7 +4589,7 @@
     "secret": "c1cabe70e0",
     "server": "3678",
     "title": "Shark",
-    "location": "Milton. FL, USA"
+    "location": "United States"
   },
   {
     "id": "2848461467",

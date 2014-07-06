@@ -11,6 +11,7 @@ import javax.xml.parsers.ParserConfigurationException;
 
 import org.xml.sax.SAXException;
 import function.SearchPhotos;
+import function.SettingCountryGeo;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,62 +26,42 @@ public class Test {
 
     public static void main(String[] args) throws Exception {
 
-        /*        List<Photo> listPhoto = new ArrayList<>();
-
-         try {
-            
-         ChangingTitle ct = new ChangingTitle();
-         listPhoto = ct.changeTitle();
-            
-         JsonArray ja = PhotoJsonSerializer.serializePhotos(listPhoto);
-         GettingSharkJson gsj = new GettingSharkJson();
-         gsj.makeSharkJson(listPhoto);
-
-         } catch (IOException e) {
-         e.printStackTrace();
-         }
-         */
         /*    CreateArff ca = new CreateArff();
          ca.createNominalAtt();
          */
-        /*    ReadingJson rjson = new ReadingJson();
-         List<Photo> photos = rjson.readJsonStream(new FileInputStream("sharks.json"));
-
-         LocationCounter lc = new LocationCounter();
-         List<Photo> withLoc = lc.countWithLoc(photos);
-         System.out.println("No with loc: "+ withLoc.size());
-         */
-        /*    List<Photo> listPhoto = new ArrayList<>();
-         ChangingTitle ct = new ChangingTitle();
-         listPhoto = ct.changeTitle();
-
-         JsonArray ja = PhotoJsonSerializer.serializePhotos(listPhoto);
+        /*
+         //get photos from flickr
+         //put photos into json file
          GettingSharkJson gsj = new GettingSharkJson();
-         gsj.makeSharkJson(listPhoto);
-         */
-        //get photos from flickr
-        //put photos into json file
-        GettingSharkJson gsj = new GettingSharkJson();
-  //      gsj.getSharkPhotos("sharks");
+         //gsj.getSharkPhotos("sharks");
 
-        //create list of photos
-        //change photos title
-        List<Photo> listPhoto = new ArrayList<>();
-        ChangingTitle ct = new ChangingTitle();
-        listPhoto = ct.changeTitle("sharks");
-        System.out.println("Size of photo list: " + listPhoto.size());
+         //create list of photos
+         //change photos title
+         List<Photo> listPhoto = new ArrayList<>();
+         ChangingTitle ct = new ChangingTitle();
+         listPhoto = ct.changeTitle("sharks");
+         System.out.println("Size of photo list: " + listPhoto.size());
         
-        LocationCounter lc = new LocationCounter();
-        List<Photo> withLoc = lc.countWithLoc(listPhoto);
-        System.out.println("Number of photos with location: "+withLoc.size());
+         LocationCounter lc = new LocationCounter();
+         List<Photo> withLoc = lc.countWithLoc(listPhoto);
+         System.out.println("Number of photos with location: "+withLoc.size());
 
-        //serialize photos
-        JsonArray ja = PhotoJsonSerializer.serializePhotos(listPhoto);
-        gsj.makeSharkJson(listPhoto, "shark");
+         //serialize photos
+         JsonArray ja = PhotoJsonSerializer.serializePhotos(listPhoto);
+         gsj.makeSharkJson(listPhoto, "shark");
         
-        ja = PhotoJsonSerializer.serializePhotos(withLoc);
+         ja = PhotoJsonSerializer.serializePhotos(withLoc);
          gsj.makeSharkJson(withLoc, "sharkLoc");
-        
+         */
+        List<Photo> listPhoto = new ArrayList<>();
+        ReadingJson rj = new ReadingJson();
+        String file = "sharkLoc.json";
+        listPhoto = rj.readJsonStream(new FileInputStream(file));
+        SettingCountryGeo scg = new SettingCountryGeo();
+        listPhoto = scg.setLocation(listPhoto);
+
+        GettingSharkJson gsj = new GettingSharkJson();
+        gsj.makeSharkJson(listPhoto, "changedLocation");
 
     }
 
