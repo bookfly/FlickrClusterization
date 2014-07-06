@@ -53,16 +53,27 @@ public class Test {
          ja = PhotoJsonSerializer.serializePhotos(withLoc);
          gsj.makeSharkJson(withLoc, "sharkLoc");
          */
+        /*
+         //getting photos from sharkLoc.json
+         //getting location with geonames
+         List<Photo> listPhoto = new ArrayList<>();
+         ReadingJson rj = new ReadingJson();
+         String file = "sharkLoc.json";
+         listPhoto = rj.readJsonStream(new FileInputStream(file));
+         SettingCountryGeo scg = new SettingCountryGeo();
+         listPhoto = scg.setLocation(listPhoto);
+
+         GettingSharkJson gsj = new GettingSharkJson();
+         gsj.makeSharkJson(listPhoto, "changedLocation");
+         */
+        //making arff file
         List<Photo> listPhoto = new ArrayList<>();
         ReadingJson rj = new ReadingJson();
-        String file = "sharkLoc.json";
+        String file = "changedLocation.json";
         listPhoto = rj.readJsonStream(new FileInputStream(file));
-        SettingCountryGeo scg = new SettingCountryGeo();
-        listPhoto = scg.setLocation(listPhoto);
 
-        GettingSharkJson gsj = new GettingSharkJson();
-        gsj.makeSharkJson(listPhoto, "changedLocation");
-
+        CreateArff ca = new CreateArff();
+        ca.general(listPhoto);
     }
 
 }
