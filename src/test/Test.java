@@ -16,17 +16,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 import photo.Photo;
-import weka.CreateDataSet;
+import weka.CreateArff;
+import weka.ReadArff;
 
 public class Test {
-
+    
     public Test() {
-
+        
     }
-
+    
     public static void main(String[] args) throws Exception {
 
-        /*    CreateDataSet ca = new CreateDataSet();
+        /*    CreateArff ca = new CreateArff();
          ca.createNominalAtt();
          */
         /*
@@ -67,13 +68,16 @@ public class Test {
          gsj.makeSharkJson(listPhoto, "changedLocation");
          */
         //making arff file
-        List<Photo> listPhoto = new ArrayList<>();
-        ReadingJson rj = new ReadingJson();
-        String file = "changedLocation.json";
-        listPhoto = rj.readJsonStream(new FileInputStream(file));
+     /*   List<Photo> listPhoto = new ArrayList<>();
+         ReadingJson rj = new ReadingJson();
+         String file = "changedLocation.json";
+         listPhoto = rj.readJsonStream(new FileInputStream(file));
 
-        CreateDataSet cds = new CreateDataSet();
-        cds.general(listPhoto);
+         CreateArff ca = new CreateArff();
+         ca.general(listPhoto);
+         */
+        ReadArff ra = new ReadArff();
+        ra.readArff("proba");
     }
-
+    
 }

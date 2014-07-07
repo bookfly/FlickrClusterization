@@ -1,0 +1,581 @@
+@relation TrainingSet
+
+@attribute Type {Reef,Tiger,Bull,White,Shark,Galapagos,Whale,Mako,Hammerhead,Nurse,Blue,Porbeagle,Gray,Lemon,Blacktip,Silky,Silvertip,Sandbar,Basking,Cow,Whitetip,Zebra}
+@attribute Location {Australia,'United States',France,'New Zealand',Kuwait,'Hong Kong',Honduras,Pakistan,Japan,Canada,Thailand,Switzerland,'South Korea',Guernsey,Maldives,'United Kingdom',Taiwan,Netherlands,Portugal,Spain,Andorra,Malta,Malaysia,Belize,Mexico,Italy,Morocco,Singapore,Greece,Germany,'South Africa',China,Lebanon,Sweden,Philippines,Norway,Brazil,Russia,'Costa Rica',Mozambique}
+
+@data
+Reef,Australia
+Tiger,'United States'
+Bull,'United States'
+White,France
+Shark,'United States'
+White,'United States'
+Tiger,'United States'
+Shark,'New Zealand'
+White,'United States'
+White,'United States'
+Shark,'United States'
+Shark,Kuwait
+Shark,'Hong Kong'
+Shark,'United States'
+White,'United States'
+Tiger,Honduras
+Galapagos,'United States'
+White,'United States'
+White,'United States'
+Shark,Pakistan
+White,'United States'
+Bull,Australia
+White,'United States'
+Whale,Japan
+White,Australia
+White,'United States'
+Mako,Canada
+White,Canada
+Hammerhead,'United States'
+Shark,Thailand
+Shark,'United States'
+White,'United States'
+White,'United States'
+Tiger,'United States'
+Nurse,Australia
+White,Australia
+Blue,'United States'
+White,'United States'
+Shark,'United States'
+White,'United States'
+Shark,'United States'
+Whale,'United States'
+Blue,Canada
+White,'United States'
+Porbeagle,Switzerland
+Shark,'New Zealand'
+Gray,'United States'
+Lemon,'South Korea'
+White,Guernsey
+Tiger,'United States'
+White,'United States'
+Whale,'United States'
+Whale,Maldives
+Galapagos,'United States'
+Shark,Kuwait
+Reef,'United Kingdom'
+White,Taiwan
+White,'United States'
+Shark,Canada
+White,'United States'
+White,'United States'
+White,'United States'
+Whale,Canada
+White,'United States'
+Blue,Canada
+Blacktip,France
+White,Canada
+White,'United States'
+Nurse,Australia
+White,Canada
+Lemon,'United States'
+White,'United States'
+Whale,'United Kingdom'
+White,'United States'
+Shark,'New Zealand'
+Tiger,'United States'
+Lemon,Netherlands
+White,'United States'
+Shark,'Hong Kong'
+Bull,Australia
+White,'United States'
+White,'United States'
+Shark,'Hong Kong'
+Shark,'United States'
+White,Australia
+Tiger,'United Kingdom'
+Tiger,'United States'
+Tiger,Canada
+Bull,Australia
+Shark,Pakistan
+Lemon,'United States'
+Reef,'United States'
+Galapagos,'United States'
+Lemon,'United States'
+Blue,Portugal
+Galapagos,'United States'
+Reef,Canada
+Shark,'United States'
+Shark,'United States'
+Silky,Canada
+Reef,Canada
+Shark,Canada
+White,'United States'
+White,Canada
+Shark,'Hong Kong'
+Blue,Canada
+Tiger,Spain
+White,Guernsey
+Reef,Netherlands
+Shark,'United States'
+Nurse,Australia
+Tiger,'United Kingdom'
+Shark,'United States'
+Shark,'United States'
+Lemon,Andorra
+Nurse,Australia
+White,'United States'
+Tiger,'United States'
+Nurse,Australia
+Reef,Canada
+Tiger,Canada
+White,Guernsey
+Shark,Guernsey
+White,'United States'
+Whale,Canada
+Nurse,Australia
+Reef,'United States'
+Silky,Canada
+Tiger,'United States'
+Tiger,'United Kingdom'
+Reef,'United States'
+Reef,Maldives
+Lemon,'United Kingdom'
+Whale,'United States'
+Lemon,Canada
+Reef,'United Kingdom'
+Shark,'Hong Kong'
+White,'United States'
+Reef,'United States'
+Silvertip,'United States'
+Shark,Malta
+Lemon,Canada
+Lemon,'United States'
+White,'United States'
+Gray,'United States'
+White,Malaysia
+Reef,'United States'
+Tiger,'United States'
+White,'United States'
+Lemon,'United States'
+Whale,Belize
+Shark,Guernsey
+Reef,'United States'
+Lemon,Canada
+Shark,'United Kingdom'
+Tiger,'United States'
+Shark,Australia
+White,Australia
+Sandbar,'United States'
+White,'United States'
+Shark,'Hong Kong'
+White,Netherlands
+Shark,'United States'
+White,'United States'
+Blue,Canada
+Gray,Australia
+Lemon,'United Kingdom'
+Shark,Mexico
+Blue,'United States'
+Tiger,Netherlands
+Shark,Australia
+Shark,Australia
+Shark,Italy
+Lemon,Netherlands
+Reef,'United States'
+Shark,Australia
+Galapagos,'United States'
+Reef,'United Kingdom'
+Galapagos,Australia
+Shark,'United States'
+White,'United States'
+White,'United States'
+Shark,Australia
+Whale,'United States'
+Shark,Morocco
+White,'United States'
+Shark,'United States'
+Tiger,'United States'
+Shark,Singapore
+Galapagos,'United States'
+White,'United Kingdom'
+Lemon,'United States'
+Hammerhead,Canada
+Blue,Canada
+Basking,'United Kingdom'
+Tiger,'United States'
+White,Taiwan
+White,'United States'
+Lemon,'United States'
+Nurse,Australia
+Whale,Canada
+Tiger,'United States'
+Reef,'United Kingdom'
+Whale,Malaysia
+Nurse,Australia
+Reef,Netherlands
+Blue,Canada
+Whale,Spain
+Shark,'United Kingdom'
+White,Australia
+White,'United States'
+Shark,Greece
+Shark,Malta
+Tiger,'United States'
+Shark,'United States'
+Nurse,Australia
+Reef,Germany
+Whale,Malaysia
+Shark,'United States'
+Reef,Canada
+White,Spain
+Whale,'United States'
+Lemon,'United States'
+White,'United States'
+White,'United States'
+Galapagos,'United States'
+Shark,'United States'
+White,'United States'
+Reef,Netherlands
+Whale,Switzerland
+Nurse,Australia
+Nurse,Canada
+Blacktip,'United Kingdom'
+Reef,'United States'
+Shark,Netherlands
+Galapagos,'United States'
+Tiger,Australia
+White,Malaysia
+Shark,Kuwait
+Cow,Canada
+Gray,Australia
+Shark,Australia
+Whale,'United States'
+Shark,Australia
+Reef,Netherlands
+Tiger,'United Kingdom'
+Shark,'New Zealand'
+White,Guernsey
+Bull,Australia
+Hammerhead,'United States'
+Reef,'United Kingdom'
+White,Mexico
+Galapagos,'United States'
+Lemon,'United States'
+Reef,Netherlands
+Gray,Australia
+Whitetip,'United Kingdom'
+Whale,Singapore
+Nurse,Australia
+Shark,Spain
+Bull,Canada
+Whale,Mexico
+Whale,Mexico
+Shark,'United States'
+White,'United States'
+Shark,'United States'
+Lemon,Spain
+Whale,Australia
+Shark,'United States'
+Bull,Canada
+Shark,'Hong Kong'
+Reef,'United Kingdom'
+White,'United States'
+White,Australia
+Reef,Canada
+Reef,Germany
+Whale,'United Kingdom'
+Whale,Malaysia
+Whale,'United Kingdom'
+Reef,Australia
+Shark,'Hong Kong'
+Reef,'United Kingdom'
+Reef,'United States'
+Reef,'United Kingdom'
+White,'South Africa'
+White,'United States'
+Shark,'United States'
+Lemon,'United Kingdom'
+Shark,Kuwait
+Shark,'United States'
+Blacktip,'United Kingdom'
+Blacktip,'United Kingdom'
+Nurse,Australia
+White,China
+Hammerhead,'South Africa'
+Shark,'United States'
+Silvertip,Canada
+Blue,'United States'
+Blue,Canada
+Blue,Canada
+Nurse,Australia
+Reef,'United States'
+Shark,Germany
+Nurse,Lebanon
+Shark,'South Africa'
+Shark,'Hong Kong'
+Reef,Netherlands
+Shark,Germany
+Shark,Australia
+Shark,Australia
+White,Malaysia
+White,'United States'
+Whale,Italy
+Shark,'United States'
+Shark,Malta
+Blacktip,'United Kingdom'
+Mako,Mexico
+White,Australia
+Shark,'United States'
+Blacktip,'United Kingdom'
+Shark,'United States'
+Blacktip,'United Kingdom'
+Tiger,'United States'
+Blue,Italy
+Reef,Canada
+Whale,'United States'
+Reef,'United Kingdom'
+Shark,'United Kingdom'
+Reef,Canada
+Bull,Australia
+Lemon,'United States'
+White,'United States'
+Shark,Australia
+Shark,Australia
+White,'South Africa'
+Tiger,'United States'
+Hammerhead,'United States'
+Shark,Spain
+Reef,'United States'
+White,'United States'
+Shark,Australia
+Shark,Australia
+Shark,'Hong Kong'
+Shark,'United States'
+Shark,Sweden
+Nurse,Australia
+Shark,Australia
+Gray,Australia
+Whale,Philippines
+Hammerhead,Australia
+Tiger,'United States'
+Shark,'United States'
+Whale,Switzerland
+Blacktip,France
+Nurse,'New Zealand'
+Shark,'United States'
+Bull,Thailand
+Reef,France
+Shark,'New Zealand'
+Shark,Canada
+Tiger,Netherlands
+Shark,Spain
+Tiger,Netherlands
+Nurse,Australia
+Galapagos,'United States'
+Reef,'United Kingdom'
+Shark,Canada
+Shark,Norway
+Shark,Australia
+Silky,Guernsey
+Blue,Italy
+Tiger,'United States'
+Whale,Mexico
+Tiger,Italy
+White,Malaysia
+Shark,'New Zealand'
+Shark,Spain
+Reef,'United Kingdom'
+Shark,'United States'
+Shark,'United Kingdom'
+Shark,Germany
+Whale,Singapore
+Whale,Malaysia
+White,Australia
+Shark,'United States'
+Blacktip,'United Kingdom'
+Shark,'Hong Kong'
+Shark,Australia
+Shark,'South Africa'
+White,'United States'
+Tiger,'United States'
+Zebra,Portugal
+White,Mexico
+Tiger,'United States'
+Blue,Italy
+White,'United States'
+Shark,'South Africa'
+White,'United States'
+Blue,Italy
+Blacktip,'United Kingdom'
+White,Australia
+Shark,'United States'
+Bull,Australia
+Nurse,Australia
+Shark,'United States'
+Reef,Netherlands
+Lemon,'United Kingdom'
+Blacktip,France
+Whale,'United States'
+Shark,'South Korea'
+Reef,'United Kingdom'
+Whale,Malaysia
+Whale,China
+Lemon,'United Kingdom'
+Reef,Netherlands
+Tiger,'South Africa'
+Shark,'United States'
+Shark,'Hong Kong'
+Shark,Brazil
+Lemon,'United States'
+Lemon,'United States'
+Shark,'United States'
+Lemon,Netherlands
+Shark,'South Africa'
+Whale,'United States'
+Nurse,Australia
+Tiger,'United States'
+Tiger,'United States'
+Tiger,Spain
+Lemon,'United States'
+Shark,'United States'
+Reef,'United Kingdom'
+Lemon,'United States'
+Tiger,Canada
+Reef,'United States'
+Shark,'South Africa'
+Blue,Spain
+Shark,'United States'
+Shark,'Hong Kong'
+Reef,'United States'
+Reef,'United Kingdom'
+Shark,Russia
+Shark,Brazil
+Whale,Malaysia
+Shark,'United States'
+Shark,'United Kingdom'
+Blacktip,'United Kingdom'
+Hammerhead,'United States'
+White,'South Africa'
+Whale,Malaysia
+Lemon,'United States'
+Shark,'United States'
+Shark,'United States'
+Shark,'United States'
+Shark,'Hong Kong'
+Reef,'United Kingdom'
+Reef,'United States'
+Shark,'United States'
+Shark,'United States'
+Lemon,Netherlands
+Whale,'United States'
+Nurse,Australia
+Shark,'United States'
+Shark,'United States'
+Tiger,'United States'
+Nurse,'United States'
+Shark,'Costa Rica'
+Shark,Italy
+Nurse,Australia
+Shark,'United States'
+Shark,'United Kingdom'
+Reef,'United States'
+Shark,Australia
+Shark,Spain
+Shark,'United States'
+Shark,'United Kingdom'
+Lemon,'United States'
+White,'United States'
+Shark,Germany
+Shark,Germany
+Shark,Canada
+Shark,'United States'
+Shark,France
+Shark,'United States'
+Tiger,Canada
+Shark,Mexico
+Tiger,Canada
+Tiger,'United States'
+Shark,Mozambique
+Shark,Japan
+Shark,'Costa Rica'
+Whale,Switzerland
+Tiger,Australia
+Tiger,'United Kingdom'
+Reef,Netherlands
+Shark,Canada
+Lemon,'United States'
+Shark,'United Kingdom'
+Shark,Brazil
+White,Australia
+Whale,'United States'
+Reef,'United States'
+White,'United States'
+Shark,'United States'
+Nurse,Australia
+Shark,'United States'
+Shark,'South Africa'
+White,'United States'
+Reef,Netherlands
+Whale,'United States'
+Reef,'Costa Rica'
+Shark,Italy
+Blue,Italy
+Reef,'United States'
+Shark,'United States'
+Lemon,Netherlands
+Lemon,'United States'
+Lemon,Netherlands
+Tiger,Netherlands
+Whale,'United States'
+Shark,'United States'
+Shark,'United States'
+Shark,'United States'
+Shark,'United States'
+Shark,'United States'
+White,'United Kingdom'
+Tiger,'United States'
+Reef,Switzerland
+Shark,'South Africa'
+Bull,Mexico
+Shark,'United Kingdom'
+Shark,France
+Tiger,'United States'
+Reef,'United Kingdom'
+Reef,France
+Reef,Switzerland
+Tiger,'United States'
+Shark,'New Zealand'
+Shark,'South Africa'
+Shark,'Hong Kong'
+Shark,'United States'
+Shark,'United States'
+Reef,'United Kingdom'
+Tiger,'United States'
+Shark,'South Africa'
+Shark,'South Africa'
+Shark,'South Africa'
+Shark,'United States'
+Silky,Guernsey
+Reef,'United States'
+Shark,Italy
+Whale,Mexico
+Tiger,Netherlands
+Shark,'United Kingdom'
+Blue,Italy
+Silvertip,Canada
+Shark,Germany
+Shark,Germany
+Shark,Germany
+Shark,Germany
+Shark,Australia
+Shark,Norway
+Reef,'United States'
+Whale,'United States'
+Shark,'South Africa'
+White,'United Kingdom'
+Shark,'United Kingdom'
+Shark,'United States'
+Reef,'United States'
+Shark,Australia
+Shark,Italy
+Reef,Canada
+Blue,Portugal
+Shark,'United States'
+Shark,Kuwait
