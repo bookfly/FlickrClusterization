@@ -61,7 +61,7 @@ Svi podaci koji su dobijeni smeštani su u JSON fajl. Primer JSON objekta dat je
 	]
 ```
 
-Kao što se može videti, JSON fajl se sastoji od JSON objekata. Svaki objekat sadrži podatke o slici: id, userId, secret, server, title i location. Dalje su ovi podaci konvertovani u ARFF fajl. ARFF (Attribute-Relation File Format) fajl je tekstualan ASCII koji opisuje listu instanci koje dele set atributa. ARFF fajl se kasnije koristi za klasterizaciju. Za klasterizaciju je izabrano osam klastera, jer je probom ustanovljeno da se oko te vrednosti dešava najmanje rasipanje podataka, odnosno najmanja promena greške nastale usled klasterovanja.
+Kao što se može videti, JSON fajl se sastoji od JSON objekata. Svaki objekat sadrži podatke o slici: id, userId, secret, server, title i location. Dalje su ovi podaci konvertovani u ARFF fajl. ARFF (Attribute-Relation File Format) fajl je tekstualan ASCII koji opisuje listu instanci koje dele set atributa. ARFF fajl se kasnije koristi za klasterizaciju. Za klasterizaciju je izabrano četiri klastera, jer je probom ustanovljeno da se oko te vrednosti dešava najmanje rasipanje podataka, odnosno najmanja promena greške nastale usled klasterovanja.
 
 
 #4. Korišćena tehnologija
@@ -104,6 +104,21 @@ Prilikom realizacije aplikacije korišćene su sledeće tehnologije:
 	eval.setClusterer(filteredClusterer);
 	eval.evaluateClusterer(data);
 ```
+
+U ovom primeru korišćen je SimpleKMeans algoritam za klasterovanje. Jedan je od najpoznatijih algoritamaq za klasterovanje. Koristi se tako što mu se zada broj klastera, a zatim on prolazeći kroz iteracije razvrstava podatke. Na početku, prilikom inicijalizacije nasumično bira onoliki broj težišta klastera koliko je zadati broj klastera. U sledećoj iteraciji razvrstava instance na osnovu udaljenosti od težišta klastera. Zatim pomera težište klastera na osnovu izračunatih proseka vrednosti instanci u klasteru. Ovaj postupak se ponavlja sve dok algoritam ne konvergira, jer daljim razvrstavanjem se nece dobiti značajnije promene, pa se proces zaustavlja. Primenom ovog algoritma, dobijeni su sledeći klasteri:
+
+![Slika 2 - Type clusters](FlickrClusterization/images/typeClust.jpg)
+
+Kao što se na slici 2 može videti, dobijena su četiri klastera sa po 337, 48, 161 i 29 instanci respektivno. U prvom klasteru se nalaze vrste ajkula koje su prema SimpleKMeans algoritmu najbliže reef ajkuli, to najviše ima tigar, belih, galapagos i limun ajkula. U drugom klasteru se nalaze vrste koje su najbliže plavoj ajkuli. Njih ima dosta manje nego u prvom klasteru, te osim plave, tu spadaju i tigar, limun, sivorepa, bela i kit ajkula. U trećem klasteru su ajkule koje su neraspoređene, odnosno one koje su najsličnije onim ajkulama za koje nije bilo moguće utvrditi vrstu. Tu spadaju nurse ajkule, bele i sive ajkule. U četvrtom klasteru su se našle one ajkule koje su najsličnije beloj, a to je kit ajkula.
+
+![Slika 3 - Location clusters](FlickrClusterization/images/locationClust.jpg)
+
+Kao što se na slici 3 može videti, dobijena su četiri klastera. U prvom se nalaze instance čija je lokacija najsličnija SAD, tu se nalaze Ujedinjeno Kraljevstvo, Holandija, Francuska. U drugom klasteru su one instance koje su najsličnije Kanadi, to je Italija, Portugal. U trećem klasteru se nalaze instance koje su najsličnije Australiji, a to su ong Kong, Južna Afrikas, Ujedinjeno Kraljevstvo, Nemačka. U četvrtom klasteru se nalaze instance koje su najsličnije Maleziji, i to su Ujedinjeno Kraljevstvo. Južna Afrika.
+
+![Slika 4 - Instance](FlickrClusterization/images/clustInstan.jpg)
+
+Na slici 4 se može videti koliko instanci je u kom klasteru. Od ukupno 575 instanci 337 (59%) je u prvom klasteru; 48 (8%) u drugom; 161 (28%) u trećem i 9 (5%) u četvrtom.
+
 
 #5. Priznanja
 Ova aplikacija je nastala kao rezultat seminarskog rada iz predmeta [Inteligentni sistemi](http://is.fon.rs/) na Fakultetu organizacionih nauka, Univerziteta u Beogradu, Srbija, 2014. godine.

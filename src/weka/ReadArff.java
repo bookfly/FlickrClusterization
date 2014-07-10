@@ -7,6 +7,7 @@ package weka;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.PrintWriter;
 import weka.clusterers.ClusterEvaluation;
 import weka.clusterers.FilteredClusterer;
 import weka.clusterers.SimpleKMeans;
@@ -40,7 +41,14 @@ public class ReadArff {
         eval.setClusterer(filteredClusterer);
         eval.evaluateClusterer(data);
 
-        System.out.println(eval.clusterResultsToString());
+        writeFile(eval.clusterResultsToString());
+        //  System.out.println(eval.clusterResultsToString());
 
+    }
+
+    private void writeFile(String text) throws FileNotFoundException {
+        PrintWriter writer = new PrintWriter("data/results.txt");
+        writer.println(text);
+        writer.close();
     }
 }

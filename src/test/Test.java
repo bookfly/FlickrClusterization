@@ -17,7 +17,7 @@ public class Test {
     }
 
     public static void main(String[] args) throws Exception {
-
+/*
         //get photos from flickr
         //put photos into json file
         GettingSharkJson gsj = new GettingSharkJson();
@@ -59,9 +59,9 @@ public class Test {
 
         CreateArff ca = new CreateArff();
         ca.general(listPhoto);
-
+*/
         ReadArff ra = new ReadArff();
-        ra.readArff("data/proba", 8);
+        ra.readArff("data/proba", 4);
 
     }
 
