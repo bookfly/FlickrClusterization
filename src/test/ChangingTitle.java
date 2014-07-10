@@ -39,22 +39,5 @@ public class ChangingTitle {
         return listPhoto;
 
     }
-    
-        public List<Photo> changeLocation(String filenName) throws IOException {
 
-        System.out.println("Reading JSON from a file");
-        System.out.println("----------------------------");
-
-        ReadingJson rjson = new ReadingJson();
-        List<Photo> photos = rjson.readJsonStream(new FileInputStream(filenName + ".json"));
-
-        for (Photo photo : photos) {
-            String location = photo.getLocation();
-            rjson.setLocation(photo);
-            listPhoto.add(photo);
-        }
-
-        return listPhoto;
-
-    }
 }

@@ -22,26 +22,20 @@ public class ReadArff {
     public ReadArff() {
     }
 
-    public void readArff(String fileName) throws FileNotFoundException, IOException, Exception {
-        /*   BufferedReader reader = new BufferedReader(new FileReader(fileName + ".arff"));
-         Instances data = new Instances(reader);
-         reader.close();
-         // Setting class attribute
-         data.setClassIndex(data.numAttributes() - 1);
-         */
+    public void readArff(String fileName, int clustNo) throws FileNotFoundException, IOException, Exception {
+
         ConverterUtils.DataSource loader = new ConverterUtils.DataSource(fileName + ".arff");
         Instances data = loader.getDataSet();
 
         SimpleKMeans kMeansCLusterer = new SimpleKMeans();
-        kMeansCLusterer.setNumClusters(3);
+        kMeansCLusterer.setNumClusters(clustNo);
         kMeansCLusterer.setDisplayStdDevs(true);
 
         FilteredClusterer filteredClusterer = new FilteredClusterer();
         filteredClusterer.setClusterer(kMeansCLusterer);
-        //  filteredClusterer.setFilter(removeFilter);
         filteredClusterer.buildClusterer(data);
 
-        // ispisujemo podatke klasterovanja
+        // Result of clusterization
         ClusterEvaluation eval = new ClusterEvaluation();
         eval.setClusterer(filteredClusterer);
         eval.evaluateClusterer(data);

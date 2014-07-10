@@ -25,8 +25,8 @@ public class GetPhotoInfo extends Functions {
 
     public GetPhotoInfo() {
     }
-    
-    public void getPhotosInfo (List<Photo> photos) throws IOException, JSONException, ParserConfigurationException, SAXException{
+
+    public void getPhotosInfo(List<Photo> photos) throws IOException, JSONException, ParserConfigurationException, SAXException {
         for (Photo photo : photos) {
             getPhotoInfo(photo);
         }

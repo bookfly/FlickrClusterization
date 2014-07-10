@@ -5,8 +5,6 @@
  */
 package photo;
 
-import java.util.List;
-
 /**
  *
  * @author jelena
@@ -15,13 +13,10 @@ public class Photo {
 
     private String id;
     private String userId;
- //   private String username;
     private String location;
     private String title;
     private String secret;
     private String server;
-//    private double longitude;
- //   private double latitude;
 
     public Photo(String id) {
         this.id = id;
@@ -87,28 +82,4 @@ public class Photo {
         this.server = server;
     }
 
-/*    public double getLongitude() {
-        return longitude;
-    }
-
-    public void setLongitude(double longitude) {
-        this.longitude = longitude;
-    }
-
-    public double getLatitude() {
-        return latitude;
-    }
-
-    public void setLatitude(double latitude) {
-        this.latitude = latitude;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-*/
 }

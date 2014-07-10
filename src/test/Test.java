@@ -1,22 +1,5 @@
 package test;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.JsonArray;
-import data.PhotoJsonSerializer;
-import function.GetPhotoInfo;
-import java.io.*;
-
-import javax.xml.parsers.ParserConfigurationException;
-
-import org.xml.sax.SAXException;
-import function.SearchPhotos;
-import function.SettingCountryGeo;
-import java.util.ArrayList;
-import java.util.List;
-
-import photo.Photo;
-import weka.CreateArff;
 import weka.ReadArff;
 
 public class Test {
@@ -77,7 +60,9 @@ public class Test {
          ca.general(listPhoto);
          */
         ReadArff ra = new ReadArff();
-        ra.readArff("proba");
+        ra.readArff("proba", 21);
+        
+
     }
     
 }

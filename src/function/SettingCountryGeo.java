@@ -35,8 +35,6 @@ public class SettingCountryGeo extends Functions {
         String url = "http://api.geonames.org/searchJSON?q=" + location + "&maxRows=1&username=jelena_tabas";
 
         setRequest(url);
-
-        //    System.out.println("GET geo location request: " + getRequest());
         setMethod(new GetMethod(getRequest()));
 
         setStatusCode(getClient().executeMethod(getMethod()));
@@ -49,14 +47,11 @@ public class SettingCountryGeo extends Functions {
 
         String jstr = toString(getRstream());
         JSONObject jobj = new JSONObject(jstr);
-        //System.out.println(jobj.get("geonames"));
         JSONArray geonames = jobj.getJSONArray("geonames");
 
         for (int i = 0; i < geonames.length(); i++) {
             JSONObject jphoto = geonames.getJSONObject(i);
-            //     System.out.println("First loc: "+photo.getLocation());
             photo.setLocation(jphoto.getString("countryName"));
-            //    System.out.println("New loc: "+photo.getLocation());
         }
 
     }

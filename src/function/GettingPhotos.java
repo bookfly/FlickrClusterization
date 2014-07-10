@@ -71,13 +71,10 @@ public class GettingPhotos extends Functions {
                     BufferedWriter bw = new BufferedWriter(fw);
                     bw.write(photo.getId() + " ");
                     bw.write(photo.getUserId() + " ");
-//                    bw.write(photo.getUsername() + " ");
                     bw.write(photo.getSecret() + " ");
                     bw.write(photo.getServer() + " ");
                     bw.write(photo.getTitle() + " ");
                     bw.write(photo.getLocation() + " ");
-                    //           bw.write(photo.getLatitude() + " ");
-                    //           bw.write(photo.getLongitude() + "");
                     bw.write("\n");
                     bw.close();
                     System.out.println("Success!");
@@ -86,13 +83,10 @@ public class GettingPhotos extends Functions {
                     BufferedWriter bw = new BufferedWriter(fw);
                     bw.write(photo.getId() + " ");
                     bw.write(photo.getUserId() + " ");
-                    //      bw.write(photo.getUsername() + " ");
                     bw.write(photo.getSecret() + " ");
                     bw.write(photo.getServer() + " ");
                     bw.write(photo.getTitle() + " ");
                     bw.write(photo.getLocation() + " ");
-                    //        bw.write(photo.getLatitude() + " ");
-                    //          bw.write(photo.getLongitude() + "");
                     bw.write("\n");
                     bw.close();
                     System.out.println("Written for the first time!");

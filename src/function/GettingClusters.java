@@ -83,7 +83,6 @@ public class GettingClusters extends Functions {
             getPhoto().setId(jphoto.getString("id"));
             getPhoto().setTitle(jphoto.getString("title"));
             getPhoto().setUserId(jphoto.getString("owner"));
-        //    getPhoto().setUsername(jphoto.getString("username"));
             getPhoto().setSecret(jphoto.getString("secret"));
             getPhoto().setServer(jphoto.getString("server"));
             getListPhotos().add(getPhoto());
