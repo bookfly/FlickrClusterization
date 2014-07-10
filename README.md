@@ -13,7 +13,6 @@ Faze u razvoju aplikacije:
 #2. Domenski model
 Nakon analize podataka koje pruža Flickr API (https://www.flickr.com/services/api/), kreiran je domenski model koji je prikazan na slici ispod (Slika 1).
 
-
 ![Slika 1 - Domenski model](FlickrClusterization/images/domainModel.jpg)
 
 Slika 1 - Domenski model
