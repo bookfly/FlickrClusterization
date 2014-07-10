@@ -13,7 +13,7 @@ Faze u razvoju aplikacije:
 #2. Domenski model
 Nakon analize podataka koje pruža Flickr API (https://www.flickr.com/services/api/), kreiran je domenski model koji je prikazan na slici ispod (Slika 1).
 
-![Slika 1 - Domenski model](FlickrClusterization/images/domainModel.jpg)
+![Slika 1 - Domenski model](FlickrClusterization/images/domainmodel.jpg)
 
 Slika 1 - Domenski model
 
@@ -61,8 +61,7 @@ Svi podaci koji su dobijeni smeštani su u JSON fajl. Primer JSON objekta dat je
 	]
 ```
 
-Kao što se može videti, JSON fajl se sastoji od JSON objekata. Svaki objekat sadrži podatke o slici: id, userId, secret, server, title i location. Dalje su ovi podaci konvertovani u ARFF fajl. ARFF (Attribute-Relation File Format) fajl je tekstualan ASCII koji opisuje listu instanci koje dele set atributa. ARFF fajl se kasnije koristi za klasterizaciju.
-
+Kao što se može videti, JSON fajl se sastoji od JSON objekata. Svaki objekat sadrži podatke o slici: id, userId, secret, server, title i location. Dalje su ovi podaci konvertovani u ARFF fajl. ARFF (Attribute-Relation File Format) fajl je tekstualan ASCII koji opisuje listu instanci koje dele set atributa. ARFF fajl se kasnije koristi za klasterizaciju. Za klasterizaciju je izabrano osam klastera, jer je probom ustanovljeno da se oko te vrednosti dešava najmanje rasipanje podataka, odnosno najmanja promena greške nastale usled klasterovanja.
 
 
 #4. Korišćena tehnologija

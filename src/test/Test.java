@@ -3,11 +3,11 @@ package test;
 import weka.ReadArff;
 
 public class Test {
-    
+
     public Test() {
-        
+
     }
-    
+
     public static void main(String[] args) throws Exception {
 
         /*    CreateArff ca = new CreateArff();
@@ -23,7 +23,7 @@ public class Test {
          //change photos title
          List<Photo> listPhoto = new ArrayList<>();
          ChangingTitle ct = new ChangingTitle();
-         listPhoto = ct.changeTitle("sharks");
+         listPhoto = ct.changeTitle("data/sharks");
          System.out.println("Size of photo list: " + listPhoto.size());
         
          LocationCounter lc = new LocationCounter();
@@ -32,37 +32,36 @@ public class Test {
 
          //serialize photos
          JsonArray ja = PhotoJsonSerializer.serializePhotos(listPhoto);
-         gsj.makeSharkJson(listPhoto, "shark");
+         gsj.makeSharkJson(listPhoto, "data/shark");
         
          ja = PhotoJsonSerializer.serializePhotos(withLoc);
-         gsj.makeSharkJson(withLoc, "sharkLoc");
+         gsj.makeSharkJson(withLoc, "data/sharkLoc");
          */
         /*
          //getting photos from sharkLoc.json
          //getting location with geonames
          List<Photo> listPhoto = new ArrayList<>();
          ReadingJson rj = new ReadingJson();
-         String file = "sharkLoc.json";
+         String file = "data/sharkLoc.json";
          listPhoto = rj.readJsonStream(new FileInputStream(file));
          SettingCountryGeo scg = new SettingCountryGeo();
          listPhoto = scg.setLocation(listPhoto);
 
          GettingSharkJson gsj = new GettingSharkJson();
-         gsj.makeSharkJson(listPhoto, "changedLocation");
+         gsj.makeSharkJson(listPhoto, "data/changedLocation");
          */
         //making arff file
      /*   List<Photo> listPhoto = new ArrayList<>();
          ReadingJson rj = new ReadingJson();
-         String file = "changedLocation.json";
+         String file = "data/changedLocation.json";
          listPhoto = rj.readJsonStream(new FileInputStream(file));
 
          CreateArff ca = new CreateArff();
          ca.general(listPhoto);
          */
         ReadArff ra = new ReadArff();
-        ra.readArff("proba", 21);
-        
+        ra.readArff("data/proba", 8);
 
     }
-    
+
 }
