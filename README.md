@@ -21,7 +21,7 @@ Slika 1 - Domenski model
 Klasa Photo sadrži podatke o slici kao što su: id, id vlasnika, naslov slike, server, secret kod i podatak o lokaciji koji se dobija korišćenjem Geonames servisa. 
 
 #3. Rešenje
-Aplikacija preuzima podatke sa dva različita izvora ([Flickr](https://www.flickr.com/services/api/), [Geonames](http://www.geonames.org/), zatim spaja te podatke i stavlja ih u JSON fajl. 
+Aplikacija preuzima podatke sa dva različita izvora ([Flickr](https://www.flickr.com/services/api/), [Geonames](http://www.geonames.org/)), zatim spaja te podatke i stavlja ih u JSON fajl. 
 
 [Flickr](https://www.flickr.com/services/api/) daje podatke o slici u željenom formatu. U sledećem primeru poziva korišćen je JSON format:
 >[https://api.flickr.com/services/rest/?method=flickr.photos.search&text=shark&sort=relevance&page=1&api_key=64a298d057676a6d7298262797a23440&format=json]
