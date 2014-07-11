@@ -21,46 +21,46 @@ public class Test {
         //get photos from flickr
         //put photos into json file
         GettingSharkJson gsj = new GettingSharkJson();
-         //gsj.getSharkPhotos("sharks");
+        gsj.getSharkPhotos("data/sharks");
 
-        //create list of photos
-        //change photos title
+        //getting only those instances with location
         List<Photo> listPhoto = new ArrayList<>();
-        ChangingTitle ct = new ChangingTitle();
-        listPhoto = ct.changeTitle("data/sharks");
-        System.out.println("Size of photo list: " + listPhoto.size());
-
+        ReadingJson rj = new ReadingJson();
+        listPhoto = rj.readJsonStream(new FileInputStream("data/sharks.json"));
         LocationCounter lc = new LocationCounter();
         List<Photo> withLoc = lc.countWithLoc(listPhoto);
         System.out.println("Number of photos with location: " + withLoc.size());
+        JsonArray ja = PhotoJsonSerializer.serializePhotos(withLoc);
+        gsj.makeSharkJson(withLoc, "data/sharkLoc");
+
+         //create list of photos
+        //change photos title
+        List<Photo> listPhoto = new ArrayList<>();
+        ChangingTitle ct = new ChangingTitle();
+        listPhoto = ct.changeTitle("data/sharkLoc");
+        System.out.println("Size of photo list: " + listPhoto.size());
 
         //serialize photos
         JsonArray ja = PhotoJsonSerializer.serializePhotos(listPhoto);
-        gsj.makeSharkJson(listPhoto, "data/shark");
+        gsj.makeSharkJson(listPhoto, "data/sharkTitle");
 
-        ja = PhotoJsonSerializer.serializePhotos(withLoc);
-        gsj.makeSharkJson(withLoc, "data/sharkLoc");
-
-        //getting photos from sharkLoc.json
+         //getting photos from sharkLoc.json
         //getting location with geonames
         List<Photo> listPhotos = new ArrayList<>();
         ReadingJson rj = new ReadingJson();
-        String file = "data/sharkLoc.json";
-        listPhotos = rj.readJsonStream(new FileInputStream(file));
+        listPhotos = rj.readJsonStream(new FileInputStream("data/sharkTitle.json"));
         SettingCountryGeo scg = new SettingCountryGeo();
-        listPhoto = scg.setLocation(listPhoto);
+        listPhotos = scg.setLocation(listPhotos);
 
-        gsj.makeSharkJson(listPhoto, "data/changedLocation");
-
+        gsj.makeSharkJson(listPhotos, "data/changedLocation");
+ 
         //making arff file
         List<Photo> listPhoto2 = new ArrayList<>();
-        String file2 = "data/changedLocation.json";
-        listPhoto2 = rj.readJsonStream(new FileInputStream(file2));
-
+        listPhoto2 = rj.readJsonStream(new FileInputStream("data/sharks.json"));
         CreateArff ca = new CreateArff();
-        ca.general(listPhoto);
+        ca.general(listPhoto2);
 */
-        ReadArff ra = new ReadArff();
+       ReadArff ra = new ReadArff();
         ra.readArff("data/proba", 4);
 
     }

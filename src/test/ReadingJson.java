@@ -50,6 +50,8 @@ public class ReadingJson {
         String title = "";
         String secret = "";
         String server = "";
+        double lat = 0;
+        double lon = 0;
 
         reader.beginObject();
 
@@ -67,13 +69,18 @@ public class ReadingJson {
                 secret = reader.nextString();
             } else if (name.equals("server")) {
                 server = reader.nextString();
+            } else if (name.equals("lon")) {
+                lon = reader.nextDouble();
+            } else if (name.equals("lat")) {
+                lat = reader.nextDouble();
             }
 
         }
 
         reader.endObject();
 
-        return new Photo(id, userId, location, title, secret, server);
+        //  return new Photo(id, userId, location, title, secret, server);
+        return new Photo(id, userId, location, title, secret, server, lon, lat);
     }
 
     public void setTitle(Photo photo) {

@@ -53,6 +53,8 @@ public class GetPhotoInfo extends Functions {
         JSONObject owner = jobj.getJSONObject("photo").getJSONObject("owner");
 
         photo.setLocation(owner.getString("location"));
+        photo.setLat(0);
+        photo.setLon(0);
 
     }
 

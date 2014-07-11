@@ -1,10 +1,10 @@
-FilteredClusterer using weka.clusterers.SimpleKMeans -V -N 4 -A "weka.core.EuclideanDistance -R first-last" -I 500 -S 10 on data filtered through weka.filters.AllFilter
+FilteredClusterer using weka.clusterers.SimpleKMeans -V -N 4 -A "weka.core.EuclideanDistance -R first-last" -I 500 -S 10 on data filtered through weka.filters.unsupervised.attribute.Remove -R 3
 
 Filtered Header
-@relation TrainingSet-weka.filters.AllFilter
+@relation TrainingSet-weka.filters.unsupervised.attribute.Remove-R3
 
-@attribute Type {Reef,Tiger,Bull,White,Shark,Galapagos,Whale,Mako,Hammerhead,Nurse,Blue,Porbeagle,Gray,Lemon,Blacktip,Silky,Silvertip,Sandbar,Basking,Cow,Whitetip,Zebra}
-@attribute Location {Australia,'United States',France,'New Zealand',Kuwait,'Hong Kong',Honduras,Pakistan,Japan,Canada,Thailand,Switzerland,'South Korea',Guernsey,Maldives,'United Kingdom',Taiwan,Netherlands,Portugal,Spain,Andorra,Malta,Malaysia,Belize,Mexico,Italy,Morocco,Singapore,Greece,Germany,'South Africa',China,Lebanon,Sweden,Philippines,Norway,Brazil,Russia,'Costa Rica',Mozambique}
+@attribute Longitude numeric
+@attribute Latitude numeric
 
 @data
 
@@ -14,87 +14,27 @@ Clusterer Model
 kMeans
 ======
 
-Number of iterations: 3
-Within cluster sum of squared errors: 596.0
+Number of iterations: 5
+Within cluster sum of squared errors: 7.061393049561895
 Missing values globally replaced with mean/mode
 
 Cluster centroids:
-                                     Cluster#
-Attribute             Full Data             0             1             2             3
-                          (575)         (337)          (48)         (161)          (29)
-=======================================================================================
-Type                      Shark          Reef          Blue         Shark         White
-  Reef                 65 ( 11%)     65 ( 19%)      0 (  0%)      0 (  0%)      0 (  0%)
-  Tiger                50 (  8%)     43 ( 12%)      5 ( 10%)      2 (  1%)      0 (  0%)
-  Bull                 11 (  1%)      3 (  0%)      2 (  4%)      6 (  3%)      0 (  0%)
-  White                90 ( 15%)     54 ( 16%)      4 (  8%)     10 (  6%)     22 ( 75%)
-  Shark               185 ( 32%)     63 ( 18%)      6 ( 12%)    116 ( 72%)      0 (  0%)
-  Galapagos            11 (  1%)     10 (  2%)      0 (  0%)      1 (  0%)      0 (  0%)
-  Whale                44 (  7%)     33 (  9%)      3 (  6%)      1 (  0%)      7 ( 24%)
-  Mako                  2 (  0%)      1 (  0%)      1 (  2%)      0 (  0%)      0 (  0%)
-  Hammerhead            7 (  1%)      5 (  1%)      1 (  2%)      1 (  0%)      0 (  0%)
-  Nurse                24 (  4%)      3 (  0%)      1 (  2%)     20 ( 12%)      0 (  0%)
-  Blue                 20 (  3%)      3 (  0%)     17 ( 35%)      0 (  0%)      0 (  0%)
-  Porbeagle             1 (  0%)      1 (  0%)      0 (  0%)      0 (  0%)      0 (  0%)
-  Gray                  6 (  1%)      2 (  0%)      0 (  0%)      4 (  2%)      0 (  0%)
-  Lemon                35 (  6%)     32 (  9%)      3 (  6%)      0 (  0%)      0 (  0%)
-  Blacktip             12 (  2%)     12 (  3%)      0 (  0%)      0 (  0%)      0 (  0%)
-  Silky                 4 (  0%)      2 (  0%)      2 (  4%)      0 (  0%)      0 (  0%)
-  Silvertip             3 (  0%)      1 (  0%)      2 (  4%)      0 (  0%)      0 (  0%)
-  Sandbar               1 (  0%)      1 (  0%)      0 (  0%)      0 (  0%)      0 (  0%)
-  Basking               1 (  0%)      1 (  0%)      0 (  0%)      0 (  0%)      0 (  0%)
-  Cow                   1 (  0%)      0 (  0%)      1 (  2%)      0 (  0%)      0 (  0%)
-  Whitetip              1 (  0%)      1 (  0%)      0 (  0%)      0 (  0%)      0 (  0%)
-  Zebra                 1 (  0%)      1 (  0%)      0 (  0%)      0 (  0%)      0 (  0%)
+                           Cluster#
+Attribute     Full Data           0           1           2           3
+                  (575)        (95)       (282)       (150)        (48)
+=======================================================================
+Longitude      -18.7464    117.8986    -97.6232      2.9355    106.4554
+             +/-91.9382  +/-59.1759  +/-22.2966    +/-7.123  +/-22.6688
 
-Location          United States United States        Canada     Australia      Malaysia
-  Australia            66 ( 11%)      2 (  0%)      0 (  0%)     64 ( 39%)      0 (  0%)
-  United States       220 ( 38%)    220 ( 65%)      0 (  0%)      0 (  0%)      0 (  0%)
-  France                8 (  1%)      5 (  1%)      0 (  0%)      2 (  1%)      1 (  3%)
-  New Zealand           8 (  1%)      1 (  0%)      0 (  0%)      7 (  4%)      0 (  0%)
-  Kuwait                5 (  0%)      0 (  0%)      0 (  0%)      5 (  3%)      0 (  0%)
-  Hong Kong            15 (  2%)      0 (  0%)      0 (  0%)     15 (  9%)      0 (  0%)
-  Honduras              1 (  0%)      1 (  0%)      0 (  0%)      0 (  0%)      0 (  0%)
-  Pakistan              2 (  0%)      0 (  0%)      0 (  0%)      2 (  1%)      0 (  0%)
-  Japan                 2 (  0%)      1 (  0%)      0 (  0%)      1 (  0%)      0 (  0%)
-  Canada               47 (  8%)      8 (  2%)     39 ( 81%)      0 (  0%)      0 (  0%)
-  Thailand              2 (  0%)      1 (  0%)      0 (  0%)      1 (  0%)      0 (  0%)
-  Switzerland           6 (  1%)      6 (  1%)      0 (  0%)      0 (  0%)      0 (  0%)
-  South Korea           2 (  0%)      1 (  0%)      0 (  0%)      1 (  0%)      0 (  0%)
-  Guernsey              8 (  1%)      2 (  0%)      0 (  0%)      2 (  1%)      4 ( 13%)
-  Maldives              2 (  0%)      2 (  0%)      0 (  0%)      0 (  0%)      0 (  0%)
-  United Kingdom       55 (  9%)     41 ( 12%)      0 (  0%)     11 (  6%)      3 ( 10%)
-  Taiwan                2 (  0%)      0 (  0%)      0 (  0%)      0 (  0%)      2 (  6%)
-  Netherlands          23 (  4%)     21 (  6%)      0 (  0%)      1 (  0%)      1 (  3%)
-  Portugal              3 (  0%)      1 (  0%)      2 (  4%)      0 (  0%)      0 (  0%)
-  Spain                11 (  1%)      4 (  1%)      1 (  2%)      5 (  3%)      1 (  3%)
-  Andorra               1 (  0%)      1 (  0%)      0 (  0%)      0 (  0%)      0 (  0%)
-  Malta                 3 (  0%)      0 (  0%)      0 (  0%)      3 (  1%)      0 (  0%)
-  Malaysia             11 (  1%)      0 (  0%)      0 (  0%)      0 (  0%)     11 ( 37%)
-  Belize                1 (  0%)      1 (  0%)      0 (  0%)      0 (  0%)      0 (  0%)
-  Mexico               10 (  1%)      6 (  1%)      0 (  0%)      2 (  1%)      2 (  6%)
-  Italy                13 (  2%)      2 (  0%)      6 ( 12%)      5 (  3%)      0 (  0%)
-  Morocco               1 (  0%)      0 (  0%)      0 (  0%)      1 (  0%)      0 (  0%)
-  Singapore             3 (  0%)      2 (  0%)      0 (  0%)      1 (  0%)      0 (  0%)
-  Greece                1 (  0%)      0 (  0%)      0 (  0%)      1 (  0%)      0 (  0%)
-  Germany              11 (  1%)      2 (  0%)      0 (  0%)      9 (  5%)      0 (  0%)
-  South Africa         17 (  2%)      2 (  0%)      0 (  0%)     12 (  7%)      3 ( 10%)
-  China                 2 (  0%)      1 (  0%)      0 (  0%)      0 (  0%)      1 (  3%)
-  Lebanon               1 (  0%)      1 (  0%)      0 (  0%)      0 (  0%)      0 (  0%)
-  Sweden                1 (  0%)      0 (  0%)      0 (  0%)      1 (  0%)      0 (  0%)
-  Philippines           1 (  0%)      1 (  0%)      0 (  0%)      0 (  0%)      0 (  0%)
-  Norway                2 (  0%)      0 (  0%)      0 (  0%)      2 (  1%)      0 (  0%)
-  Brazil                3 (  0%)      0 (  0%)      0 (  0%)      3 (  1%)      0 (  0%)
-  Russia                1 (  0%)      0 (  0%)      0 (  0%)      1 (  0%)      0 (  0%)
-  Costa Rica            3 (  0%)      1 (  0%)      0 (  0%)      2 (  1%)      0 (  0%)
-  Mozambique            1 (  0%)      0 (  0%)      0 (  0%)      1 (  0%)      0 (  0%)
+Latitude        26.5174    -31.8952     35.5638      49.064     18.5203
+             +/-28.1599   +/-4.7145   +/-7.7117    +/-5.122  +/-11.2208
 
 
 
 Clustered Instances
 
-0      337 ( 59%)
-1       48 (  8%)
-2      161 ( 28%)
-3       29 (  5%)
+0       95 ( 17%)
+1      282 ( 49%)
+2      150 ( 26%)
+3       48 (  8%)
 

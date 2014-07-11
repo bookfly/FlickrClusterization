@@ -13,6 +13,8 @@ import weka.clusterers.FilteredClusterer;
 import weka.clusterers.SimpleKMeans;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils;
+import weka.filters.Filter;
+import weka.filters.unsupervised.attribute.Remove;
 
 /**
  *
@@ -28,12 +30,16 @@ public class ReadArff {
         ConverterUtils.DataSource loader = new ConverterUtils.DataSource(fileName + ".arff");
         Instances data = loader.getDataSet();
 
+        Remove removeFilter = new Remove();
+        removeFilter.setAttributeIndices("3");
+
         SimpleKMeans kMeansCLusterer = new SimpleKMeans();
         kMeansCLusterer.setNumClusters(clustNo);
         kMeansCLusterer.setDisplayStdDevs(true);
 
         FilteredClusterer filteredClusterer = new FilteredClusterer();
         filteredClusterer.setClusterer(kMeansCLusterer);
+        filteredClusterer.setFilter(removeFilter);
         filteredClusterer.buildClusterer(data);
 
         // Result of clusterization

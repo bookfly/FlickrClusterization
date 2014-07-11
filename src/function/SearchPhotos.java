@@ -53,6 +53,7 @@ public class SearchPhotos extends Functions {
             getPhoto().setUserId(jphoto.getString("owner"));
             getPhoto().setSecret(jphoto.getString("secret"));
             getPhoto().setServer(jphoto.getString("server"));
+          
             getListPhotos().add(getPhoto());
         }
         return getListPhotos();

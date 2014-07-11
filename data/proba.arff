@@ -1,581 +1,582 @@
 @relation TrainingSet
 
-@attribute Type {Reef,Tiger,Bull,White,Shark,Galapagos,Whale,Mako,Hammerhead,Nurse,Blue,Porbeagle,Gray,Lemon,Blacktip,Silky,Silvertip,Sandbar,Basking,Cow,Whitetip,Zebra}
-@attribute Location {Australia,'United States',France,'New Zealand',Kuwait,'Hong Kong',Honduras,Pakistan,Japan,Canada,Thailand,Switzerland,'South Korea',Guernsey,Maldives,'United Kingdom',Taiwan,Netherlands,Portugal,Spain,Andorra,Malta,Malaysia,Belize,Mexico,Italy,Morocco,Singapore,Greece,Germany,'South Africa',China,Lebanon,Sweden,Philippines,Norway,Brazil,Russia,'Costa Rica',Mozambique}
+@attribute Longitude numeric
+@attribute Latitude numeric
+@attribute Type {Reef,Tiger,Bull,White,Shark,Galapagos,Lemon,Whale,Gray,Mako,Hammerhead,Nurse,Blue,Porbeagle,Blacktip,Silky,Silvertip,Sandbar,Basking,Cow,Whitetip,Zebra}
 
 @data
-Reef,Australia
-Tiger,'United States'
-Bull,'United States'
-White,France
-Shark,'United States'
-White,'United States'
-Tiger,'United States'
-Shark,'New Zealand'
-White,'United States'
-White,'United States'
-Shark,'United States'
-Shark,Kuwait
-Shark,'Hong Kong'
-Shark,'United States'
-White,'United States'
-Tiger,Honduras
-Galapagos,'United States'
-White,'United States'
-White,'United States'
-Shark,Pakistan
-White,'United States'
-Bull,Australia
-White,'United States'
-Whale,Japan
-White,Australia
-White,'United States'
-Mako,Canada
-White,Canada
-Hammerhead,'United States'
-Shark,Thailand
-Shark,'United States'
-White,'United States'
-White,'United States'
-Tiger,'United States'
-Nurse,Australia
-White,Australia
-Blue,'United States'
-White,'United States'
-Shark,'United States'
-White,'United States'
-Shark,'United States'
-Whale,'United States'
-Blue,Canada
-White,'United States'
-Porbeagle,Switzerland
-Shark,'New Zealand'
-Gray,'United States'
-Lemon,'South Korea'
-White,Guernsey
-Tiger,'United States'
-White,'United States'
-Whale,'United States'
-Whale,Maldives
-Galapagos,'United States'
-Shark,Kuwait
-Reef,'United Kingdom'
-White,Taiwan
-White,'United States'
-Shark,Canada
-White,'United States'
-White,'United States'
-White,'United States'
-Whale,Canada
-White,'United States'
-Blue,Canada
-Blacktip,France
-White,Canada
-White,'United States'
-Nurse,Australia
-White,Canada
-Lemon,'United States'
-White,'United States'
-Whale,'United Kingdom'
-White,'United States'
-Shark,'New Zealand'
-Tiger,'United States'
-Lemon,Netherlands
-White,'United States'
-Shark,'Hong Kong'
-Bull,Australia
-White,'United States'
-White,'United States'
-Shark,'Hong Kong'
-Shark,'United States'
-White,Australia
-Tiger,'United Kingdom'
-Tiger,'United States'
-Tiger,Canada
-Bull,Australia
-Shark,Pakistan
-Lemon,'United States'
-Reef,'United States'
-Galapagos,'United States'
-Lemon,'United States'
-Blue,Portugal
-Galapagos,'United States'
-Reef,Canada
-Shark,'United States'
-Shark,'United States'
-Silky,Canada
-Reef,Canada
-Shark,Canada
-White,'United States'
-White,Canada
-Shark,'Hong Kong'
-Blue,Canada
-Tiger,Spain
-White,Guernsey
-Reef,Netherlands
-Shark,'United States'
-Nurse,Australia
-Tiger,'United Kingdom'
-Shark,'United States'
-Shark,'United States'
-Lemon,Andorra
-Nurse,Australia
-White,'United States'
-Tiger,'United States'
-Nurse,Australia
-Reef,Canada
-Tiger,Canada
-White,Guernsey
-Shark,Guernsey
-White,'United States'
-Whale,Canada
-Nurse,Australia
-Reef,'United States'
-Silky,Canada
-Tiger,'United States'
-Tiger,'United Kingdom'
-Reef,'United States'
-Reef,Maldives
-Lemon,'United Kingdom'
-Whale,'United States'
-Lemon,Canada
-Reef,'United Kingdom'
-Shark,'Hong Kong'
-White,'United States'
-Reef,'United States'
-Silvertip,'United States'
-Shark,Malta
-Lemon,Canada
-Lemon,'United States'
-White,'United States'
-Gray,'United States'
-White,Malaysia
-Reef,'United States'
-Tiger,'United States'
-White,'United States'
-Lemon,'United States'
-Whale,Belize
-Shark,Guernsey
-Reef,'United States'
-Lemon,Canada
-Shark,'United Kingdom'
-Tiger,'United States'
-Shark,Australia
-White,Australia
-Sandbar,'United States'
-White,'United States'
-Shark,'Hong Kong'
-White,Netherlands
-Shark,'United States'
-White,'United States'
-Blue,Canada
-Gray,Australia
-Lemon,'United Kingdom'
-Shark,Mexico
-Blue,'United States'
-Tiger,Netherlands
-Shark,Australia
-Shark,Australia
-Shark,Italy
-Lemon,Netherlands
-Reef,'United States'
-Shark,Australia
-Galapagos,'United States'
-Reef,'United Kingdom'
-Galapagos,Australia
-Shark,'United States'
-White,'United States'
-White,'United States'
-Shark,Australia
-Whale,'United States'
-Shark,Morocco
-White,'United States'
-Shark,'United States'
-Tiger,'United States'
-Shark,Singapore
-Galapagos,'United States'
-White,'United Kingdom'
-Lemon,'United States'
-Hammerhead,Canada
-Blue,Canada
-Basking,'United Kingdom'
-Tiger,'United States'
-White,Taiwan
-White,'United States'
-Lemon,'United States'
-Nurse,Australia
-Whale,Canada
-Tiger,'United States'
-Reef,'United Kingdom'
-Whale,Malaysia
-Nurse,Australia
-Reef,Netherlands
-Blue,Canada
-Whale,Spain
-Shark,'United Kingdom'
-White,Australia
-White,'United States'
-Shark,Greece
-Shark,Malta
-Tiger,'United States'
-Shark,'United States'
-Nurse,Australia
-Reef,Germany
-Whale,Malaysia
-Shark,'United States'
-Reef,Canada
-White,Spain
-Whale,'United States'
-Lemon,'United States'
-White,'United States'
-White,'United States'
-Galapagos,'United States'
-Shark,'United States'
-White,'United States'
-Reef,Netherlands
-Whale,Switzerland
-Nurse,Australia
-Nurse,Canada
-Blacktip,'United Kingdom'
-Reef,'United States'
-Shark,Netherlands
-Galapagos,'United States'
-Tiger,Australia
-White,Malaysia
-Shark,Kuwait
-Cow,Canada
-Gray,Australia
-Shark,Australia
-Whale,'United States'
-Shark,Australia
-Reef,Netherlands
-Tiger,'United Kingdom'
-Shark,'New Zealand'
-White,Guernsey
-Bull,Australia
-Hammerhead,'United States'
-Reef,'United Kingdom'
-White,Mexico
-Galapagos,'United States'
-Lemon,'United States'
-Reef,Netherlands
-Gray,Australia
-Whitetip,'United Kingdom'
-Whale,Singapore
-Nurse,Australia
-Shark,Spain
-Bull,Canada
-Whale,Mexico
-Whale,Mexico
-Shark,'United States'
-White,'United States'
-Shark,'United States'
-Lemon,Spain
-Whale,Australia
-Shark,'United States'
-Bull,Canada
-Shark,'Hong Kong'
-Reef,'United Kingdom'
-White,'United States'
-White,Australia
-Reef,Canada
-Reef,Germany
-Whale,'United Kingdom'
-Whale,Malaysia
-Whale,'United Kingdom'
-Reef,Australia
-Shark,'Hong Kong'
-Reef,'United Kingdom'
-Reef,'United States'
-Reef,'United Kingdom'
-White,'South Africa'
-White,'United States'
-Shark,'United States'
-Lemon,'United Kingdom'
-Shark,Kuwait
-Shark,'United States'
-Blacktip,'United Kingdom'
-Blacktip,'United Kingdom'
-Nurse,Australia
-White,China
-Hammerhead,'South Africa'
-Shark,'United States'
-Silvertip,Canada
-Blue,'United States'
-Blue,Canada
-Blue,Canada
-Nurse,Australia
-Reef,'United States'
-Shark,Germany
-Nurse,Lebanon
-Shark,'South Africa'
-Shark,'Hong Kong'
-Reef,Netherlands
-Shark,Germany
-Shark,Australia
-Shark,Australia
-White,Malaysia
-White,'United States'
-Whale,Italy
-Shark,'United States'
-Shark,Malta
-Blacktip,'United Kingdom'
-Mako,Mexico
-White,Australia
-Shark,'United States'
-Blacktip,'United Kingdom'
-Shark,'United States'
-Blacktip,'United Kingdom'
-Tiger,'United States'
-Blue,Italy
-Reef,Canada
-Whale,'United States'
-Reef,'United Kingdom'
-Shark,'United Kingdom'
-Reef,Canada
-Bull,Australia
-Lemon,'United States'
-White,'United States'
-Shark,Australia
-Shark,Australia
-White,'South Africa'
-Tiger,'United States'
-Hammerhead,'United States'
-Shark,Spain
-Reef,'United States'
-White,'United States'
-Shark,Australia
-Shark,Australia
-Shark,'Hong Kong'
-Shark,'United States'
-Shark,Sweden
-Nurse,Australia
-Shark,Australia
-Gray,Australia
-Whale,Philippines
-Hammerhead,Australia
-Tiger,'United States'
-Shark,'United States'
-Whale,Switzerland
-Blacktip,France
-Nurse,'New Zealand'
-Shark,'United States'
-Bull,Thailand
-Reef,France
-Shark,'New Zealand'
-Shark,Canada
-Tiger,Netherlands
-Shark,Spain
-Tiger,Netherlands
-Nurse,Australia
-Galapagos,'United States'
-Reef,'United Kingdom'
-Shark,Canada
-Shark,Norway
-Shark,Australia
-Silky,Guernsey
-Blue,Italy
-Tiger,'United States'
-Whale,Mexico
-Tiger,Italy
-White,Malaysia
-Shark,'New Zealand'
-Shark,Spain
-Reef,'United Kingdom'
-Shark,'United States'
-Shark,'United Kingdom'
-Shark,Germany
-Whale,Singapore
-Whale,Malaysia
-White,Australia
-Shark,'United States'
-Blacktip,'United Kingdom'
-Shark,'Hong Kong'
-Shark,Australia
-Shark,'South Africa'
-White,'United States'
-Tiger,'United States'
-Zebra,Portugal
-White,Mexico
-Tiger,'United States'
-Blue,Italy
-White,'United States'
-Shark,'South Africa'
-White,'United States'
-Blue,Italy
-Blacktip,'United Kingdom'
-White,Australia
-Shark,'United States'
-Bull,Australia
-Nurse,Australia
-Shark,'United States'
-Reef,Netherlands
-Lemon,'United Kingdom'
-Blacktip,France
-Whale,'United States'
-Shark,'South Korea'
-Reef,'United Kingdom'
-Whale,Malaysia
-Whale,China
-Lemon,'United Kingdom'
-Reef,Netherlands
-Tiger,'South Africa'
-Shark,'United States'
-Shark,'Hong Kong'
-Shark,Brazil
-Lemon,'United States'
-Lemon,'United States'
-Shark,'United States'
-Lemon,Netherlands
-Shark,'South Africa'
-Whale,'United States'
-Nurse,Australia
-Tiger,'United States'
-Tiger,'United States'
-Tiger,Spain
-Lemon,'United States'
-Shark,'United States'
-Reef,'United Kingdom'
-Lemon,'United States'
-Tiger,Canada
-Reef,'United States'
-Shark,'South Africa'
-Blue,Spain
-Shark,'United States'
-Shark,'Hong Kong'
-Reef,'United States'
-Reef,'United Kingdom'
-Shark,Russia
-Shark,Brazil
-Whale,Malaysia
-Shark,'United States'
-Shark,'United Kingdom'
-Blacktip,'United Kingdom'
-Hammerhead,'United States'
-White,'South Africa'
-Whale,Malaysia
-Lemon,'United States'
-Shark,'United States'
-Shark,'United States'
-Shark,'United States'
-Shark,'Hong Kong'
-Reef,'United Kingdom'
-Reef,'United States'
-Shark,'United States'
-Shark,'United States'
-Lemon,Netherlands
-Whale,'United States'
-Nurse,Australia
-Shark,'United States'
-Shark,'United States'
-Tiger,'United States'
-Nurse,'United States'
-Shark,'Costa Rica'
-Shark,Italy
-Nurse,Australia
-Shark,'United States'
-Shark,'United Kingdom'
-Reef,'United States'
-Shark,Australia
-Shark,Spain
-Shark,'United States'
-Shark,'United Kingdom'
-Lemon,'United States'
-White,'United States'
-Shark,Germany
-Shark,Germany
-Shark,Canada
-Shark,'United States'
-Shark,France
-Shark,'United States'
-Tiger,Canada
-Shark,Mexico
-Tiger,Canada
-Tiger,'United States'
-Shark,Mozambique
-Shark,Japan
-Shark,'Costa Rica'
-Whale,Switzerland
-Tiger,Australia
-Tiger,'United Kingdom'
-Reef,Netherlands
-Shark,Canada
-Lemon,'United States'
-Shark,'United Kingdom'
-Shark,Brazil
-White,Australia
-Whale,'United States'
-Reef,'United States'
-White,'United States'
-Shark,'United States'
-Nurse,Australia
-Shark,'United States'
-Shark,'South Africa'
-White,'United States'
-Reef,Netherlands
-Whale,'United States'
-Reef,'Costa Rica'
-Shark,Italy
-Blue,Italy
-Reef,'United States'
-Shark,'United States'
-Lemon,Netherlands
-Lemon,'United States'
-Lemon,Netherlands
-Tiger,Netherlands
-Whale,'United States'
-Shark,'United States'
-Shark,'United States'
-Shark,'United States'
-Shark,'United States'
-Shark,'United States'
-White,'United Kingdom'
-Tiger,'United States'
-Reef,Switzerland
-Shark,'South Africa'
-Bull,Mexico
-Shark,'United Kingdom'
-Shark,France
-Tiger,'United States'
-Reef,'United Kingdom'
-Reef,France
-Reef,Switzerland
-Tiger,'United States'
-Shark,'New Zealand'
-Shark,'South Africa'
-Shark,'Hong Kong'
-Shark,'United States'
-Shark,'United States'
-Reef,'United Kingdom'
-Tiger,'United States'
-Shark,'South Africa'
-Shark,'South Africa'
-Shark,'South Africa'
-Shark,'United States'
-Silky,Guernsey
-Reef,'United States'
-Shark,Italy
-Whale,Mexico
-Tiger,Netherlands
-Shark,'United Kingdom'
-Blue,Italy
-Silvertip,Canada
-Shark,Germany
-Shark,Germany
-Shark,Germany
-Shark,Germany
-Shark,Australia
-Shark,Norway
-Reef,'United States'
-Whale,'United States'
-Shark,'South Africa'
-White,'United Kingdom'
-Shark,'United Kingdom'
-Shark,'United States'
-Reef,'United States'
-Shark,Australia
-Shark,Italy
-Reef,Canada
-Blue,Portugal
-Shark,'United States'
-Shark,Kuwait
+135,-25,Reef
+-80.05699,26.6159,Tiger
+-122.33207,47.60621,Bull
+1.44367,43.60426,White
+-155.99556,19.64056,Shark
+-122.33207,47.60621,White
+-80.05699,26.6159,Tiger
+174.76667,-36.86667,Shark
+-80.41394,37.22957,White
+-117.55477,33.53419,White
+-117.55477,33.53419,White
+174.45,-36.81667,Shark
+-87.65005,41.85003,Shark
+47.75,29.5,Shark
+-80.41394,37.22957,White
+114.01667,22.3,Shark
+-80.05699,26.6159,Tiger
+-97.32085,32.72541,Shark
+-80.41394,37.22957,White
+-88.33333,15.08333,Tiger
+-117.99923,33.6603,Galapagos
+-80.41394,37.22957,White
+-80.41394,37.22957,White
+74.53134,32.49268,Shark
+4.88969,52.37403,Lemon
+-122.41942,37.77493,White
+-80.41394,37.22957,White
+151.77647,-32.92715,Bull
+-84.38798,33.749,Shark
+114.01667,22.3,Shark
+135.183,34.6913,Whale
+135,-25,Bull
+-80.41394,37.22957,White
+-98.5,39.76,Gray
+135,-25,White
+-80.41394,37.22957,White
+126.9784,37.566,Lemon
+-80.41394,37.22957,White
+-79.4163,43.70011,Mako
+114.01667,22.3,Shark
+-79.4163,43.70011,White
+135,-25,White
+-0.0061,51.12382,Tiger
+-122.41942,37.77493,Hammerhead
+100.50144,13.75398,Shark
+-122.33207,47.60621,Shark
+-80.41394,37.22957,White
+-87.65005,41.85003,White
+-80.05699,26.6159,Tiger
+151.20732,-33.86785,Nurse
+135,-25,White
+-117.55477,33.53419,Blue
+-122.0308,36.97412,White
+-84.38798,33.749,Shark
+-80.41394,37.22957,White
+-86.62,36.30477,Shark
+-121.91662,36.61774,Whale
+174.45,-36.81667,Shark
+-79.4163,43.70011,Blue
+-80.41394,37.22957,White
+8.01427,47.00016,Porbeagle
+-2.35622,49.43331,White
+-79.4163,43.70011,Whale
+-74.00597,40.71427,Tiger
+-80.41394,37.22957,White
+-122.41942,37.77493,Whale
+73.50888,4.1748,Whale
+-113.64258,60.10867,White
+67.0822,24.9056,Shark
+-117.99923,33.6603,Galapagos
+47.75,29.5,Shark
+-0.32719,51.06395,Reef
+-110.92648,32.22174,Tiger
+121.53185,25.04776,White
+-80.41394,37.22957,White
+-79.4163,43.70011,Shark
+-80.41394,37.22957,White
+-80.41394,37.22957,White
+-80.41394,37.22957,White
+-79.4163,43.70011,White
+-79.4163,43.70011,Tiger
+-114.31291,48.19579,White
+-79.4163,43.70011,Blue
+2,46,Blacktip
+-80.41394,37.22957,White
+135,-25,Bull
+149.12807,-35.28346,Nurse
+-80.05699,26.6159,Lemon
+-80.41394,37.22957,White
+-2.09814,57.14369,Whale
+-118.24368,34.05223,White
+-79.4163,43.70011,Whale
+149.12807,-35.28346,Nurse
+-80.05699,26.6159,Reef
+-79.4163,43.70011,Silky
+-80.05699,26.6159,Tiger
+-0.0061,51.12382,Tiger
+-155.99556,19.64056,Reef
+73.50888,4.1748,Reef
+-0.0061,51.12382,Lemon
+-87.65005,41.85003,Whale
+-79.4163,43.70011,Lemon
+-0.32719,51.06395,Reef
+114.01667,22.3,Shark
+-87.65005,41.85003,White
+-117.99923,33.6603,Reef
+-122.0308,36.97412,Silvertip
+14.50194,35.9125,Shark
+-79.4163,43.70011,Lemon
+-117.55477,33.53419,Lemon
+-87.65005,41.85003,Lemon
+-71.10561,42.3751,Reef
+-157.85833,21.30694,Galapagos
+-87.65005,41.85003,Lemon
+-80.41394,37.22957,White
+-98.5,39.76,Gray
+116.0724,5.9749,White
+-28.45404,38.42836,Blue
+-155.99556,19.64056,Galapagos
+-155.99556,19.64056,Reef
+-117.99923,33.6603,Tiger
+-87.65005,41.85003,White
+-80.05699,26.6159,Lemon
+-88.23206,16.96921,Whale
+-79.4163,43.70011,Reef
+-117.99923,33.6603,Shark
+-122.33207,47.60621,Shark
+-79.4163,43.70011,Silky
+-2.35622,49.43331,Shark
+-80.05699,26.6159,Reef
+-79.4163,43.70011,Reef
+-79.4163,43.70011,Lemon
+1.29834,52.62783,Shark
+-80.05699,26.6159,Tiger
+-79.4163,43.70011,Shark
+-80.41394,37.22957,White
+-79.4163,43.70011,White
+114.01667,22.3,Shark
+151.20732,-33.86785,Shark
+-79.4163,43.70011,Blue
+-3.70256,40.4165,Tiger
+-2.35622,49.43331,White
+135,-25,White
+4.88969,52.37403,Reef
+-117.99923,33.6603,Sandbar
+-92.50046,38.25031,Shark
+151.20732,-33.86785,Nurse
+-80.41394,37.22957,White
+-0.0061,51.12382,Tiger
+114.01667,22.3,Shark
+4.88969,52.37403,White
+-74.65905,40.34872,Shark
+-84.37382,33.78649,Shark
+1.58333,42.55,Lemon
+-88.18343,43.42528,Shark
+-80.41394,37.22957,White
+149.12807,-35.28346,Nurse
+-80.41394,37.22957,White
+-98.5,39.76,Tiger
+-79.4163,43.70011,Blue
+151.20732,-33.86785,Nurse
+151.20732,-33.86785,Gray
+-0.0061,51.12382,Lemon
+-118.49119,34.01945,Blue
+-86.84656,21.17429,Shark
+-79.4163,43.70011,Reef
+-79.4163,43.70011,Tiger
+4.88969,52.37403,Tiger
+-2.35622,49.43331,White
+-2.35622,49.43331,Shark
+135,-25,Shark
+135,-25,Shark
+12.51133,41.89193,Shark
+4.88969,52.37403,Lemon
+-91.6083,30.12907,Reef
+153.02809,-27.46794,Shark
+-80.41394,37.22957,White
+-80.41394,37.22957,White
+135,-25,Shark
+-80.41394,37.22957,Whale
+-7.61138,33.58831,Shark
+-80.41394,37.22957,White
+-74.45099,40.63788,Shark
+-157.85833,21.30694,Tiger
+103.8,1.36667,Shark
+116.0724,5.9749,Whale
+-117.99923,33.6603,Galapagos
+-0.12574,51.50853,White
+-80.05699,26.6159,Lemon
+-79.4163,43.70011,Hammerhead
+-79.4163,43.70011,Blue
+-4.75,50.41667,Basking
+-80.05699,26.6159,Tiger
+121.53185,25.04776,White
+-80.41394,37.22957,White
+-117.99923,33.6603,Lemon
+153.43088,-28.00029,Nurse
+-79.4163,43.70011,Whale
+-117.99923,33.6603,Tiger
+-0.12574,51.50853,Reef
+149.12807,-35.28346,Nurse
+4.88969,52.37403,Reef
+-79.4163,43.70011,Blue
+-3.70256,40.4165,Whale
+-0.32719,51.06395,Shark
+135,-25,White
+-80.41394,37.22957,White
+22,39,Shark
+14.43333,35.91667,Shark
+-122.41942,37.77493,Tiger
+-79.10139,35.5825,Shark
+149.12807,-35.28346,Nurse
+10.5,51.5,Reef
+116.0724,5.9749,Whale
+-122.03635,37.36883,Shark
+-79.4163,43.70011,Reef
+-3.70256,40.4165,White
+-84.3642,33.6101,Whale
+-80.05699,26.6159,Lemon
+-80.41394,37.22957,White
+-117.99923,33.6603,White
+-117.99923,33.6603,Galapagos
+-118.24368,34.05223,Shark
+-80.41394,37.22957,White
+4.88969,52.37403,Reef
+8.30635,47.05048,Whale
+151.20732,-33.86785,Nurse
+-117.99923,33.6603,Galapagos
+-79.4163,43.70011,Nurse
+-2.23743,53.48095,Blacktip
+-155.99556,19.64056,Reef
+4.42222,51.8575,Shark
+-119.82764,34.43583,Galapagos
+-0.32719,51.06395,Reef
+135,-25,Tiger
+116.0724,5.9749,White
+48.07417,29.31167,Shark
+-79.4163,43.70011,Cow
+151.20732,-33.86785,Gray
+135,-25,Galapagos
+-98.5,39.76,Shark
+151.20732,-33.86785,Shark
+-84.3642,33.6101,Whale
+151.20732,-33.86785,Shark
+4.88969,52.37403,Reef
+-0.12574,51.50853,Tiger
+176,-39,Shark
+151.77647,-32.92715,Bull
+-70.72587,42.19593,Hammerhead
+-0.12574,51.50853,Reef
+-115,30,White
+-117.99923,33.6603,Galapagos
+-80.05699,26.6159,Lemon
+4.88969,52.37403,Reef
+151.20732,-33.86785,Gray
+-0.12574,51.50853,Whitetip
+103.8,1.36667,Whale
+151.20732,-33.86785,Nurse
+-8.396,43.37135,Shark
+-79.4163,43.70011,Bull
+-86.84656,21.17429,Whale
+-86.84656,21.17429,Whale
+-119.29317,34.27834,Shark
+-117.99923,33.6603,White
+-98.5,39.76,Shark
+-3.70256,40.4165,Lemon
+115.8614,-31.95224,Whale
+-119.82764,34.43583,Shark
+-79.4163,43.70011,Bull
+114.01667,22.3,Shark
+-0.12574,51.50853,Reef
+-80.41394,37.22957,White
+149.12807,-35.28346,White
+-79.4163,43.70011,Reef
+-0.32719,51.06395,Reef
+10.5,51.5,Reef
+-1.89983,52.48142,Whale
+116.0724,5.9749,Whale
+-80.41394,37.22957,Shark
+-3.20792,51.77714,Whale
+135,-25,Reef
+114.01667,22.3,Shark
+18.42322,-33.92584,White
+-0.0061,51.12382,Reef
+-97.32085,32.72541,Reef
+-2.36172,51.3751,Reef
+18.42322,-33.92584,White
+-79.93092,32.77657,White
+-0.0061,51.12382,Lemon
+47.75,29.5,Shark
+-155.99556,19.64056,Shark
+-2.23743,53.48095,Blacktip
+-2.23743,53.48095,Blacktip
+153.43088,-28.00029,Nurse
+121.45806,31.22222,White
+4.47917,51.9225,Shark
+28.18783,-25.74486,Hammerhead
+-122.03635,37.36883,Shark
+-79.4163,43.70011,Silvertip
+-98.5,39.76,Blue
+-79.4163,43.70011,Blue
+-79.4163,43.70011,Blue
+149.12807,-35.28346,Nurse
+-122.0308,36.97412,Reef
+7.16755,51.27027,Shark
+35.64972,34.16444,Nurse
+-2.35622,49.43331,White
+22.14605,-34.18307,Shark
+114.01667,22.3,Shark
+4.88969,52.37403,Reef
+10.01534,53.57532,Shark
+153.38112,-27.87667,Shark
+144.96332,-37.814,Shark
+116.0724,5.9749,White
+-80.41394,37.22957,White
+9.27246,45.58005,Whale
+-97.74306,30.26715,Shark
+14.50194,35.9125,Shark
+-2.23743,53.48095,Blacktip
+-100.31846,25.67506,Mako
+135,-25,White
+151.20732,-33.86785,Gray
+-118.53675,34.22834,Shark
+120.9822,14.6042,Whale
+-2.23743,53.48095,Blacktip
+-80.41394,37.22957,Shark
+135,-25,Hammerhead
+-80.05699,26.6159,Tiger
+-2.23743,53.48095,Blacktip
+-114.98194,36.0397,Shark
+8.01427,47.00016,Whale
+-74.00597,40.71427,Tiger
+2,46,Blacktip
+174,-42,Nurse
+-157.85833,21.30694,Shark
+9.27246,45.58005,Blue
+100.02489,9.74512,Bull
+-79.4163,43.70011,Reef
+2,46,Reef
+-80.38232,33.91617,Whale
+-0.32719,51.06395,Reef
+172.63333,-43.53333,Shark
+-0.12574,51.50853,Shark
+-79.4163,43.70011,Reef
+-79.84963,43.25011,Shark
+151.77647,-32.92715,Bull
+-80.05699,26.6159,Lemon
+-90.45232,31.43878,White
+151.20732,-33.86785,Shark
+151.20732,-33.86785,Shark
+4.88969,52.37403,Tiger
+-157.85833,21.30694,Tiger
+2.65024,39.56939,Shark
+-110.92648,32.22174,Hammerhead
+2.65024,39.56939,Shark
+4.88969,52.37403,Tiger
+149.12807,-35.28346,Nurse
+-157.85833,21.30694,Galapagos
+-0.0061,51.12382,Reef
+-80.86039,32.23715,Reef
+-122.41942,37.77493,White
+-79.4163,43.70011,Shark
+9.25853,59.55936,Shark
+151.20732,-33.86785,Shark
+-2.35622,49.43331,Silky
+9.27246,45.58005,Blue
+-117.55477,33.53419,Tiger
+-86.84656,21.17429,Whale
+9.27246,45.58005,Tiger
+151.20732,-33.86785,Shark
+116.0724,5.9749,White
+151.20732,-33.86785,Shark
+174,-42,Shark
+114.01667,22.3,Shark
+-3.70256,40.4165,Shark
+-0.0061,51.12382,Reef
+-156.61706,20.86774,Shark
+15.62157,58.41086,Shark
+-98.5,39.76,Shark
+-0.12574,51.50853,Shark
+13.06566,52.39886,Shark
+103.8,1.36667,Whale
+149.12807,-35.28346,Nurse
+116.0724,5.9749,Whale
+115.8614,-31.95224,White
+151.20732,-33.86785,Shark
+-91.6083,30.12907,Shark
+-117.99923,33.6603,Shark
+-2.23743,53.48095,Blacktip
+4.88969,52.37403,Reef
+-0.12574,51.50853,Lemon
+114.01667,22.3,Shark
+2,46,Blacktip
+-157.85833,21.30694,Whale
+129.04028,35.10278,Shark
+151.20732,-33.86785,Shark
+22.14605,-34.18307,Shark
+-0.0061,51.12382,Reef
+116.0724,5.9749,Whale
+117.17667,39.14222,Whale
+-0.0061,51.12382,Lemon
+-117.99923,33.6603,White
+4.88969,52.37403,Reef
+22.14605,-34.18307,Tiger
+-121.89468,36.60024,Shark
+114.01667,22.3,Shark
+-49.27306,-25.42778,Shark
+-80.05699,26.6159,Tiger
+-117.55477,33.53419,Lemon
+-117.55477,33.53419,Lemon
+-122.33207,47.60621,Shark
+4.88969,52.37403,Lemon
+-9.13333,38.71667,Zebra
+28.04363,-26.20227,Shark
+-86.29997,32.36681,Whale
+151.20732,-33.86785,Nurse
+-117.99923,33.6603,Tiger
+-117.55477,33.53419,Tiger
+-3.70256,40.4165,Tiger
+-115,30,White
+-117.55477,33.53419,Tiger
+-98.5,39.76,Lemon
+-78.39085,40.33591,Shark
+-0.12574,51.50853,Reef
+-117.55477,33.53419,Lemon
+9.27246,45.58005,Blue
+-79.4163,43.70011,Tiger
+-117.99923,33.6603,White
+-97.97959,30.36377,Reef
+18.42322,-33.92584,Shark
+-80.41394,37.22957,Shark
+18.42322,-33.92584,Shark
+-80.41394,37.22957,White
+-3.70256,40.4165,Blue
+-122.41942,37.77493,Shark
+114.15769,22.28552,Shark
+9.27246,45.58005,Blue
+-97.97959,30.36377,Reef
+-2.23743,53.48095,Blacktip
+-0.12574,51.50853,Reef
+37.61556,55.75222,Shark
+-43.2075,-22.90278,Shark
+116.0724,5.9749,Whale
+135,-25,White
+-117.15726,32.71533,Shark
+-73.12122,41.80065,Shark
+151.77647,-32.92715,Bull
+-4.99541,50.44056,Shark
+151.20732,-33.86785,Nurse
+-2.23743,53.48095,Blacktip
+-118.24368,34.05223,Hammerhead
+18.42322,-33.92584,White
+116.0724,5.9749,Whale
+-80.05699,26.6159,Lemon
+-74.74294,40.21705,Shark
+-121.89468,36.60024,Shark
+-117.99923,33.6603,Shark
+114.01667,22.3,Shark
+-97.06473,33.15401,Reef
+-98.5,39.76,Shark
+-98.5,39.76,Shark
+4.88969,52.37403,Lemon
+-76.52662,38.56679,Whale
+149.12807,-35.28346,Nurse
+-122.03107,37.97798,Shark
+-81.63474,33.54437,Shark
+-81.09983,32.08354,Tiger
+-95.36327,29.76328,Nurse
+-84.12934,9.99299,Shark
+9.27246,45.58005,Shark
+149.12807,-35.28346,Nurse
+-96.80667,32.78306,Shark
+0.46958,51.73575,Shark
+-97.97959,30.36377,Reef
+-3.60667,37.18817,Shark
+115.8614,-31.95224,Shark
+-104.9847,39.73915,Shark
+-0.18835,51.98781,Shark
+-98.5,39.76,Lemon
+-117.99923,33.6603,White
+8.35916,49.63278,Shark
+8.35916,49.63278,Shark
+-79.4163,43.70011,Shark
+-95.36327,29.76328,Shark
+7.1204,43.66663,Shark
+-115.13722,36.17497,Shark
+-79.4163,43.70011,Tiger
+-102.28259,21.88234,Shark
+-79.4163,43.70011,Tiger
+-157.85833,21.30694,Tiger
+32.58322,-25.96553,Shark
+136.90641,35.18147,Shark
+-85.69337,10.98545,Shark
+8.01427,47.00016,Whale
+135,-25,Tiger
+0.66667,51.16667,Tiger
+4.88969,52.37403,Reef
+-123.11934,49.24966,Shark
+-117.55477,33.53419,Lemon
+-2.23743,53.48095,Shark
+-43.2075,-22.90278,Shark
+4.47917,51.9225,Shark
+151.20732,-33.86785,White
+-122.41942,37.77493,Whale
+-76.74969,38.81595,Reef
+-95.36327,29.76328,White
+-71.10832,42.36565,Shark
+151.20732,-33.86785,Nurse
+-97.94211,35.94539,Shark
+18.42322,-33.92584,Shark
+-95.36327,29.76328,White
+4.88969,52.37403,Reef
+-97.51643,35.46756,Whale
+-84.12934,9.99299,Reef
+9.27246,45.58005,Shark
+9.27246,45.58005,Blue
+-87.65005,41.85003,Reef
+-155.99556,19.64056,Shark
+4.88969,52.37403,Lemon
+4.88969,52.37403,Tiger
+4.88969,52.37403,Lemon
+-117.55477,33.53419,Lemon
+-82.99879,39.96118,Whale
+-87.78449,41.57337,Shark
+-71.05977,42.35843,Shark
+-122.33207,47.60621,Shark
+-122.33207,47.60621,Shark
+-122.33207,47.60621,Shark
+-4.14305,50.37153,White
+-74.00597,40.71427,Tiger
+7.44744,46.94809,Reef
+18.42322,-33.92584,Shark
+-99.12766,19.42847,Bull
+-0.53792,53.22683,Shark
+2.89541,42.69764,Shark
+-122.31513,47.82093,Tiger
+-0.32719,51.06395,Reef
+2,46,Reef
+7.44744,46.94809,Reef
+-87.65005,41.85003,Tiger
+174.08333,-39.06667,Shark
+18.42322,-33.92584,Shark
+114.01667,22.3,Shark
+-101.85517,33.57786,Shark
+-81.40952,28.29057,Shark
+-0.12574,51.50853,Reef
+-74.00597,40.71427,Tiger
+18.42322,-33.92584,Shark
+18.42322,-33.92584,Shark
+18.42322,-33.92584,Shark
+-117.99923,33.6603,Shark
+-2.35622,49.43331,Silky
+-85.79198,42.90725,Reef
+9.18951,45.46427,Shark
+-86.84656,21.17429,Whale
+4.88969,52.37403,Tiger
+-2.89189,53.1905,Shark
+9.27246,45.58005,Blue
+-79.4163,43.70011,Silvertip
+8.35916,49.63278,Shark
+8.35916,49.63278,Shark
+8.35916,49.63278,Shark
+8.35916,49.63278,Shark
+151.20732,-33.86785,Shark
+10,62,Shark
+-117.99923,33.6603,Reef
+-122.27275,37.87159,Whale
+18.42322,-33.92584,Shark
+-2.89189,53.1905,White
+-2.69531,54.75844,Shark
+-155.9225,19.52083,Shark
+-97.97959,30.36377,Reef
+153.02809,-27.46794,Shark
+12.80317,41.95781,Shark
+-63.50861,44.88083,Reef

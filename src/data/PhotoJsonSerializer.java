@@ -21,7 +21,8 @@ public class PhotoJsonSerializer {
             photoJson.addProperty("server", p.getServer());
             photoJson.addProperty("title", p.getTitle());
             photoJson.addProperty("location", p.getLocation());
-
+            photoJson.addProperty("lon", p.getLon());
+            photoJson.addProperty("lat", p.getLat());
             photosArray.add(photoJson);
         }
 

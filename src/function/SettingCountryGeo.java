@@ -52,6 +52,8 @@ public class SettingCountryGeo extends Functions {
         for (int i = 0; i < geonames.length(); i++) {
             JSONObject jphoto = geonames.getJSONObject(i);
             photo.setLocation(jphoto.getString("countryName"));
+            photo.setLon(jphoto.getDouble("lng"));
+            photo.setLat(jphoto.getDouble("lat"));
         }
 
     }

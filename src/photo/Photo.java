@@ -17,9 +17,22 @@ public class Photo {
     private String title;
     private String secret;
     private String server;
+    private double lon;
+    private double lat;
 
     public Photo(String id) {
         this.id = id;
+    }
+
+    public Photo(String id, String userId, String location, String title, String secret, String server, double lon, double lat) {
+        this.id = id;
+        this.userId = userId;
+        this.location = location;
+        this.title = title;
+        this.secret = secret;
+        this.server = server;
+        this.lon = lon;
+        this.lat = lat;
     }
 
     public Photo(String id, String userId, String location, String title, String secret, String server) {
@@ -30,6 +43,8 @@ public class Photo {
         this.secret = secret;
         this.server = server;
     }
+    
+    
 
     public Photo() {
     }
@@ -80,6 +95,22 @@ public class Photo {
 
     public void setServer(String server) {
         this.server = server;
+    }
+
+    public double getLat() {
+        return lat;
+    }
+
+    public void setLat(double lat) {
+        this.lat = lat;
+    }
+
+    public double getLon() {
+        return lon;
+    }
+
+    public void setLon(double lon) {
+        this.lon = lon;
     }
 
 }

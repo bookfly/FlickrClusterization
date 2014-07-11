@@ -61,6 +61,11 @@ public class CreateArff {
         attList.add(att);
     }
 
+    private void getTypeValues(String name) {
+        Attribute att = new Attribute(name);
+        attList.add(att);
+    }
+
     private void addAttribute(List<Attribute> atts) {
         attributes = new FastVector(atts.size());
         for (Attribute attr : atts) {
@@ -75,7 +80,7 @@ public class CreateArff {
 
         for (int i = 0; i < photos.size();) {
             for (int j = 0; j < instances.length; j++) {
-                instances[j] = createInstance(photos.get(i).getTitle(), photos.get(i).getLocation());
+                instances[j] = createInstance(photos.get(i).getTitle(), photos.get(i).getLon(), photos.get(i).getLat());
                 i++;
             }
         }
@@ -84,7 +89,7 @@ public class CreateArff {
             data.add(instances[i]);
         }
 
-        createArffFile(data, "proba");
+        createArffFile(data, "data/proba");
     }
 
     private void createArffFile(Instances data, String fileName) throws IOException {
@@ -98,17 +103,22 @@ public class CreateArff {
     public void general(List<Photo> photos) throws IOException {
         gettingSharkTypes(photos);
         gettingLocations(photos);
+        getTypeValues("Longitude");
+        getTypeValues("Latitude");
         getTypeValues("Type", sharkTypes);
-        getTypeValues("Location", locations);
+      // getTypeValues("Location", locations);
         addAttribute(attList);
 
         createInstances(photos);
     }
 
-    private Instance createInstance(String type, String location) {
-        Instance i1 = new Instance(2);
-        i1.setValue((Attribute) attributes.elementAt(0), type);
-        i1.setValue((Attribute) attributes.elementAt(1), location);
+    private Instance createInstance(String type,double lon, double lat) {
+        Instance i1 = new Instance(3);
+        i1.setValue((Attribute) attributes.elementAt(0), lon);
+        i1.setValue((Attribute) attributes.elementAt(1), lat);
+        i1.setValue((Attribute) attributes.elementAt(2), type);
+     //   i1.setValue((Attribute) attributes.elementAt(3), location);
+
         return i1;
     }
 

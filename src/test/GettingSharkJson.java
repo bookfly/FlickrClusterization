@@ -47,6 +47,7 @@ public class GettingSharkJson {
         GetPhotoInfo gpi = new GetPhotoInfo();
         gpi.getPhotosInfo(listPhotos);
 
+        //write data into json file
         makeSharkJson(listPhotos, fileName);
 
     }
@@ -54,7 +55,6 @@ public class GettingSharkJson {
     public void makeSharkJson(List<Photo> photos, String fileName) throws IOException {
 
         FileWriter writer = new FileWriter(fileName + ".json");
-        //    FileWriter writer = new FileWriter("shark.json");
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         JsonArray jsonArray = PhotoJsonSerializer.serializePhotos(photos);
 
