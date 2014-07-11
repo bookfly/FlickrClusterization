@@ -11,9 +11,11 @@ import java.io.PrintWriter;
 import weka.clusterers.ClusterEvaluation;
 import weka.clusterers.FilteredClusterer;
 import weka.clusterers.SimpleKMeans;
+import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils;
 import weka.filters.Filter;
+import weka.filters.unsupervised.attribute.AddCluster;
 import weka.filters.unsupervised.attribute.Remove;
 
 /**
@@ -25,9 +27,9 @@ public class ReadArff {
     public ReadArff() {
     }
 
-    public void readArff(String fileName, int clustNo) throws FileNotFoundException, IOException, Exception {
+    public void readArff(String fileName, int clustNo, String txtName) throws FileNotFoundException, IOException, Exception {
 
-        ConverterUtils.DataSource loader = new ConverterUtils.DataSource(fileName + ".arff");
+        ConverterUtils.DataSource loader = new ConverterUtils.DataSource("data/" + fileName + ".arff");
         Instances data = loader.getDataSet();
 
         Remove removeFilter = new Remove();
@@ -42,18 +44,32 @@ public class ReadArff {
         filteredClusterer.setFilter(removeFilter);
         filteredClusterer.buildClusterer(data);
 
+        writeClusters(data, filteredClusterer);
+
         // Result of clusterization
         ClusterEvaluation eval = new ClusterEvaluation();
         eval.setClusterer(filteredClusterer);
         eval.evaluateClusterer(data);
 
-        writeFile(eval.clusterResultsToString());
+        writeFile(eval.clusterResultsToString(), txtName);
         //  System.out.println(eval.clusterResultsToString());
 
     }
 
-    private void writeFile(String text) throws FileNotFoundException {
-        PrintWriter writer = new PrintWriter("data/results.txt");
+    private void writeClusters(Instances data, FilteredClusterer filteredClusterer) throws Exception {
+
+        PrintWriter writer = new PrintWriter("data/resultWithClusters.txt");
+        for (int i = 0; i < data.numInstances(); i++) {
+            writer.print(data.instance(i).toString());
+            writer.println(", " + filteredClusterer.clusterInstance(data.instance(i)));
+
+        }
+        writer.close();
+
+    }
+
+    private void writeFile(String text, String name) throws FileNotFoundException {
+        PrintWriter writer = new PrintWriter("data/" + name + ".txt");
         writer.println(text);
         writer.close();
     }

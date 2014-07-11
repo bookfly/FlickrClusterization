@@ -89,7 +89,7 @@ public class CreateArff {
             data.add(instances[i]);
         }
 
-        createArffFile(data, "data/proba");
+        createArffFile(data, "data/trial");
     }
 
     private void createArffFile(Instances data, String fileName) throws IOException {
@@ -106,18 +106,18 @@ public class CreateArff {
         getTypeValues("Longitude");
         getTypeValues("Latitude");
         getTypeValues("Type", sharkTypes);
-      // getTypeValues("Location", locations);
+        // getTypeValues("Location", locations);
         addAttribute(attList);
 
         createInstances(photos);
     }
 
-    private Instance createInstance(String type,double lon, double lat) {
+    private Instance createInstance(String type, double lon, double lat) {
         Instance i1 = new Instance(3);
         i1.setValue((Attribute) attributes.elementAt(0), lon);
         i1.setValue((Attribute) attributes.elementAt(1), lat);
         i1.setValue((Attribute) attributes.elementAt(2), type);
-     //   i1.setValue((Attribute) attributes.elementAt(3), location);
+        //   i1.setValue((Attribute) attributes.elementAt(3), location);
 
         return i1;
     }

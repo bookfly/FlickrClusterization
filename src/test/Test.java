@@ -33,7 +33,7 @@ public class Test {
         JsonArray ja = PhotoJsonSerializer.serializePhotos(withLoc);
         gsj.makeSharkJson(withLoc, "data/sharkLoc");
 
-         //create list of photos
+        //create list of photos
         //change photos title
         List<Photo> listPhoto = new ArrayList<>();
         ChangingTitle ct = new ChangingTitle();
@@ -44,7 +44,7 @@ public class Test {
         JsonArray ja = PhotoJsonSerializer.serializePhotos(listPhoto);
         gsj.makeSharkJson(listPhoto, "data/sharkTitle");
 
-         //getting photos from sharkLoc.json
+        //getting photos from sharkLoc.json
         //getting location with geonames
         List<Photo> listPhotos = new ArrayList<>();
         ReadingJson rj = new ReadingJson();
@@ -53,15 +53,21 @@ public class Test {
         listPhotos = scg.setLocation(listPhotos);
 
         gsj.makeSharkJson(listPhotos, "data/changedLocation");
- 
+
         //making arff file
         List<Photo> listPhoto2 = new ArrayList<>();
         listPhoto2 = rj.readJsonStream(new FileInputStream("data/sharks.json"));
         CreateArff ca = new CreateArff();
         ca.general(listPhoto2);
 */
-       ReadArff ra = new ReadArff();
-        ra.readArff("data/proba", 4);
+        ReadArff ra = new ReadArff();
+
+        //changing number of clusters led to a conclusion the best number is 4
+/*        for (int i = 1; i < 30; i++) {
+            ra.readArff("proba", i, "rez" + i);
+        }
+*/
+        ra.readArff("trial", 4, "result");
 
     }
 
