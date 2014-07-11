@@ -14,11 +14,8 @@ import java.util.Date;
 import weka.clusterers.ClusterEvaluation;
 import weka.clusterers.FilteredClusterer;
 import weka.clusterers.SimpleKMeans;
-import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils;
-import weka.filters.Filter;
-import weka.filters.unsupervised.attribute.AddCluster;
 import weka.filters.unsupervised.attribute.Remove;
 import weka.gui.explorer.ClustererPanel;
 import weka.gui.visualize.PlotData2D;
@@ -50,8 +47,7 @@ public class ReadArff {
         filteredClusterer.setFilter(removeFilter);
         filteredClusterer.buildClusterer(data);
 
-        writeClusters(data, filteredClusterer);
-
+    //    writeClusters(data, filteredClusterer);
         // Result of clusterization
         ClusterEvaluation eval = new ClusterEvaluation();
         eval.setClusterer(filteredClusterer);
@@ -91,7 +87,6 @@ public class ReadArff {
         jf.setVisible(true);
 
     }
-
 
     private void writeClusters(Instances data, FilteredClusterer filteredClusterer) throws Exception {
         PrintWriter writer = new PrintWriter("data/resultWithClusters.txt");
