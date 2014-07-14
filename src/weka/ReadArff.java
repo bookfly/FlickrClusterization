@@ -47,7 +47,7 @@ public class ReadArff {
         filteredClusterer.setFilter(removeFilter);
         filteredClusterer.buildClusterer(data);
 
-    //    writeClusters(data, filteredClusterer);
+        //writeClusters(data, filteredClusterer);
         // Result of clusterization
         ClusterEvaluation eval = new ClusterEvaluation();
         eval.setClusterer(filteredClusterer);
@@ -89,13 +89,32 @@ public class ReadArff {
     }
 
     private void writeClusters(Instances data, FilteredClusterer filteredClusterer) throws Exception {
-        PrintWriter writer = new PrintWriter("data/resultWithClusters.txt");
+        PrintWriter writer1 = new PrintWriter("data/resultWithClusters1.txt");
+        PrintWriter writer2 = new PrintWriter("data/resultWithClusters2.txt");
+        PrintWriter writer3 = new PrintWriter("data/resultWithClusters3.txt");
+        PrintWriter writer4 = new PrintWriter("data/resultWithClusters4.txt");
+
         for (int i = 0; i < data.numInstances(); i++) {
-            writer.print(data.instance(i).toString());
-            writer.println(", " + filteredClusterer.clusterInstance(data.instance(i)));
+            if (filteredClusterer.clusterInstance(data.instance(i)) == 0) {
+                writer1.print(data.instance(i).toString());
+                writer1.println(", " + filteredClusterer.clusterInstance(data.instance(i)));
+            } else if (filteredClusterer.clusterInstance(data.instance(i)) == 1) {
+                writer2.print(data.instance(i).toString());
+                writer2.println(", " + filteredClusterer.clusterInstance(data.instance(i)));
+            } else if (filteredClusterer.clusterInstance(data.instance(i)) == 2) {
+                writer3.print(data.instance(i).toString());
+                writer3.println(", " + filteredClusterer.clusterInstance(data.instance(i)));
+            } else if (filteredClusterer.clusterInstance(data.instance(i)) == 3) {
+                writer4.print(data.instance(i).toString());
+                writer4.println(", " + filteredClusterer.clusterInstance(data.instance(i)));
+            }
 
         }
-        writer.close();
+
+        writer1.close();
+        writer2.close();
+        writer3.close();
+        writer4.close();
 
     }
 

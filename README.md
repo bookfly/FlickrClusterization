@@ -105,20 +105,19 @@ Prilikom realizacije aplikacije korišćene su sledeće tehnologije:
 	eval.evaluateClusterer(data);
 ```
 
-U ovom primeru korišćen je SimpleKMeans algoritam za klasterovanje. Jedan je od najpoznatijih algoritamaq za klasterovanje. Koristi se tako što mu se zada broj klastera, a zatim on prolazeći kroz iteracije razvrstava podatke. Na početku, prilikom inicijalizacije nasumično bira onoliki broj težišta klastera koliko je zadati broj klastera. U sledećoj iteraciji razvrstava instance na osnovu udaljenosti od težišta klastera. Zatim pomera težište klastera na osnovu izračunatih proseka vrednosti instanci u klasteru. Ovaj postupak se ponavlja sve dok algoritam ne konvergira, jer daljim razvrstavanjem se nece dobiti značajnije promene, pa se proces zaustavlja. Primenom ovog algoritma, dobijeni su sledeći klasteri:
+U ovom primeru korišćen je SimpleKMeans algoritam za klasterovanje. Jedan je od najpoznatijih algoritama za klasterovanje. Koristi se tako što mu se zada broj klastera, a zatim on prolazeći kroz iteracije razvrstava podatke. SimpleKMeans grupiše instance na osnovu Euklidske udaljenosti u ravni koja je postavljena atributima tih instanci. Na početku, prilikom inicijalizacije nasumično bira onoliki broj težišta klastera koliko je zadati broj klastera. U sledećoj iteraciji razvrstava instance na osnovu udaljenosti od težišta klastera. Zatim pomera težište klastera na osnovu izračunatih proseka vrednosti instanci u klasteru. Ovaj postupak se ponavlja sve dok algoritam ne konvergira, jer daljim razvrstavanjem se nece dobiti značajnije promene, pa se proces zaustavlja. Primenom ovog algoritma, dobijeni su sledeći klasteri:
 
-![Slika 2 - Type clusters](FlickrClusterization/images/typeClust.jpg)
+![Slika 2 - Type clusters](FlickrClusterization/images/results.jpg)
 
-Kao što se na slici 2 može videti, dobijena su četiri klastera sa po 337, 48, 161 i 29 instanci respektivno. U prvom klasteru se nalaze vrste ajkula koje su prema SimpleKMeans algoritmu najbliže reef ajkuli, to najviše ima tigar, belih, galapagos i limun ajkula. U drugom klasteru se nalaze vrste koje su najbliže plavoj ajkuli. Njih ima dosta manje nego u prvom klasteru, te osim plave, tu spadaju i tigar, limun, sivorepa, bela i kit ajkula. U trećem klasteru su ajkule koje su neraspoređene, odnosno one koje su najsličnije onim ajkulama za koje nije bilo moguće utvrditi vrstu. Tu spadaju nurse ajkule, bele i sive ajkule. U četvrtom klasteru su se našle one ajkule koje su najsličnije beloj, a to je kit ajkula.
+Kao što se na slici 2 može videti, dobijena su četiri klastera sa po 95, 282, 150 i 48 instanci respektivno. U prvom klasteru se nalaze vrste ajkula među kojima je najvise nurse ajkula. U drugom su pretežno bele ajkule. U trećem limun, tigar i reef ajkule. U četvrtom najviše ima kit ajkula.
 
-![Slika 3 - Location clusters](FlickrClusterization/images/locationClust.jpg)
+![Slika 3 - Location clusters](FlickrClusterization/images/wekaVisType.jpg)
 
-Kao što se na slici 3 može videti, dobijena su četiri klastera. U prvom se nalaze instance čija je lokacija najsličnija SAD, tu se nalaze Ujedinjeno Kraljevstvo, Holandija, Francuska. U drugom klasteru su one instance koje su najsličnije Kanadi, to je Italija, Portugal. U trećem klasteru se nalaze instance koje su najsličnije Australiji, a to su ong Kong, Južna Afrikas, Ujedinjeno Kraljevstvo, Nemačka. U četvrtom klasteru se nalaze instance koje su najsličnije Maleziji, i to su Ujedinjeno Kraljevstvo. Južna Afrika.
+U prvom se nalaze instance čija je lokacija najbliža Australiji (njih 95). U drugom se nalaze one koje su najbliže Sjedinjenim Američkim Državama (njih 282). U trećem se nalaze one koje su po lokaciji najbliže Francuskoj njih 150). U četvrtom se nalaze one instance koje su po lokaciji najbliže Kini (njih 48).
 
-![Slika 4 - Instance](FlickrClusterization/images/clustInstan.jpg)
+Na slici 3 se može videti koliko instanci je u kom klasteru. Od ukupno 575 instanci 95 (17%) je u prvom klasteru; 282 (49%) u drugom; 150 (26%) u trećem i 48 (5%) u četvrtom. Metodom probanja dobijeno je da se se prilikom klasterizacije na četiri klastera dobija najmanje osipanje podataka uz najmanju kvadratnu grešku od 7.061393049561895.
 
-Na slici 4 se može videti koliko instanci je u kom klasteru. Od ukupno 575 instanci 337 (59%) je u prvom klasteru; 48 (8%) u drugom; 161 (28%) u trećem i 9 (5%) u četvrtom.
-
+![Slika 4 - Location clusters](FlickrClusterization/images/wekaVisClust.jpg)
 
 #5. Priznanja
 Ova aplikacija je nastala kao rezultat seminarskog rada iz predmeta [Inteligentni sistemi](http://is.fon.rs/) na Fakultetu organizacionih nauka, Univerziteta u Beogradu, Srbija, 2014. godine.
