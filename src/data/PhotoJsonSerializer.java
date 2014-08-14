@@ -23,6 +23,7 @@ public class PhotoJsonSerializer {
             photoJson.addProperty("location", p.getLocation());
             photoJson.addProperty("lon", p.getLon());
             photoJson.addProperty("lat", p.getLat());
+            photoJson.addProperty("cluster", p.getCluster());
             photosArray.add(photoJson);
         }
 

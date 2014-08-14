@@ -32,31 +32,33 @@ public class Test {
         System.out.println("Number of photos with location: " + withLoc.size());
         JsonArray ja = PhotoJsonSerializer.serializePhotos(withLoc);
         gsj.makeSharkJson(withLoc, "data/sharkLoc");
-
+        
+ 
         //create list of photos
         //change photos title
-        List<Photo> listPhoto = new ArrayList<>();
+        List<Photo> listPhoto1 = new ArrayList<>();
         ChangingTitle ct = new ChangingTitle();
-        listPhoto = ct.changeTitle("data/sharkLoc");
-        System.out.println("Size of photo list: " + listPhoto.size());
+        listPhoto1 = ct.changeTitle("data/sharkLoc");
+        System.out.println("Size of photo list: " + listPhoto1.size());
 
         //serialize photos
-        JsonArray ja = PhotoJsonSerializer.serializePhotos(listPhoto);
-        gsj.makeSharkJson(listPhoto, "data/sharkTitle");
+        JsonArray ja1 = PhotoJsonSerializer.serializePhotos(listPhoto1);
+        gsj.makeSharkJson(listPhoto1, "data/sharkTitle");
 
         //getting photos from sharkLoc.json
         //getting location with geonames
         List<Photo> listPhotos = new ArrayList<>();
-        ReadingJson rj = new ReadingJson();
-        listPhotos = rj.readJsonStream(new FileInputStream("data/sharkTitle.json"));
+        ReadingJson rj1 = new ReadingJson();
+        listPhotos = rj1.readJsonStream(new FileInputStream("data/sharkTitle.json"));
         SettingCountryGeo scg = new SettingCountryGeo();
         listPhotos = scg.setLocation(listPhotos);
 
         gsj.makeSharkJson(listPhotos, "data/changedLocation");
+     
 
         //making arff file
         List<Photo> listPhoto2 = new ArrayList<>();
-        listPhoto2 = rj.readJsonStream(new FileInputStream("data/sharks.json"));
+        listPhoto2 = rj1.readJsonStream(new FileInputStream("data/changedLocation.json"));
         CreateArff ca = new CreateArff();
         ca.general(listPhoto2);
 */

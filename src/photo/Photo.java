@@ -19,12 +19,13 @@ public class Photo {
     private String server;
     private double lon;
     private double lat;
+    private int cluster;
 
     public Photo(String id) {
         this.id = id;
     }
 
-    public Photo(String id, String userId, String location, String title, String secret, String server, double lon, double lat) {
+    public Photo(String id, String userId, String location, String title, String secret, String server, double lon, double lat, int cluster) {
         this.id = id;
         this.userId = userId;
         this.location = location;
@@ -33,6 +34,7 @@ public class Photo {
         this.server = server;
         this.lon = lon;
         this.lat = lat;
+        this.cluster = cluster;
     }
 
     public Photo(String id, String userId, String location, String title, String secret, String server) {
@@ -43,8 +45,6 @@ public class Photo {
         this.secret = secret;
         this.server = server;
     }
-    
-    
 
     public Photo() {
     }
@@ -111,6 +111,14 @@ public class Photo {
 
     public void setLon(double lon) {
         this.lon = lon;
+    }
+
+    public int getCluster() {
+        return cluster;
+    }
+
+    public void setCluster(int cluster) {
+        this.cluster = cluster;
     }
 
 }
