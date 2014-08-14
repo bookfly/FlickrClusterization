@@ -33,10 +33,41 @@
 					<h1>Sharks</h1>
 				</hgroup>
 			</header>
-						
-			
+                    
+                        <?php
+				$url = "clustered.json";
+								
+				$contents = file_get_contents($url); 
+				$contents = utf8_encode($contents); 
+				$results = json_decode($contents);
+				$cityName = array();
+				$cityLatitude = array();
+				$cityLongitude = array();
+				
+				$i=-1;
+				foreach ($results as $more_results) {
+					$i++;
+					$urlCity= "clustered.json";
+					$contentsCity = file_get_contents($urlCity); 
+					$contentsCity = utf8_encode($contentsCity); 
+					$resultsCity = json_decode($contentsCity);
+					$cityLongitude[i] = $resultsCity->lon;
+					$cityLatitude[i] = $resultsCity->lat;                                        
+					$cityName[i] = $more_results->cluster;
+
+				}
+			?>
+                            
+                            
+
 			<div id="vis">
   			<script type="text/javascript">
+                            
+                            
+         
+                            
+                            
+                            
     			var w = 800;
     			var h = 400;
     			var proj = d3.geo.mercator();

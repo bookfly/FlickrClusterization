@@ -37,7 +37,7 @@
 			<div id="vis">
   			<script type="text/javascript">
   				<?php
-					$url = "data/clustered.json";
+					$url = "clustered.json";
 								
 					$contents = file_get_contents($url); 
 					$contents = utf8_encode($contents); 
@@ -47,24 +47,21 @@
 					$pop = array();
 				
 					$i=-1;
-					foreach ($results as $more_results) {
-						$i+=1;
-						$pop[$i] = $more_results->population /500000000;
-					}
+
 					for ($j=0; $j <$i ; $j++) { 
-						$urlCity= "data/clustered.json";
+						$urlCity= "clustered.json";
                                                 $contentsCity = file_get_contents($urlCity); 
 						$contentsCity = utf8_encode($contentsCity); 
 						$resultsCity = json_decode($contentsCity);
 						$cityRadius .= $pop[$j].',';
-						$coordinates .= '['.$resultsCity->longitude.','.$resultsCity->latitude.'],';
+						$coordinates .= '['.$resultsCity->lon.','.$resultsCity->lat.'],';
 					}
-					$urlCity= "http://localhost/rest/city/location/name/". $results[$i]->name.".json";
+					$urlCity= "clustered.json";
 					$contentsCity = file_get_contents($urlCity); 
 					$contentsCity = utf8_encode($contentsCity); 
 					$resultsCity = json_decode($contentsCity);
 					$cityRadius .= $pop[$i].'];';
-					$coordinates .= '['.$resultsCity->longitude.','.$resultsCity->latitude.']];';
+					$coordinates .= '['.$resultsCity->lon.','.$resultsCity->lat.']];';
 					echo $cityRadius;
 					echo $coordinates;
 				?>
