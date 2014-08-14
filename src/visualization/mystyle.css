@@ -1,0 +1,147 @@
+body{
+	background: url('images/background.jpeg') fixed;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+
+}
+
+#wrapper{
+	background-color: #000000;
+	opacity: 0.7;
+	width: 1000px;
+	margin: 2% auto;
+	color: #ffffff;
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border: 1px groove white;
+}
+header{
+	border: 1px groove white;
+}
+
+hgroup{
+	text-align: center;
+	text-shadow: 2px 2px #404060;
+	margin-top: -100px;
+	margin-left: 200px;
+	font-size: 26px;
+	padding-bottom: 2px;
+}
+
+#logo{
+	margin-left: 50px;
+	margin-top: 20px;
+	max-width: 200px;
+	max-height: 200px;
+}
+
+a:link{
+	text-decoration: none;
+	color: gray;
+}
+a:visited{
+	text-decoration: none;
+	color: #730000;
+}
+
+nav ul{
+	list-style-type: none;
+	margin: auto;
+	margin-left: 18px;
+	padding: 0;
+	width: 990;
+}
+
+
+nav ul li{
+	padding: 5px 4px 4px 4px;
+	border: 1px groove white;
+	display: inline;
+	opacity: 1;
+	background-color: #002953;
+}
+
+nav ul li a{
+	font-size: 20px;
+	padding: 5px 4px 4px 4px;
+	display: inline-block;
+	width: 220px;
+	text-align: center;
+}
+nav ul li a:link{
+	color: white;
+}
+
+nav ul li a:visited{
+	color: white;
+}
+
+section header{
+	border: none;
+}
+
+section{
+	width: 700px;
+	margin-left: 100px;
+}
+
+article header h1{
+	font-size: 30px;
+}
+article footer{
+	border: none;
+}
+
+p{
+	text-align: justify;
+}
+
+aside{
+	background-color: #00273b;
+	opacity: 0.95;
+	position: fixed;
+	top: 400px;
+	right: 190px;
+	width: 160px;
+	max-width: 160px;
+	border: 2px groove white; 
+}
+
+aside #text{
+	width: 140px;
+	margin: auto;
+	color: #caf4ff;
+}
+
+aside h4{
+	margin-top: 10px;
+	font-size: 20px;
+	color: #808f97;
+}
+
+footer{
+	text-align: center;
+	border: 1px groove white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+article img{
+	max-width: 200px;
+	max-height: 150px;
+	border: 1px groove white;
+	float: right;
+	margin-left: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+form p{
+	text-align: left;
+}
+#googleMap{
+	margin: 2% auto;
+	width:500px;
+	height:380px;
+}
+

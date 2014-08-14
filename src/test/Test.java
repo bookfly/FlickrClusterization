@@ -3,7 +3,10 @@ package test;
 import com.google.gson.JsonArray;
 import data.PhotoJsonSerializer;
 import function.SettingCountryGeo;
+import java.awt.Desktop;
+import java.io.File;
 import java.io.FileInputStream;
+import java.net.URI;
 import java.util.ArrayList;
 import java.util.List;
 import photo.Photo;
@@ -62,15 +65,17 @@ public class Test {
         CreateArff ca = new CreateArff();
         ca.general(listPhoto2);
 */
-        ReadArff ra = new ReadArff();
+   //     ReadArff ra = new ReadArff();
 
         //changing number of clusters led to a conclusion the best number is 4
 /*        for (int i = 1; i < 30; i++) {
             ra.readArff("proba", i, "rez" + i);
         }
 */
-        ra.readArff("trial", 4, "result");
-
+   //     ra.readArff("trial", 4, "result");
+        
+         Desktop.getDesktop().browse(new URI("file:///home/jelena/NetBeansProjects/FlickrClusterization%20/src/visualization/sharks.html")); 
+         
     }
 
 }
