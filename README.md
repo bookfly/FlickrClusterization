@@ -13,7 +13,7 @@ Faze u razvoju aplikacije:
 #2. Domenski model
 Nakon analize podataka koje pruža Flickr API (https://www.flickr.com/services/api/), kreiran je domenski model koji je prikazan na slici ispod (Slika 1).
 
-![Slika 1 - Domenski model](FlickrClusterization/images/domainmodel.jpg)
+![Slika 1 - Domenski model](images/domainmodel.jpg)
 
 Slika 1 - Domenski model
 
@@ -107,17 +107,17 @@ Prilikom realizacije aplikacije korišćene su sledeće tehnologije:
 
 U ovom primeru korišćen je SimpleKMeans algoritam za klasterovanje. Jedan je od najpoznatijih algoritama za klasterovanje. Koristi se tako što mu se zada broj klastera, a zatim on prolazeći kroz iteracije razvrstava podatke. SimpleKMeans grupiše instance na osnovu Euklidske udaljenosti u ravni koja je postavljena atributima tih instanci. Na početku, prilikom inicijalizacije nasumično bira onoliki broj težišta klastera koliko je zadati broj klastera. U sledećoj iteraciji razvrstava instance na osnovu udaljenosti od težišta klastera. Zatim pomera težište klastera na osnovu izračunatih proseka vrednosti instanci u klasteru. Ovaj postupak se ponavlja sve dok algoritam ne konvergira, jer daljim razvrstavanjem se nece dobiti značajnije promene, pa se proces zaustavlja. Primenom ovog algoritma, dobijeni su sledeći klasteri:
 
-![Slika 2 - Type clusters](FlickrClusterization/images/results.jpg)
+![Slika 2 - Type clusters](images/results.jpg)
 
 Kao što se na slici 2 može videti, dobijena su četiri klastera sa po 95, 282, 150 i 48 instanci respektivno. U prvom klasteru se nalaze vrste ajkula među kojima je najvise nurse ajkula. U drugom su pretežno bele ajkule. U trećem limun, tigar i reef ajkule. U četvrtom najviše ima kit ajkula.
 
-![Slika 3 - Location clusters](FlickrClusterization/images/wekaVisType.jpg)
+![Slika 3 - Location clusters](images/wekaVisType.jpg)
 
 U prvom se nalaze instance čija je lokacija najbliža Australiji (njih 95). U drugom se nalaze one koje su najbliže Sjedinjenim Američkim Državama (njih 282). U trećem se nalaze one koje su po lokaciji najbliže Francuskoj njih 150). U četvrtom se nalaze one instance koje su po lokaciji najbliže Kini (njih 48).
 
 Na slici 3 se može videti koliko instanci je u kom klasteru. Od ukupno 575 instanci 95 (17%) je u prvom klasteru; 282 (49%) u drugom; 150 (26%) u trećem i 48 (5%) u četvrtom. Metodom probanja dobijeno je da se se prilikom klasterizacije na četiri klastera dobija najmanje osipanje podataka uz najmanju kvadratnu grešku od 7.061393049561895.
 
-![Slika 4 - Location clusters](FlickrClusterization/images/wekaVisClust.jpg)
+![Slika 4 - Location clusters](images/wekaVisClust.jpg)
 
 #5. Priznanja
 Ova aplikacija je nastala kao rezultat seminarskog rada iz predmeta [Inteligentni sistemi](http://is.fon.rs/) na Fakultetu organizacionih nauka, Univerziteta u Beogradu, Srbija, 2014. godine.
