@@ -74,8 +74,7 @@ public class Test {
 */
    //     ra.readArff("trial", 4, "result");
         
-    //     Desktop.getDesktop().browse(new URI("file:///home/jelena/NetBeansProjects/FlickrClusterization%20/src/visualization/sharks.html")); 
-          Desktop.getDesktop().browse(new URI("file:///home/jelena/NetBeansProjects/FlickrClusterization%20/src/visualization/new.html")); 
+       Desktop.getDesktop().browse(new URI("file:///home/jelena/NetBeansProjects/FlickrClusterization%20/src/visualization/sharks.html")); 
        
     }
 

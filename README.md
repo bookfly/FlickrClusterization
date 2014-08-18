@@ -109,13 +109,13 @@ U ovom primeru korišćen je SimpleKMeans algoritam za klasterovanje. Jedan je o
 
 ![Slika 2 - Type clusters](images/results.jpg)
 
-Kao što se na slici 2 može videti, dobijena su četiri klastera sa po 95, 282, 150 i 48 instanci respektivno. U prvom klasteru se nalaze vrste ajkula među kojima je najvise nurse ajkula. U drugom su pretežno bele ajkule. U trećem limun, tigar i reef ajkule. U četvrtom najviše ima kit ajkula.
+Kao što se na slici 2 može videti, dobijena su četiri klastera sa po 140, 279, 70 i 88 instanci respektivno. U prvom klasteru se nalaze vrste ajkula među kojima je najvise nurse ajkula. U drugom su pretežno bele ajkule. U trećem limun, tigar i reef ajkule. U četvrtom najviše ima kit ajkula.
 
 ![Slika 3 - Location clusters](images/wekaVisType.jpg)
 
-U prvom se nalaze instance čija je lokacija najbliža Australiji (njih 95). U drugom se nalaze one koje su najbliže Sjedinjenim Američkim Državama (njih 282). U trećem se nalaze one koje su po lokaciji najbliže Francuskoj njih 150). U četvrtom se nalaze one instance koje su po lokaciji najbliže Kini (njih 48).
+U prvom se nalaze instance čija je lokacija najbliža Evropi (njih 140). U drugom se nalaze one koje su najbliže Sjedinjenim Američkim Državama (njih 140). U trećem se nalaze one koje su po lokaciji najbliže Kini njih 70). U četvrtom se nalaze one instance koje su po lokaciji najbliže Australiji (njih 88).
 
-Na slici 3 se može videti koliko instanci je u kom klasteru. Od ukupno 575 instanci 95 (17%) je u prvom klasteru; 282 (49%) u drugom; 150 (26%) u trećem i 48 (5%) u četvrtom. Metodom probanja dobijeno je da se se prilikom klasterizacije na četiri klastera dobija najmanje osipanje podataka uz najmanju kvadratnu grešku od 7.061393049561895.
+Na slici 3 se može videti koliko instanci je u kom klasteru. Od ukupno 575 instanci 95 (17%) je u prvom klasteru; 282 (49%) u drugom; 150 (26%) u trećem i 48 (5%) u četvrtom. Metodom probanja dobijeno je da se se prilikom klasterizacije na četiri klastera dobija najmanje osipanje podataka uz najmanju kvadratnu grešku od 8.314650964383816.
 
 ![Slika 4 - Location clusters](images/wekaVisClust.jpg)
 
