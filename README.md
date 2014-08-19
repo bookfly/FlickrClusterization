@@ -174,6 +174,8 @@ U ovom primeru korišćen je SimpleKMeans algoritam za klasterovanje. Jedan je o
 
 ![Slika 2 - Type clusters](images/results.jpg)
 
+Slika 2 - Rezultat klasterizacije
+
 Kao što se na slici 2 može videti, dobijeno je pet klastera sa po 140, 279, 49, 72 i 37 instanci respektivno. U prvom klasteru se nalaze vrste ajkula među kojima je najvise nurse ajkula. U drugom su pretežno bele ajkule. U trećem limun, tigar i reef ajkule. U četvrtom najviše ima kit ajkula. U petom je najviše neimenovanih ajkula, zatimreef i belih ajkula.
 
 U prvom se nalaze instance čija je lokacija najbliža Evropi (njih 140). U drugom se nalaze one koje su najbliže Sjedinjenim Američkim Državama (njih 279). U trećem se nalaze one koje su po lokaciji najbliže Kini (njih 49). U četvrtom se nalaze one instance koje su po lokaciji najbliže Australiji (njih 72). U petom se nalaze one koje su najbliže Južnoj Americi i Africi (njih 37).
@@ -183,6 +185,8 @@ Na slici 2 se može videti koliko instanci je u kom klasteru. Od ukupno 577 inst
 Na slici 3 se može videti prikaz klasterizovanih podataka prikazanih na mapi sveta.
 
 ![Slika 3 - Clusters](images/map.jpg)
+
+Slika 3- Prikaz klasterizovanih podataka
 
 #5. Priznanja
 Ova aplikacija je nastala kao rezultat seminarskog rada iz predmeta [Inteligentni sistemi](http://is.fon.rs/) na Fakultetu organizacionih nauka, Univerziteta u Beogradu, Srbija, 2014. godine.
