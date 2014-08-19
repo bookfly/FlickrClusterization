@@ -1,4 +1,4 @@
-FilteredClusterer using weka.clusterers.SimpleKMeans -V -N 4 -A "weka.core.EuclideanDistance -R first-last" -I 500 -S 10 on data filtered through weka.filters.unsupervised.attribute.Remove -R 3
+FilteredClusterer using weka.clusterers.SimpleKMeans -V -N 5 -A "weka.core.EuclideanDistance -R first-last" -I 500 -S 10 on data filtered through weka.filters.unsupervised.attribute.Remove -R 3
 
 Filtered Header
 @relation TrainingSet-weka.filters.unsupervised.attribute.Remove-R3
@@ -15,19 +15,19 @@ kMeans
 ======
 
 Number of iterations: 4
-Within cluster sum of squared errors: 8.314650964383816
+Within cluster sum of squared errors: 4.942677457897851
 Missing values globally replaced with mean/mode
 
 Cluster centroids:
                            Cluster#
-Attribute     Full Data           0           1           2           3
-                  (577)       (140)       (279)        (70)        (88)
-=======================================================================
-Longitude      -18.5587      2.7357    -97.4165     72.2926    125.3112
-             +/-91.0755   +/-6.6917  +/-22.0014  +/-55.8595  +/-50.7389
+Attribute     Full Data           0           1           2           3           4
+                  (577)       (140)       (279)        (49)        (72)        (37)
+===================================================================================
+Longitude      -18.5587      2.7357    -97.4165    106.0443     148.443       5.508
+             +/-91.0755   +/-6.6917  +/-22.0014  +/-22.3369  +/-12.8797  +/-18.6691
 
-Latitude        25.5315     49.1856     35.5792     10.9492    -32.3564
-             +/-27.9792   +/-4.9713   +/-7.6132  +/-13.9074   +/-4.4824
+Latitude        25.5315     49.1856     35.5792     17.0955    -32.3283    -15.9717
+             +/-27.9792   +/-4.9713   +/-7.6132  +/-10.9177   +/-4.7336  +/-16.0691
 
 
 
@@ -35,6 +35,7 @@ Clustered Instances
 
 0      140 ( 24%)
 1      279 ( 48%)
-2       70 ( 12%)
-3       88 ( 15%)
+2       49 (  8%)
+3       72 ( 12%)
+4       37 (  6%)
 

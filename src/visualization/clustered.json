@@ -305,7 +305,7 @@
     "location": "Sialkot, Pakistan, Kuwait",
     "lon": 0.0,
     "lat": 0.0,
-    "cluster": 2
+    "cluster": 4
   },
   {
     "id": "4398813594",
@@ -459,7 +459,7 @@
     "location": "Seoul, Korea",
     "lon": 0.0,
     "lat": 0.0,
-    "cluster": 2
+    "cluster": 4
   },
   {
     "id": "6186980337",
@@ -1449,7 +1449,7 @@
     "location": "soon to be Seattle, United States",
     "lon": 0.0,
     "lat": 0.0,
-    "cluster": 2
+    "cluster": 4
   },
   {
     "id": "10272719224",
@@ -1966,7 +1966,7 @@
     "location": "Mostly Cairns area , Australia",
     "lon": 0.0,
     "lat": 0.0,
-    "cluster": 2
+    "cluster": 4
   },
   {
     "id": "6103396894",
@@ -1999,7 +1999,7 @@
     "location": "Grand Case, Saint Martin, USA",
     "lon": 0.0,
     "lat": 0.0,
-    "cluster": 2
+    "cluster": 4
   },
   {
     "id": "4477687647",
@@ -3011,7 +3011,7 @@
     "location": "Germany / Spain / SE Asia",
     "lon": 0.0,
     "lat": 0.0,
-    "cluster": 2
+    "cluster": 4
   },
   {
     "id": "2499026475",
@@ -3121,7 +3121,7 @@
     "location": "South Africa",
     "lon": 18.42322,
     "lat": -33.92584,
-    "cluster": 3
+    "cluster": 4
   },
   {
     "id": "3087420393",
@@ -3198,7 +3198,7 @@
     "location": "South Africa",
     "lon": 18.42322,
     "lat": -33.92584,
-    "cluster": 3
+    "cluster": 4
   },
   {
     "id": "5704356780",
@@ -3209,7 +3209,7 @@
     "location": "South Africa",
     "lon": 18.42322,
     "lat": -33.92584,
-    "cluster": 3
+    "cluster": 4
   },
   {
     "id": "6899358781",
@@ -3330,7 +3330,7 @@
     "location": "South Africa",
     "lon": 28.18783,
     "lat": -25.74486,
-    "cluster": 3
+    "cluster": 4
   },
   {
     "id": "8562785641",
@@ -3418,7 +3418,7 @@
     "location": "South Africa",
     "lon": 22.14605,
     "lat": -34.18307,
-    "cluster": 3
+    "cluster": 4
   },
   {
     "id": "4141001292",
@@ -3495,7 +3495,7 @@
     "location": "Lebanon, IL, United Sates",
     "lon": 0.0,
     "lat": 0.0,
-    "cluster": 2
+    "cluster": 4
   },
   {
     "id": "4569081810",
@@ -3968,7 +3968,7 @@
     "location": "Mostly Cairns area , Australia",
     "lon": 0.0,
     "lat": 0.0,
-    "cluster": 2
+    "cluster": 4
   },
   {
     "id": "3413407576",
@@ -4023,7 +4023,7 @@
     "location": "somewhere in the world, France",
     "lon": 0.0,
     "lat": 0.0,
-    "cluster": 2
+    "cluster": 4
   },
   {
     "id": "7369285914",
@@ -4067,7 +4067,7 @@
     "location": "Addaia, Menorca, Baleares. Spain",
     "lon": 0.0,
     "lat": 0.0,
-    "cluster": 2
+    "cluster": 4
   },
   {
     "id": "4598797428",
@@ -4309,7 +4309,7 @@
     "location": "Grand Case, Saint Martin, USA",
     "lon": 0.0,
     "lat": 0.0,
-    "cluster": 2
+    "cluster": 4
   },
   {
     "id": "13963883471",
@@ -4496,7 +4496,7 @@
     "location": "Brazil",
     "lon": -49.27306,
     "lat": -25.42778,
-    "cluster": 2
+    "cluster": 4
   },
   {
     "id": "1355404460",
@@ -4551,7 +4551,7 @@
     "location": "South Africa",
     "lon": 28.04363,
     "lat": -26.20227,
-    "cluster": 3
+    "cluster": 4
   },
   {
     "id": "4690592783",
@@ -4749,7 +4749,7 @@
     "location": "South Africa",
     "lon": 22.14605,
     "lat": -34.18307,
-    "cluster": 3
+    "cluster": 4
   },
   {
     "id": "9370913624",
@@ -4782,7 +4782,7 @@
     "location": "South Africa",
     "lon": 22.14605,
     "lat": -34.18307,
-    "cluster": 3
+    "cluster": 4
   },
   {
     "id": "2342135406",
@@ -4903,7 +4903,7 @@
     "location": "South Africa",
     "lon": 18.42322,
     "lat": -33.92584,
-    "cluster": 3
+    "cluster": 4
   },
   {
     "id": "5703792699",
@@ -4914,7 +4914,7 @@
     "location": "South Africa",
     "lon": 18.42322,
     "lat": -33.92584,
-    "cluster": 3
+    "cluster": 4
   },
   {
     "id": "225022843",
@@ -5035,7 +5035,7 @@
     "location": "South Africa",
     "lon": 18.42322,
     "lat": -33.92584,
-    "cluster": 3
+    "cluster": 4
   },
   {
     "id": "2731261406",
@@ -5332,7 +5332,7 @@
     "location": "Brazil",
     "lon": -43.2075,
     "lat": -22.90278,
-    "cluster": 2
+    "cluster": 4
   },
   {
     "id": "4299597101",
@@ -5596,7 +5596,7 @@
     "location": "Mozambique",
     "lon": 32.58322,
     "lat": -25.96553,
-    "cluster": 3
+    "cluster": 4
   },
   {
     "id": "6830373047",
@@ -5651,7 +5651,7 @@
     "location": "Massachusetts, U.S.A.",
     "lon": 0.0,
     "lat": 0.0,
-    "cluster": 2
+    "cluster": 4
   },
   {
     "id": "6375623207",
@@ -5739,7 +5739,7 @@
     "location": "Boston, www",
     "lon": 0.0,
     "lat": 0.0,
-    "cluster": 2
+    "cluster": 4
   },
   {
     "id": "8652715905",
@@ -5805,7 +5805,7 @@
     "location": "South Africa",
     "lon": 18.42322,
     "lat": -33.92584,
-    "cluster": 3
+    "cluster": 4
   },
   {
     "id": "7802359962",
@@ -5948,7 +5948,7 @@
     "location": "South Africa",
     "lon": 18.42322,
     "lat": -33.92584,
-    "cluster": 3
+    "cluster": 4
   },
   {
     "id": "2341303189",
@@ -5970,7 +5970,7 @@
     "location": "Near Manchester, United Kingdom",
     "lon": 0.0,
     "lat": 0.0,
-    "cluster": 2
+    "cluster": 4
   },
   {
     "id": "5164824936",
@@ -5981,7 +5981,7 @@
     "location": "Brazil",
     "lon": -43.2075,
     "lat": -22.90278,
-    "cluster": 2
+    "cluster": 4
   },
   {
     "id": "2919980791",
@@ -6014,7 +6014,7 @@
     "location": "South Africa",
     "lon": 18.42322,
     "lat": -33.92584,
-    "cluster": 3
+    "cluster": 4
   },
   {
     "id": "2940242066",
@@ -6135,7 +6135,7 @@
     "location": "Lincoln, Britain",
     "lon": 0.0,
     "lat": 0.0,
-    "cluster": 2
+    "cluster": 4
   },
   {
     "id": "7184052949",
@@ -6157,7 +6157,7 @@
     "location": "somewhere in the world, France",
     "lon": 0.0,
     "lat": 0.0,
-    "cluster": 2
+    "cluster": 4
   },
   {
     "id": "9184790140",
@@ -6190,7 +6190,7 @@
     "location": "South Africa",
     "lon": 18.42322,
     "lat": -33.92584,
-    "cluster": 3
+    "cluster": 4
   },
   {
     "id": "5695263415",
@@ -6256,7 +6256,7 @@
     "location": "Chester, U.K.",
     "lon": 0.0,
     "lat": 0.0,
-    "cluster": 2
+    "cluster": 4
   },
   {
     "id": "9987862234",
@@ -6344,6 +6344,6 @@
     "location": "Chester, U.K.",
     "lon": 0.0,
     "lat": 0.0,
-    "cluster": 2
+    "cluster": 4
   }
 ]

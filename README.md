@@ -26,7 +26,7 @@ Aplikacija preuzima podatke sa dva različita izvora ([Flickr](https://www.flick
 >[https://api.flickr.com/services/rest/?method=flickr.photos.search&text=shark&sort=relevance&page=1&api_key=64a298d057676a6d7298262797a23440&format=json]
 (https://api.flickr.com/services/rest/?method=flickr.photos.search&text=shark&sort=relevance&page=1&api_key=64a298d057676a6d7298262797a23440&format=json)
 
-Parametar *method* ukazuje na metodu koja se poziva na sajtu, u ovom slu;aju je to metoda search. Da bi se koristila metoda search, potrebno je uneti kriterijum pretrage, što je u primeru zadata reč shark. Parametar *sort* se odnosi na način sortiranja, ovde je to po relevantnosti. Zatim, parametar *page* nam pomaže da se lakše kećemo po dobijenim rezultatima pretrage, odnosno da nam kao rezultat metode bude vraćena samo prva stranica. Parametar *api_key* se dobija prilikom registracije za korišćenje Flickr API-a, i obavezan je deo poziva svake metode. Parametar *format* nam omogućava da rezultat metode bude vraćen u formatu koji nama odgovara, u ovom slučaju je to JSON. Podaci koji se na osnovu ovog poziva preuzimaju su: id, userId, title, server, secret i location.
+Parametar *method* ukazuje na metodu koja se poziva na sajtu, u ovom slučaju je to metoda search. Da bi se koristila metoda search, potrebno je uneti kriterijum pretrage, što je u primeru zadata reč shark. Parametar *sort* se odnosi na način sortiranja, ovde je to po relevantnosti. Zatim, parametar *page* nam pomaže da se lakše kećemo po dobijenim rezultatima pretrage, odnosno da nam kao rezultat metode bude vraćena samo prva stranica. Parametar *api_key* se dobija prilikom registracije za korišćenje Flickr API-a, i obavezan je deo poziva svake metode. Parametar *format* nam omogućava da rezultat metode bude vraćen u formatu koji nama odgovara, u ovom slučaju je to JSON. Podaci koji se na osnovu ovog poziva preuzimaju su: id, userId, title, server, secret i location.
 
 [Geonames](http://www.geonames.org/) daje podatke o geografskoj lokaciji unetog mesta. Ovde se mogu dobiti informacije kao što su geografska dužina i širina, kod države, populacija, naziv države. U sledećem primeru dat je poziv ovog servisa:
 
@@ -42,26 +42,59 @@ Svi podaci koji su dobijeni smeštani su u JSON fajl. Primer JSON objekta dat je
 
 ```
 	[
-	  {
-	    "id": "5266243108",
+	   {
+	    "id": "3873710525",
 	    "userId": "21915962@N02",
-	    "secret": "8bb6ebc8b8",
-	    "server": "5284",
-	    "title": "Reef",
-	    "location": "Australia"
+	    "secret": "9460b2dd37",
+	    "server": "2480",
+	    "title": "White",
+	    "location": "Australia",
+	    "lon": 135.0,
+	    "lat": -25.0,
+	    "cluster": 0
 	  },
 	  {
-	    "id": "1038089969",
-	    "userId": "94802649@N00",
-	    "secret": "e01b5dd141",
-	    "server": "1012",
-	    "title": "Tiger",
-	    "location": "Lake Worth, FL, USA"
+	    "id": "8856286135",
+	    "userId": "36937610@N08",
+	    "secret": "b55718d380",
+	    "server": "3825",
+	    "title": "White",
+	    "location": "United States",
+	    "lon": -80.41394,
+	    "lat": 37.22957,
+	    "cluster": 0
 	  }
 	]
 ```
 
-Kao što se može videti, JSON fajl se sastoji od JSON objekata. Svaki objekat sadrži podatke o slici: id, userId, secret, server, title i location. Dalje su ovi podaci konvertovani u ARFF fajl. ARFF (Attribute-Relation File Format) fajl je tekstualan ASCII koji opisuje listu instanci koje dele set atributa. ARFF fajl se kasnije koristi za klasterizaciju. Za klasterizaciju je izabrano četiri klastera, jer je probom ustanovljeno da se oko te vrednosti dešava najmanje rasipanje podataka, odnosno najmanja promena greške nastale usled klasterovanja.
+Kao što se može videti, JSON fajl se sastoji od JSON objekata. Svaki objekat sadrži podatke o slici: id, userId, secret, server, title, location, lon, lat i cluster. Dalje su ovi podaci konvertovani u ARFF fajl. ARFF (Attribute-Relation File Format) fajl je tekstualan ASCII koji opisuje listu instanci koje dele set atributa. ARFF fajl se kasnije koristi za klasterizaciju. Za klasterizaciju je izabrano četiri klastera, jer je probom ustanovljeno da se oko te vrednosti dešava najmanje rasipanje podataka, odnosno najmanja promena greške nastale usled klasterovanja. Nakon klasterovanja, u podacima je promenjena vrednost podatka cluster, pa je dobjen novi JSON fajl:
+
+```
+	[
+	   {
+	    "id": "3873710525",
+	    "userId": "21915962@N02",
+	    "secret": "9460b2dd37",
+	    "server": "2480",
+	    "title": "White",
+	    "location": "Australia",
+	    "lon": 135.0,
+	    "lat": -25.0,
+	    "cluster": 3
+	  },
+	  {
+	    "id": "8856286135",
+	    "userId": "36937610@N08",
+	    "secret": "b55718d380",
+	    "server": "3825",
+	    "title": "White",
+	    "location": "United States",
+	    "lon": -80.41394,
+	    "lat": 37.22957,
+	    "cluster": 1
+	  }
+	]
+```
 
 
 #4. Korišćena tehnologija
@@ -105,19 +138,51 @@ Prilikom realizacije aplikacije korišćene su sledeće tehnologije:
 	eval.evaluateClusterer(data);
 ```
 
+5. [Google maps] (https://developers.google.com/maps/documentation/javascript/) - koriščeno za prikaz klastera na mapi sveta. Omogućava postavljanje različitih markera na mapi, kako bi se označila pripadnost određenoj grupi klastera. Za korišćenje je potreban *api key* kako bi se pozvao servis:
+
+```
+        <script type="text/javascript"
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBksrT0O5yUkw0zc2J7YhaYo_zy5FmM5Y4&sensor=false">
+        </script>
+```
+
+Za postavljanje markera napravljena je posebna funkcija:
+
+```
+        if (data.cluster === 0) {
+           var latLng = new google.maps.LatLng(data.lat, data.lon);
+           // Creating a marker and putting it on the map
+           var marker = new google.maps.Marker({
+		   position: latLng,
+		   title: data.cluster.toString(),
+		   icon: imageB
+           });
+           marker.setMap(map);
+       } else if (data.cluster === 1) {
+          var latLng = new google.maps.LatLng(data.lat, data.lon);
+           // Creating a marker and putting it on the map
+           var marker = new google.maps.Marker({
+		   position: latLng,
+		   title: data.cluster.toString(),
+		   icon: imageP
+           });
+           marker.setMap(map);
+       }
+```
+
 U ovom primeru korišćen je SimpleKMeans algoritam za klasterovanje. Jedan je od najpoznatijih algoritama za klasterovanje. Koristi se tako što mu se zada broj klastera, a zatim on prolazeći kroz iteracije razvrstava podatke. SimpleKMeans grupiše instance na osnovu Euklidske udaljenosti u ravni koja je postavljena atributima tih instanci. Na početku, prilikom inicijalizacije nasumično bira onoliki broj težišta klastera koliko je zadati broj klastera. U sledećoj iteraciji razvrstava instance na osnovu udaljenosti od težišta klastera. Zatim pomera težište klastera na osnovu izračunatih proseka vrednosti instanci u klasteru. Ovaj postupak se ponavlja sve dok algoritam ne konvergira, jer daljim razvrstavanjem se nece dobiti značajnije promene, pa se proces zaustavlja. Primenom ovog algoritma, dobijeni su sledeći klasteri:
 
 ![Slika 2 - Type clusters](images/results.jpg)
 
-Kao što se na slici 2 može videti, dobijena su četiri klastera sa po 140, 279, 70 i 88 instanci respektivno. U prvom klasteru se nalaze vrste ajkula među kojima je najvise nurse ajkula. U drugom su pretežno bele ajkule. U trećem limun, tigar i reef ajkule. U četvrtom najviše ima kit ajkula.
+Kao što se na slici 2 može videti, dobijeno je pet klastera sa po 140, 279, 49, 72 i 37 instanci respektivno. U prvom klasteru se nalaze vrste ajkula među kojima je najvise nurse ajkula. U drugom su pretežno bele ajkule. U trećem limun, tigar i reef ajkule. U četvrtom najviše ima kit ajkula. U petom je najviše neimenovanih ajkula, zatimreef i belih ajkula.
 
-![Slika 3 - Location clusters](images/wekaVisType.jpg)
+U prvom se nalaze instance čija je lokacija najbliža Evropi (njih 140). U drugom se nalaze one koje su najbliže Sjedinjenim Američkim Državama (njih 279). U trećem se nalaze one koje su po lokaciji najbliže Kini (njih 49). U četvrtom se nalaze one instance koje su po lokaciji najbliže Australiji (njih 72). U petom se nalaze one koje su najbliže Južnoj Americi i Africi (njih 37).
 
-U prvom se nalaze instance čija je lokacija najbliža Evropi (njih 140). U drugom se nalaze one koje su najbliže Sjedinjenim Američkim Državama (njih 140). U trećem se nalaze one koje su po lokaciji najbliže Kini njih 70). U četvrtom se nalaze one instance koje su po lokaciji najbliže Australiji (njih 88).
+Na slici 2 se može videti koliko instanci je u kom klasteru. Od ukupno 577 instanci 140 (24%) je u prvom klasteru; 279 (48%) u drugom; 49 (8%) u trećem; 72 (12%) u četvrtom i 37 (6%) u petom. Metodom probanja dobijeno je da se se prilikom klasterizacije na pet klastera dobija najmanje osipanje podataka uz najmanju kvadratnu grešku od 4.942677457897851.
 
-Na slici 3 se može videti koliko instanci je u kom klasteru. Od ukupno 575 instanci 95 (17%) je u prvom klasteru; 282 (49%) u drugom; 150 (26%) u trećem i 48 (5%) u četvrtom. Metodom probanja dobijeno je da se se prilikom klasterizacije na četiri klastera dobija najmanje osipanje podataka uz najmanju kvadratnu grešku od 8.314650964383816.
+Na slici 3 se može videti prikaz klasterizovanih podataka prikazanih na mapi sveta.
 
-![Slika 4 - Location clusters](images/wekaVisClust.jpg)
+![Slika 3 - Clusters](images/map.jpg)
 
 #5. Priznanja
 Ova aplikacija je nastala kao rezultat seminarskog rada iz predmeta [Inteligentni sistemi](http://is.fon.rs/) na Fakultetu organizacionih nauka, Univerziteta u Beogradu, Srbija, 2014. godine.

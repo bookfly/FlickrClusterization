@@ -58,6 +58,7 @@
                     var imageP = "images/pinkdot.png";
                     var imageG = "images/greendot.png";
                     var imageR = "images/reddot.png";
+                    var imageY = "images/yellowdot.png";
 
                     $(document).ready(function() {
                         $.getJSON("clustered.json", function(json1) {
@@ -100,9 +101,16 @@
                                         icon: imageR
                                     });
                                     marker.setMap(map);
+                                } else if (data.cluster === 4) {
+                                    var latLng = new google.maps.LatLng(data.lat, data.lon);
+                                    // Creating a marker and putting it on the map
+                                    var marker = new google.maps.Marker({
+                                        position: latLng,
+                                        title: data.cluster.toString(),
+                                        icon: imageY
+                                    });
+                                    marker.setMap(map);
                                 }
-
-
                             });
                         });
                     });
