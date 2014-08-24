@@ -1,8 +1,7 @@
 FlickrClusterization
 ==============
 #1. O projektu
-Tema projekta je da se kreira aplikacija koja će omogućiti da se pristupi podacima o slikama korišćenjem Flickr API-a (https://www.flickr.com/services/api/). Potrebno je preuzeti podatke o slikama, zatim obraditi podatke i sačuvati ih, kasnije pomoću servisa Geonames (http://www.geonames.org/) preuzeti podatke o lokaciji, odnosno državi.
-Takođe, potrebno je klasterizovati preuzete slike.
+Tema projekta je da se kreira aplikacija koja će omogućiti da se na osnovu raspoloživih podataka o slikama dobijenih korišćenjem Flickr API-a (https://www.flickr.com/services/api/) klasterizuju slike. S obzirom na raznovrsnost slika koje se svakodnevno postavljaju na Flickr, odlučila sam da ograničim domen aplikacije na slike o ajkulama.
 
 Faze u razvoju aplikacije:
 * Preuzimanje podataka o slikama kroz Flickr API i njihovo čuvanje
@@ -17,26 +16,49 @@ Nakon analize podataka koje pruža Flickr API (https://www.flickr.com/services/a
 
 Slika 1 - Domenski model
 
-Klasa Photo sadrži podatke o slici kao što su: id, id vlasnika, naslov slike, server, secret kod i podatak o lokaciji koji se dobija korišćenjem Geonames servisa. 
+Klasa Photo sadrži podatke o slici kao što su: id, id vlasnika, naslov slike, server, secret kod, podatak o lokaciji, geografsku dužinu i širinu i klaster kome slika pripada nakon što je izvršena klasterizacija.
 
 #3. Rešenje
-Aplikacija preuzima podatke sa dva različita izvora ([Flickr](https://www.flickr.com/services/api/), [Geonames](http://www.geonames.org/)), zatim spaja te podatke i stavlja ih u JSON fajl. 
+
+Flickr je sajt koji sčuži za postavljanje slika kako bi korisnici, i ostali posetioci sajta mogli da ih vide. Flickr omogućava pristup svojim podacima preko ([API-ja](https://www.flickr.com/services/api/). Kako bi se ova mogućnost koristila, prvo je potrebno registrovati se na sajt. Nakon registracije potrebno je zatražiti *API key* koji se kasnije koristi za pozivanje različitih funkcija ovog servisa. Primer korišćenja API-ja za dobijanje slika:
 
 [Flickr](https://www.flickr.com/services/api/) daje podatke o slici u željenom formatu. U sledećem primeru poziva korišćen je JSON format:
 >[https://api.flickr.com/services/rest/?method=flickr.photos.search&text=shark&sort=relevance&page=1&api_key=64a298d057676a6d7298262797a23440&format=json]
 (https://api.flickr.com/services/rest/?method=flickr.photos.search&text=shark&sort=relevance&page=1&api_key=64a298d057676a6d7298262797a23440&format=json)
 
-Parametar *method* ukazuje na metodu koja se poziva na sajtu, u ovom slučaju je to metoda search. Da bi se koristila metoda search, potrebno je uneti kriterijum pretrage, što je u primeru zadata reč shark. Parametar *sort* se odnosi na način sortiranja, ovde je to po relevantnosti. Zatim, parametar *page* nam pomaže da se lakše kećemo po dobijenim rezultatima pretrage, odnosno da nam kao rezultat metode bude vraćena samo prva stranica. Parametar *api_key* se dobija prilikom registracije za korišćenje Flickr API-a, i obavezan je deo poziva svake metode. Parametar *format* nam omogućava da rezultat metode bude vraćen u formatu koji nama odgovara, u ovom slučaju je to JSON. Podaci koji se na osnovu ovog poziva preuzimaju su: id, userId, title, server, secret i location.
+Parametri koji se šalju:
+* *method* ukazuje na metodu koja se poziva na sajtu, u ovom slučaju je to metoda search. Da bi se koristila metoda search, potrebno je uneti kriterijum pretrage, što je u primeru zadata reč *shark*
+* *sort* se odnosi na način sortiranja, ovde je to po relevantnosti.
+* *page* nam pomaže da se lakše krećemo po dobijenim rezultatima pretrage, odnosno da nam kao rezultat metode bude vraćena samo prva stranica
+* *api_key* se dobija prilikom registracije za korišćenje Flickr API-a.
+* *format* nam omogućava da rezultat metode bude vraćen u formatu koji nama odgovara, u ovom slučaju je to JSON.
 
-[Geonames](http://www.geonames.org/) daje podatke o geografskoj lokaciji unetog mesta. Ovde se mogu dobiti informacije kao što su geografska dužina i širina, kod države, populacija, naziv države. U sledećem primeru dat je poziv ovog servisa:
+Primer odgovora Flickr API-ja:
+
+```
+jsonFlickrApi({"photos":{"page":1,"pages":12505,"perpage":100,"total":"1250481","photo":[{"id":"5266243108","owner":"21915962@N02","secret":"8bb6ebc8b8","server":"5284","farm":6,"title":"Caribbean Reef Shark at Tiger Beach in the Bahamas","ispublic":1,"isfriend":0,"isfamily":0},{"id":"1038089969","owner":"94802649@N00","secret":"e01b5dd141","server":"1012","farm":2,"title":"Tiger shark","ispublic":1,"isfriend":0,"isfamily":0}]
+```
+
+U podacima koji su dobijeni na ovaj način ne postoji podatak o geografskoj širini i dužini, pa je zbog toga potrebno koristiti eksterni servis Geonames.
+
+Geonames je baza geografskih podataka koji su dostupni korišćenjem [Geonames API-ja](http://www.geonames.org/)). Kako bi se omogućilo korišćenje API-ja, potrebno je prvo registrovati se. Prilikom registracije bira se *username* koji se kasnije koristi za poziv operacija ovog servisa. Primer poziva operacije za dobijanje naziva države:
 
 >[http://api.geonames.org/searchJSON?q=Lake%20Worth,%20FL,%20USA&maxRows=1&username=jelena_tabas](http://api.geonames.org/searchJSON?q=Lake%20Worth,%20FL,%20USA&maxRows=1&username=jelena_tabas)
 
-Parametar *q* se odnosi na kriterijum pretrage, odnosno tu stoji informacija koje mesto želimo da nađemo, u ovom slučaju to je Lake Worth, FL, USA. Parametar *max_rows* nam omogućava da ograničimo rezultate pretrage, odnosno da dobijemo samo jedan rezultat, ovde je to prvi, koji smatramo najtačnijim, odnosno preciznijim za našu pretragu. Parametar *username* je potreban kako bi se izvršilo pozivanje Geonames servisa, dobija se prilikom registracije za korišćenje servisa. Preuzeti podaci: countryName.
+Poslati parametri:
+* *q* se odnosi na kriterijum pretrage, odnosno tu stoji informacija koje mesto želimo da nađemo, u ovom slučaju to je Lake Worth, FL, USA.
+* *max_rows* nam omogućava da ograničimo rezultate pretrage, odnosno da dobijemo samo jedan rezultat, ovde je to prvi, koji smatramo najtačnijim, odnosno preciznijim za našu pretragu.
+* *username* je potreban kako bi se izvršilo pozivanje Geonames servisa, dobija se prilikom registracije za korišćenje servisa.
 
-Nakon preuzimanja podataka, može se primetiti da za pojedine slike ne postoji podatak o lokaciji, te nije mogao da se izvrši poziv servisa [Geonames](http://www.geonames.org/), odnosno nisu dobijeni podaci. Zbog toga su slike koje nemaju podatak o lokaciji izbačene iz obrade, tačnije, one koje imaju podatak o lokaciji su premeštene u drugi fajl.
+Primer odgovora Geonames API-ja:
 
-Takođe, kako bi se kasnije omogućila klasterizacija slika na osnovu vrste ajkule koja je prikazana, bilo je potrebno izvršiti obradu podataka. Zbog toga se iz naslova slika zaključivalo koja je vrsta ajkule na slici, te se sama slika nazivala po vrsti. Rezultat ove operacije je dobijeno dvadeset i jedna vrsta ajkule i jedna kao nedefinisana koja ima naziv ajkula.
+```
+{"totalResultsCount":60,"geonames":[{"countryId":"6252001","adminCode1":"FL","countryName":"United States","fclName":"city, village,...","countryCode":"US","lng":"-80.05699","fcodeName":"populated place","toponymName":"Lake Worth","fcl":"P","name":"Lake Worth","fcode":"PPL","geonameId":4161422,"lat":"26.6159","adminName1":"Florida","population":34910}]}
+```
+
+Podaci koji su preuzeti se nalaze u *countryName*, u ovom primeru to je *United States*.
+
+Za potrebe aplikacije preuzeto je 800 slika korišćenjem Flickr API-ja. Ove slike su prošle selekciju, odnosno odbačene su one koje nemaju podatak o lokaciji, nakon čega je ostalo 577 slika. Podatak o lokaciji, odnosno nazivu mesta i/ili države poslat je Geonames API-ju, a natrag su dobijeni podaci o geografskoj širini i dužini koji će se kasnije koristiti za klasterizaciju.
 
 Svi podaci koji su dobijeni smeštani su u JSON fajl. Primer JSON objekta dat je niže:
 
@@ -67,7 +89,7 @@ Svi podaci koji su dobijeni smeštani su u JSON fajl. Primer JSON objekta dat je
 	]
 ```
 
-Kao što se može videti, JSON fajl se sastoji od JSON objekata. Svaki objekat sadrži podatke o slici: id, userId, secret, server, title, location, lon, lat i cluster. Dalje su ovi podaci konvertovani u ARFF fajl. ARFF (Attribute-Relation File Format) fajl je tekstualan ASCII koji opisuje listu instanci koje dele set atributa. ARFF fajl se kasnije koristi za klasterizaciju. Za klasterizaciju je izabrano četiri klastera, jer je probom ustanovljeno da se oko te vrednosti dešava najmanje rasipanje podataka, odnosno najmanja promena greške nastale usled klasterovanja. Nakon klasterovanja, u podacima je promenjena vrednost podatka cluster, pa je dobjen novi JSON fajl:
+Kao što se može videti, JSON fajl se sastoji od JSON objekata. Svaki objekat sadrži podatke o slici: id, userId, secret, server, title, location, lon, lat i cluster. Dalje su ovi podaci konvertovani u ARFF fajl. ARFF (Attribute-Relation File Format) fajl je tekstualan ASCII koji opisuje listu instanci koje dele set atributa. ARFF fajl se kasnije koristi za klasterizaciju. Za klasterizaciju je izabrano pet klastera, jer je probom ustanovljeno da se oko te vrednosti dešava najmanje rasipanje podataka, odnosno najmanja promena greške nastale usled klasterovanja. Nakon klasterovanja, u podacima je promenjena vrednost podatka cluster, pa je dobjen novi JSON fajl:
 
 ```
 	[
@@ -96,14 +118,41 @@ Kao što se može videti, JSON fajl se sastoji od JSON objekata. Svaki objekat s
 	]
 ```
 
+#4. Proces klasterovanja
 
-#4. Korišćena tehnologija
+U ovom primeru korišćen je SimpleKMeans algoritam za klasterovanje. Jedan je od najpoznatijih algoritama za klasterovanje. Koristi se tako što mu se zada broj klastera, a zatim on prolazeći kroz iteracije razvrstava podatke. SimpleKMeans grupiše instance na osnovu Euklidske udaljenosti u ravni koja je postavljena atributima tih instanci. Na početku, prilikom inicijalizacije nasumično bira onoliki broj težišta klastera koliko je zadati broj klastera. U sledećoj iteraciji razvrstava instance na osnovu udaljenosti od težišta klastera. Zatim pomera težište klastera na osnovu izračunatih proseka vrednosti instanci u klasteru. Ovaj postupak se ponavlja sve dok algoritam ne konvergira, jer daljim razvrstavanjem se nece dobiti značajnije promene, pa se proces zaustavlja. 
+
+Kako bi se utvrdilo koji broj klastera je najpogodniji, odnosno koji broj je onaj koji pravi najmanju kvadratnu grešku, potrebno je izvršiti probu. Rezultat probe se može videti na slici 2. Menjanjem broja klastera ustanovljeno je da se prilikom klasterizacije na pet klastera dobija najmanje osipanje podataka uz najmanju kvadratnu grešku od 4.942677457897851.
+
+![Slika 2 - Graph](images/graph.jpg)
+
+Slika 2- Grafikon kvadratnih grešaka
+
+Primenom SimpleKMeans algoritma, dobijeni su sledeći klasteri:
+
+![Slika 3 - Type clusters](images/results.jpg)
+
+Slika 3 - Rezultat klasterizacije
+
+Kao što se na slici 3 može videti, dobijeno je pet klastera sa po 140, 279, 49, 72 i 37 instanci respektivno. U prvom klasteru se nalaze vrste ajkula među kojima je najvise nurse ajkula. U drugom su pretežno bele ajkule. U trećem limun, tigar i reef ajkule. U četvrtom najviše ima kit ajkula. U petom je najviše neimenovanih ajkula, zatim reef i belih ajkula.
+
+U prvom se nalaze instance čija je lokacija najbliža Evropi (njih 140). U drugom se nalaze one koje su najbliže Sjedinjenim Američkim Državama (njih 279). U trećem se nalaze one koje su po lokaciji najbliže Kini (njih 49). U četvrtom se nalaze one instance koje su po lokaciji najbliže Australiji (njih 72). U petom se nalaze one koje su najbliže Južnoj Americi i Africi (njih 37).
+
+Na slici 3 se može videti koliko instanci je u kom klasteru. Od ukupno 577 instanci 140 (24%) je u prvom klasteru; 279 (48%) u drugom; 49 (8%) u trećem; 72 (12%) u četvrtom i 37 (6%) u petom.
+
+Na slici 4 se može videti prikaz klasterizovanih podataka prikazanih na mapi sveta.
+
+![Slika 4 - Clusters](images/map.jpg)
+
+Slika 4- Prikaz klasterizovanih podataka
+
+#5. Korišćene tehnologije
 
 Aplikacija je napisana u programskom jeziku Java. 
 
 Prilikom realizacije aplikacije korišćene su sledeće tehnologije:
 
-1. [Biblioteka za izvrsenje HTTP poziva](http://hc.apache.org/httpcomponents-client-ga/) - za izvršavanje poziva Flickr i Geonames metoda, kako bi se omogućilo dobijanje podataka na kojima će se kasnije raditi.
+1. [Apache Commons](http://hc.apache.org/httpcomponents-client-ga/) - za izvršavanje poziva Flickr i Geonames metoda, kako bi se omogućilo dobijanje podataka na kojima će se kasnije raditi.
 
 ```
     	setMethod(new GetMethod(getRequest()));
@@ -114,15 +163,7 @@ Prilikom realizacije aplikacije korišćene su sledeće tehnologije:
 	setRstream(null);
 	setRstream(getMethod().getResponseBodyAsStream());
 ```
-
-2. [Biblioteka za rad sa JSON-om](http://json.org/java/) - za korišćenje JSON formata i objekata. JSON omogućava lakšu manipulaciu podacima, s obzirom da su podaci smešteni u stablo. Identifikator podatka je njegov naziv preko koga mu se i pristupa. JSON fajl je i čitljiv, odnosno može se jasno razumeti, i ima jednostavnu formu.
-
-```
-      JSONObject jobj = new JSONObject(jstr);
-      JSONObject owner = jobj.getJSONObject("photo").getJSONObject("owner");
-```
-
-3. [GSON biblioteka](https://code.google.com/p/google-gson/) - omogućava korišćenje JSON-a tako što konvertuje Java objekte u JSON objekte. Takođe, može se koristiti i obrnuto za pretvaranje JSON stringa u Java objekte.
+2. [GSON biblioteka](https://code.google.com/p/google-gson/) - omogućava korišćenje JSON-a tako što konvertuje Java objekte u JSON objekte. Takođe, može se koristiti i obrnuto za pretvaranje JSON stringa u Java objekte.
 
 ```
 	JsonArray photosArray = new JsonArray();
@@ -130,7 +171,7 @@ Prilikom realizacije aplikacije korišćene su sledeće tehnologije:
 	photoJson.addProperty("id", p.getId());
 ```
 
-4. [Weka](http://weka.wikispaces.com/Use+WEKA+in+your+Java+code) - (Waikato Environment for Knowledge Analysis) - softver za mašinsko učenje koji omogućuje da izvršimo klasterizaciju podataka (slika). Weka čita iz ARFF fajla podatke, i na osnovu zadatih parametara (filtera, broja klastera, načina klasterizacije) vrši klasterizaciju i ispisuje rezultat.
+3. [Weka](http://weka.wikispaces.com/Use+WEKA+in+your+Java+code) - (Waikato Environment for Knowledge Analysis) - softver za mašinsko učenje koji omogućuje da izvršimo klasterizaciju podataka (slika). Weka čita iz ARFF fajla podatke, i na osnovu zadatih parametara (filtera, broja klastera, načina klasterizacije) vrši klasterizaciju i ispisuje rezultat.
 
 ```
 	ClusterEvaluation eval = new ClusterEvaluation();
@@ -138,7 +179,7 @@ Prilikom realizacije aplikacije korišćene su sledeće tehnologije:
 	eval.evaluateClusterer(data);
 ```
 
-5. [Google maps] (https://developers.google.com/maps/documentation/javascript/) - koriščeno za prikaz klastera na mapi sveta. Omogućava postavljanje različitih markera na mapi, kako bi se označila pripadnost određenoj grupi klastera. Za korišćenje je potreban *api key* kako bi se pozvao servis:
+4. [Google maps] (https://developers.google.com/maps/documentation/javascript/) - koriščeno za prikaz klastera na mapi sveta. Omogućava postavljanje različitih markera na mapi, kako bi se označila pripadnost određenoj grupi klastera. Za korišćenje je potreban *api key* kako bi se pozvao servis:
 
 ```
         <script type="text/javascript"
@@ -170,23 +211,5 @@ Za postavljanje markera napravljena je posebna funkcija:
        }
 ```
 
-U ovom primeru korišćen je SimpleKMeans algoritam za klasterovanje. Jedan je od najpoznatijih algoritama za klasterovanje. Koristi se tako što mu se zada broj klastera, a zatim on prolazeći kroz iteracije razvrstava podatke. SimpleKMeans grupiše instance na osnovu Euklidske udaljenosti u ravni koja je postavljena atributima tih instanci. Na početku, prilikom inicijalizacije nasumično bira onoliki broj težišta klastera koliko je zadati broj klastera. U sledećoj iteraciji razvrstava instance na osnovu udaljenosti od težišta klastera. Zatim pomera težište klastera na osnovu izračunatih proseka vrednosti instanci u klasteru. Ovaj postupak se ponavlja sve dok algoritam ne konvergira, jer daljim razvrstavanjem se nece dobiti značajnije promene, pa se proces zaustavlja. Primenom ovog algoritma, dobijeni su sledeći klasteri:
-
-![Slika 2 - Type clusters](images/results.jpg)
-
-Slika 2 - Rezultat klasterizacije
-
-Kao što se na slici 2 može videti, dobijeno je pet klastera sa po 140, 279, 49, 72 i 37 instanci respektivno. U prvom klasteru se nalaze vrste ajkula među kojima je najvise nurse ajkula. U drugom su pretežno bele ajkule. U trećem limun, tigar i reef ajkule. U četvrtom najviše ima kit ajkula. U petom je najviše neimenovanih ajkula, zatimreef i belih ajkula.
-
-U prvom se nalaze instance čija je lokacija najbliža Evropi (njih 140). U drugom se nalaze one koje su najbliže Sjedinjenim Američkim Državama (njih 279). U trećem se nalaze one koje su po lokaciji najbliže Kini (njih 49). U četvrtom se nalaze one instance koje su po lokaciji najbliže Australiji (njih 72). U petom se nalaze one koje su najbliže Južnoj Americi i Africi (njih 37).
-
-Na slici 2 se može videti koliko instanci je u kom klasteru. Od ukupno 577 instanci 140 (24%) je u prvom klasteru; 279 (48%) u drugom; 49 (8%) u trećem; 72 (12%) u četvrtom i 37 (6%) u petom. Metodom probanja dobijeno je da se se prilikom klasterizacije na pet klastera dobija najmanje osipanje podataka uz najmanju kvadratnu grešku od 4.942677457897851.
-
-Na slici 3 se može videti prikaz klasterizovanih podataka prikazanih na mapi sveta.
-
-![Slika 3 - Clusters](images/map.jpg)
-
-Slika 3- Prikaz klasterizovanih podataka
-
-#5. Priznanja
+#6. Priznanja
 Ova aplikacija je nastala kao rezultat seminarskog rada iz predmeta [Inteligentni sistemi](http://is.fon.rs/) na Fakultetu organizacionih nauka, Univerziteta u Beogradu, Srbija, 2014. godine.

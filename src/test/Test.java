@@ -65,16 +65,16 @@ public class Test {
         CreateArff ca = new CreateArff();
         ca.general(listPhoto2);
 */
-    //    ReadArff ra = new ReadArff();
+        ReadArff ra = new ReadArff();
 
         //changing number of clusters led to a conclusion the best number is 5
-    /*    for (int i = 1; i < 30; i++) {
+        for (int i = 1; i < 30; i++) {
            ra.readArff("trial", i, "rez" + i);
         }
-*/
+
     //    ra.readArff("trial", 5, "result");
         
-       Desktop.getDesktop().browse(new URI("file:///home/jelena/NetBeansProjects/FlickrClusterization%20/src/visualization/sharks.html")); 
+    //   Desktop.getDesktop().browse(new URI("file:///home/jelena/NetBeansProjects/FlickrClusterization%20/src/visualization/sharks.html")); 
        
     }
 

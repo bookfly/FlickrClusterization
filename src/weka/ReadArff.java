@@ -59,7 +59,7 @@ public class ReadArff {
         filteredClusterer.setFilter(removeFilter);
         filteredClusterer.buildClusterer(data);
 
-        writeCluster("data/changedLocation", data, filteredClusterer);
+    //    writeCluster("data/changedLocation", data, filteredClusterer);
 
         // Result of clusterization
         ClusterEvaluation eval = new ClusterEvaluation();
