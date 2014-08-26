@@ -121,7 +121,6 @@ Rezultat probe se može videti na slici 2. Menjanjem broja klastera ustanovljeno
 	]
 ```
 
-
 ![Slika 2 - Graph](images/graph.jpg)
 
 Slika 2- Grafikon srednjih kvadratnih grešaka
