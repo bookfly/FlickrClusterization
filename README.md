@@ -1,7 +1,7 @@
 FlickrClusterization
 ==============
 #1. O projektu
-Tema projekta je da se kreira aplikacija koja će omogućiti da se na osnovu raspoloživih podataka o slikama dobijenih korišćenjem Flickr API-a (https://www.flickr.com/services/api/) klasterizuju slike. S obzirom na raznovrsnost slika koje se svakodnevno postavljaju na Flickr, odlučila sam da ograničim domen aplikacije na slike o ajkulama.
+Tema projekta je da se kreira aplikacija koja će omogućiti da se na osnovu raspoloživih podataka o slikama dobijenih korišćenjem Flickr API-a (https://www.flickr.com/services/api/) klasterizuju slike. S obzirom na raznovrsnost slika koje se svakodnevno postavljaju na Flickr, odlučeno je da se domen aplikacije ograniči na slike o ajkulama.
 
 Faze u razvoju aplikacije:
 * Preuzimanje podataka o slikama kroz Flickr API i njihovo čuvanje
@@ -56,10 +56,7 @@ Primer odgovora Geonames API-ja:
 {"totalResultsCount":60,"geonames":[{"countryId":"6252001","adminCode1":"FL","countryName":"United States","fclName":"city, village,...","countryCode":"US","lng":"-80.05699","fcodeName":"populated place","toponymName":"Lake Worth","fcl":"P","name":"Lake Worth","fcode":"PPL","geonameId":4161422,"lat":"26.6159","adminName1":"Florida","population":34910}]}
 ```
 
-Podaci koji su preuzeti se nalaze u *countryName*, u ovom primeru to je *United States*.
-
 Za potrebe aplikacije preuzeto je 800 slika korišćenjem Flickr API-ja. Ove slike su prošle selekciju, odnosno odbačene su one koje nemaju podatak o lokaciji, nakon čega je ostalo 577 slika. Podatak o lokaciji, odnosno nazivu mesta i/ili države poslat je Geonames API-ju, a natrag su dobijeni podaci o geografskoj širini i dužini koji će se kasnije koristiti za klasterizaciju.
-
 Svi podaci koji su dobijeni smeštani su u JSON fajl. Primer JSON objekta dat je niže:
 
 ```
@@ -72,8 +69,7 @@ Svi podaci koji su dobijeni smeštani su u JSON fajl. Primer JSON objekta dat je
 	    "title": "White",
 	    "location": "Australia",
 	    "lon": 135.0,
-	    "lat": -25.0,
-	    "cluster": 0
+	    "lat": -25.0
 	  },
 	  {
 	    "id": "8856286135",
@@ -83,13 +79,20 @@ Svi podaci koji su dobijeni smeštani su u JSON fajl. Primer JSON objekta dat je
 	    "title": "White",
 	    "location": "United States",
 	    "lon": -80.41394,
-	    "lat": 37.22957,
-	    "cluster": 0
+	    "lat": 37.22957
 	  }
 	]
 ```
 
-Kao što se može videti, JSON fajl se sastoji od JSON objekata. Svaki objekat sadrži podatke o slici: id, userId, secret, server, title, location, lon, lat i cluster. Dalje su ovi podaci konvertovani u ARFF fajl. ARFF (Attribute-Relation File Format) fajl je tekstualan ASCII koji opisuje listu instanci koje dele set atributa. ARFF fajl se kasnije koristi za klasterizaciju. Za klasterizaciju je izabrano pet klastera, jer je probom ustanovljeno da se oko te vrednosti dešava najmanje rasipanje podataka, odnosno najmanja promena greške nastale usled klasterovanja. Nakon klasterovanja, u podacima je promenjena vrednost podatka cluster, pa je dobjen novi JSON fajl:
+Kao što se može videti, JSON fajl se sastoji od JSON objekata. Svaki objekat sadrži podatke o slici: id, userId, secret, server, title, location, lon, lat. Dalje su ovi podaci konvertovani u ARFF fajl. ARFF (Attribute-Relation File Format) fajl je tekstualan ASCII koji opisuje listu instanci koje dele set atributa. ARFF fajl se kasnije koristi za klasterizaciju.
+
+#4. Proces klasterovanja
+
+U ovom primeru korišćen je SimpleKMeans algoritam za klasterovanje. Jedan je od najpoznatijih algoritama za klasterovanje. Koristi se tako što mu se zada broj klastera, a zatim on prolazeći kroz iteracije razvrstava podatke. SimpleKMeans grupiše instance na osnovu Euklidske udaljenosti u ravni koja je postavljena atributima tih instanci. Na početku, prilikom inicijalizacije nasumično bira onoliki broj težišta klastera koliko je zadati broj klastera. U sledećoj iteraciji razvrstava instance na osnovu udaljenosti od težišta klastera. Zatim pomera težište klastera na osnovu izračunatih proseka vrednosti instanci u klasteru. Ovaj postupak se ponavlja sve dok algoritam ne konvergira, jer daljim razvrstavanjem se nece dobiti značajnije promene, pa se proces zaustavlja.
+
+Podaci koji su u ovoj aplikaciji korišćeni za klasterizaciju su geografska širina i dužina, a kako bi se utvrdilo koji broj klastera je najpogodniji, odnosno koji broj je onaj koji pravi najmanju srednju kvadratnu grešku, potrebno je izvršiti probu. Srednja kvadratna greška merenja je mera odstupanja vrednosti od srednje vrednosti. Ova mera pokazuje prosečno rasipanje rezultata merenja, što je posledica nesavršene preciznosti mernog uređaja.
+
+Rezultat probe se može videti na slici 2. Menjanjem broja klastera ustanovljeno je da se prilikom klasterizacije na pet klastera dobija najmanje osipanje podataka uz najmanju srednju kvadratnu grešku od 4.942677457897851. Nakon klasterovanja, u podacima je promenjena vrednost podatka cluster, pa je dobjen novi JSON fajl:
 
 ```
 	[
@@ -118,15 +121,10 @@ Kao što se može videti, JSON fajl se sastoji od JSON objekata. Svaki objekat s
 	]
 ```
 
-#4. Proces klasterovanja
-
-U ovom primeru korišćen je SimpleKMeans algoritam za klasterovanje. Jedan je od najpoznatijih algoritama za klasterovanje. Koristi se tako što mu se zada broj klastera, a zatim on prolazeći kroz iteracije razvrstava podatke. SimpleKMeans grupiše instance na osnovu Euklidske udaljenosti u ravni koja je postavljena atributima tih instanci. Na početku, prilikom inicijalizacije nasumično bira onoliki broj težišta klastera koliko je zadati broj klastera. U sledećoj iteraciji razvrstava instance na osnovu udaljenosti od težišta klastera. Zatim pomera težište klastera na osnovu izračunatih proseka vrednosti instanci u klasteru. Ovaj postupak se ponavlja sve dok algoritam ne konvergira, jer daljim razvrstavanjem se nece dobiti značajnije promene, pa se proces zaustavlja. 
-
-Kako bi se utvrdilo koji broj klastera je najpogodniji, odnosno koji broj je onaj koji pravi najmanju kvadratnu grešku, potrebno je izvršiti probu. Rezultat probe se može videti na slici 2. Menjanjem broja klastera ustanovljeno je da se prilikom klasterizacije na pet klastera dobija najmanje osipanje podataka uz najmanju kvadratnu grešku od 4.942677457897851.
 
 ![Slika 2 - Graph](images/graph.jpg)
 
-Slika 2- Grafikon kvadratnih grešaka
+Slika 2- Grafikon srednjih kvadratnih grešaka
 
 Primenom SimpleKMeans algoritma, dobijeni su sledeći klasteri:
 
@@ -137,8 +135,6 @@ Slika 3 - Rezultat klasterizacije
 Kao što se na slici 3 može videti, dobijeno je pet klastera sa po 140, 279, 49, 72 i 37 instanci respektivno. U prvom klasteru se nalaze vrste ajkula među kojima je najvise nurse ajkula. U drugom su pretežno bele ajkule. U trećem limun, tigar i reef ajkule. U četvrtom najviše ima kit ajkula. U petom je najviše neimenovanih ajkula, zatim reef i belih ajkula.
 
 U prvom se nalaze instance čija je lokacija najbliža Evropi (njih 140). U drugom se nalaze one koje su najbliže Sjedinjenim Američkim Državama (njih 279). U trećem se nalaze one koje su po lokaciji najbliže Kini (njih 49). U četvrtom se nalaze one instance koje su po lokaciji najbliže Australiji (njih 72). U petom se nalaze one koje su najbliže Južnoj Americi i Africi (njih 37).
-
-Na slici 3 se može videti koliko instanci je u kom klasteru. Od ukupno 577 instanci 140 (24%) je u prvom klasteru; 279 (48%) u drugom; 49 (8%) u trećem; 72 (12%) u četvrtom i 37 (6%) u petom.
 
 Na slici 4 se može videti prikaz klasterizovanih podataka prikazanih na mapi sveta.
 
